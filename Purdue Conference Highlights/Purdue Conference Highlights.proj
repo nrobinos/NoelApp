@@ -81,6 +81,7 @@
     <Content Include="images3\services\tile_site.png" />
     <Content Include="images3\services\tile_speaker.png" />
     <Content Include="index.html" />
+    <Content Include="kendo\js\jquerty.tools.min.1.2.7.js" />
     <Content Include="kendo\js\jquery.min.js" />
     <Content Include="kendo\js\kendo.mobile.min.js" />
     <Content Include="kendo\styles\images\ios-sprite.png" />
