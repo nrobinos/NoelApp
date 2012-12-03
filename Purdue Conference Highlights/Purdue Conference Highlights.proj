@@ -30,8 +30,6 @@
     </Folder>
     <Folder Include="images" />
     <Folder Include="images\services" />
-    <Folder Include="images3" />
-    <Folder Include="images3\services" />
     <Folder Include="scripts" />
   </ItemGroup>
   <ItemGroup>
@@ -56,6 +54,7 @@
     <Resource Include="App_Resources\Android\drawable-ldpi\icon.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="index_original.html" />
     <Content Include="images\CampusMap82112.png" />
     <Content Include="images\close.png" />
     <Content Include="images\pic1.jpg" />
@@ -68,18 +67,6 @@
     <Content Include="images\services\tile_register.png" />
     <Content Include="images\services\tile_site.png" />
     <Content Include="images\services\tile_speaker.png" />
-    <Content Include="images3\CampusMap82112.png" />
-    <Content Include="images3\close.png" />
-    <Content Include="images3\pic1.jpg" />
-    <Content Include="images3\pic2_large.jpg" />
-    <Content Include="images3\pic2.jpg" />
-    <Content Include="images3\pic1_large.jpg" />
-    <Content Include="images3\pyt_07_balc_view_small.jpg" />
-    <Content Include="images3\services\tile_event.png" />
-    <Content Include="images3\services\tile_onsite.png" />
-    <Content Include="images3\services\tile_register.png" />
-    <Content Include="images3\services\tile_site.png" />
-    <Content Include="images3\services\tile_speaker.png" />
     <Content Include="index.html" />
     <Content Include="kendo\js\jquery.min.js" />
     <Content Include="kendo\js\kendo.mobile.min.js" />
@@ -88,6 +75,7 @@
     <Content Include="kendo\styles\images\iconmasks.svg" />
     <Content Include="kendo\styles\images\android-sprite.png" />
     <Content Include="kendo\styles\kendo.mobile.all.min.css" />
+    <Content Include="styles\main_original.css" />
     <Content Include="styles\main.css" />
     <Content Include="cordova.ios.js">
       <Platform>iOS</Platform>
