@@ -9,144 +9,1003 @@
 		<link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />-->
 		<link href="styles/main.css" rel="stylesheet" />
         
-        <!--JQUERY MOBILE POPUP-->
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <!--META-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!--JQUERY MOBILE POPUP-->
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
 	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+        
+    <!--START ARNAV's SAMPLE-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+    <!--END ARNAV's SAMPLE-->
+        
 	</head>
     
 	<body>
-            
-            
+    <!--START ARNAV's SAMPLE-->
+		<script>
+			$(function() {
+				$("#toggle1").click(function() { 
+					// Toggles Venues Div
+					$("#Venues").toggle();
+				});
+			});
+			
+			$(function() {
+				$("#toggle2").click(function() {
+					// Toggles Lodging Div  
+					$("#Lodging").toggle();
+				});
+			});
+			
+			$(function() {
+				$("#toggle3").click(function() {
+					// Toggles Theatre Div  
+					$("#Theatre").toggle();
+				});
+			});
+			
+			$(function() {
+				$("#toggle4").click(function() {
+					// Toggles Athletics Div  
+					$("#Athletics").toggle();
+				});
+			});
+            			
+			$(function() {
+				$("#toggle5").click(function() {
+					// Toggles Dining Div  
+					$("#Dining").toggle();
+				});
+			});
+		</script>
+	<!--END ARNAV's SAMPLE-->	
+		
+    <!--START MAIN PAGE-->
 		<div data-role="page" id="home" data-title=" ">
-            
-            
-            <div id="main">
-			    <h1>EXPERIENCE</h1>
+            <div data-role="header"></div>
+            <div data-role="content">
+                <div id="main"></div>
+            </div>
+			    
                 <div data-role="footer" data-position="fixed" data-fullscreen="true" align="center">
                     <div data-role="controlgroup" data-type="horizontal" data-mini="true">
                         <a href="#home" data-role="button" data-icon="home">Home</a>
 					    <a href="#campus_map" data-role="button" data-icon="star">Campus Map</a>
 					    <a href="#services" data-role="button" data-icon="gear">Services</a>
-					    <a href="#button1" data-role="button" data-icon="info">Button1</a>
-					    <a href="#button2" data-role="button" data-icon="refresh">Button2</a>
-                        
+					    <a href="#about" data-role="button" data-icon="info">About</a>
+					    <a href="#staff" data-role="button" data-icon="refresh">Staff</a>
 				    </div>
                 </div>
             </div>
-            
-        </div>
-
+    <!--END MAIN PAGE-->
+        
+        
+    <!--START CAMPUS MAP PAGE-->
 		<div data-role="page" id="campus_map" data-title=" ">
-                <div id="map">
-			        <h1>Purdue Campus Map2</h1>
+            <div data-role="header" data-position="fixed" data-fullscreen="true" align="center">
+                <!--<div data-role="controlgroup" data-type="horizontal" data-mini="true">
+                    <a href="#venues" data-role="button"><span style="color:red; font-size:50px; float:left; padding-right:10px;">&#8226;</span> Venues</a>
+                    <a href="#lodging" data-role="button"><span style="color:green; font-size:50px; float:left; padding-right:10px;">&#8226;</span> Lodging</a>
+                    <a href="#theatre" data-role="button"><span style="color:blue; font-size:50px; float:left; padding-right:10px;">&#8226;</span> Theatre</a>
+                    <a href="#athletics" data-role="button"><span style="color:yellow; font-size:50px; float:left; padding-right:10px;">&#8226;</span> Athletics</a>
+                    <a href="#dining" data-role="button"><span style="color:orange; font-size:50px; float:left; padding-right:10px;">&#8226;</span> Dining</a>
+                </div>-->
+                <div data-role="navbar">
+    	        <ul>
+                    <li id="toggle1"><a href="javascript:void(0)" >Venues <img src="images/pins/pin_red.png" style="width:20px; height:20px;"></a></li>
+            		<li id="toggle2"><a href="javascript:void(0)" >Lodging <img src="images/pins/pin_green.png" style="width:20px; height:20px;"></a></li>
+            		<li id="toggle3"><a href="javascript:void(0)" >Theatre <img src="images/pins/pin_blue.png" style="width:20px; height:20px;"></a></li>
+            		<li id="toggle4"><a href="javascript:void(0)" >Athletics <img src="images/pins/pin_yellow.png" style="width:20px; height:20px;"></a></li>
+            		<li id="toggle5"><a href="javascript:void(0)" >Dining <img src="images/pins/pin_orange.png" style="width:20px; height:20px;"></a></li>
+    	        </ul>
                 </div>
+            </div>
+            
+            <div data-role="content">
+            <!--MAP -->
+                <!--<img class="map" src="media/map.jpg">-->
+                
+            <!-- PINS (red) and popup photo for Venues tab--> 
+                <div id="Venues" style="display:none">
+                    
+                    <!--STEWART-->
+                    <a href="#stew"  data-rel="popup" >
+                        <div id="venues_stew">
+                            <img src="images/pins/pin_red.png" style="width:40px; height:40px;">
+                        </div>
+                    </a>
+                    <div data-role="popup" id="stew" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+                        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                        
+                        <div class="details" style="display:inline-block;">
+                            <img class="popphoto" src="media/stew.jpg" alt="Stewart Center" style="width:800px; height:600px; float:left;">
+                            <h3 style="float:left; padding-left:10px;">The Stewart Center</h3>
+                        </div>
+                    </div>
+                    
+                    <!--PMU-->
+                    <a href="#pmu"  data-rel="popup" >
+                        <div id="venues_pmu">
+                            <img src="images/pins/pin_red.png" style="width:40px; height:40px;">
+                        </div>
+                    </a>
+                    <div data-role="popup" id="pmu" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+                        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                        <img class="popphoto" src="media/pmu.png" alt="PMU" style="width:800px; height:600px;">
+                        <div class="details">
+                            <h3>Purdue Memorial Union</h3>
+                            <p>North Ballroom, South Ballroom, East Faculty Lounge, West Faculty Lounge, Anniversary Drawing Room</p>
+                        </div>
+                    </div>
 
-                <div data-role="footer" data-position="fixed" data-fullscreen="true">
-                    <div data-role="navbar">
-                        <ul>
-					    <li><a href="#home" data-icon="home">Home</a></li>
-					    <li><a href="#campus_map" data-icon="star">Campus Map</a></li>
-					    <li><a href="#services" data-icon="gear">Services</a></li>
-					    <li><a href="#button1" data-icon="info">Button1</a></li>
-					    <li><a href="#button2" data-icon="refresh">Button2</a></li>
-                        </ul>
+                   <!--LIBERAL ARTS MALL-->
+                    <a href="#arts"  data-rel="popup" >
+                        <div id="venues_arts">
+                            <img src="images/pins/pin_red.png" style="width:40px; height:40px;">
+                        </div>
+                    </a>
+                    <div data-role="popup" id="arts" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+                        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                        <img class="popphoto" src="media/stew.jpg" alt="Stewart Center" style="width:800px; height:600px;">
+                        <div class="details">
+                            <h3>Liberal Arts Mall</h3>
+                            <p>UNIV, REC, STON, MTHW, BRNG, MAT, PSYCH</p>
+                        </div>
+                    </div>
+                            
+                    <!--CLASS OF 50-->
+                    <a href="#class50"  data-rel="popup" >
+                        <div id="venues_class50">
+                            <img src="images/pins/pin_red.png" style="width:40px; height:40px;">
+                        </div>
+                    </a>
+                    <div data-role="popup" id="class50" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+                        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                        <img class="popphoto" src="media/stew.jpg" alt="Stewart Center" style="width:800px; height:600px;">
+                        <div class="details">
+                            <h3>Class of 50</h3>
+                        </div>
+                    </div>
+                            
+                    <!--BUSINESS CAMPUS-->
+                    <a href="#business"  data-rel="popup" >
+                        <div id="venues_business">
+                            <img src="images/pins/pin_red.png" style="width:40px; height:40px;">
+                        </div>
+                    </a>
+                    <div data-role="popup" id="business" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+                        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                        <img class="popphoto" src="media/stew.jpg" alt="Stewart Center" style="width:800px; height:600px;">
+                        <div class="details">
+                            <h3>Business Campus</h3>
+                            <p>KRAN, RAWLS, KRANNERT CENTER, YONG</p>
+                        </div>
+                    </div>
+                            
+                    <!--ENGINEERING MALL-->
+                    <a href="#engineer"  data-rel="popup" >
+                        <div id="venues_engineer">
+                            <img src="images/pins/pin_red.png" style="width:40px; height:40px;">
+                        </div>
+                    </a>
+                    <div data-role="popup" id="engineer" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+                        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                        <img class="popphoto" src="media/stew.jpg" alt="Stewart Center" style="width:800px; height:600px;">
+                        <div class="details">
+                            <h3>Engineering Mall</h3>
+                            <p>ARMS, CIVL, PHYS, ME, EE, KNOY</p>
+                        </div>
+                    </div>
+
+                    <!--DAUCH ALUMNI CENTER-->
+                    <a href="#dauch"  data-rel="popup" >
+                        <div id="venues_dauch">
+                            <img src="images/pins/pin_red.png" style="width:40px; height:40px;">
+                        </div>
+                    </a>
+                    <div data-role="popup" id="dauch" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+                        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                        <img class="popphoto" src="media/stew.jpg" alt="Stewart Center" style="width:800px; height:600px;">
+                        <div class="details">
+                            <h3>Dauch Alumni Center</h3>
+                        </div>
+                    </div>
+                            
+                    <!--ROSS ADE STADIUM PAVILION-->
+                    <a href="#rossadepavilion"  data-rel="popup" >
+                        <div id="venues_rossadepavilion">
+                            <img src="images/pins/pin_red.png" style="width:40px; height:40px;">
+                        </div>
+                    </a>
+                    <div data-role="popup" id="rossadepavilion" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+                        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                        <img class="popphoto" src="media/stew.jpg" alt="Stewart Center" style="width:800px; height:600px;">
+                        <div class="details">
+                            <h3>Ross Ade Stadium Pavilion</h3>
+                            <p>Shively Club, Buchanan Club, Buchanan Mingling, Media Suite</p>
+                        </div>
+                    </div>
+                            
+                    <!--DISCOVERY PARK-->
+                    <a href="#discoverypark"  data-rel="popup" >
+                        <div id="venues_discoverypark">
+                            <img src="images/pins/pin_red.png" style="width:40px; height:40px;">
+                        </div>
+                    </a>
+                    <div data-role="popup" id="discoverypark" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+                        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                        <img class="popphoto" src="media/stew.jpg" alt="Stewart Center" style="width:800px; height:600px;">
+                        <div class="details">
+                            <h3>Discovery Park</h3>
+                        </div>
+                    </div>
+                            
+                </div> <!-- Div #Venues ends -->
+                
+            <!-- PINS (green) and popup photo for Lodging tab-->
+                <div id="Lodging" style="display:none">
+
+                    <!--UNION CLUB HOTEL-->
+                    <a href="#unionhotel"  data-rel="popup" >
+                        <div id="lodging_unionhotel">
+                            <img src="images/pins/pin_green.png" style="width:40px; height:40px;">
+                        </div>
+                    </a>
+                    <div data-role="popup" id="unionhotel" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+                        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                        <img class="popphoto" src="media/pmu.png" alt="PMU" style="width:800px; height:600px;">
+                        <div class="details">
+                            <h3>Union Club Hotel</h3>
+                            <p>Deluxe Room, Double Twin, Queen</p>
+                        </div>
+                    </div>
+                            
+                    <!--CARY QUAD-->
+                    <a href="#cary"  data-rel="popup" >
+                        <div id="lodging_cary">
+                            <img src="images/pins/pin_green.png" style="width:40px; height:40px;">
+                        </div>
+                    </a>
+                    <div data-role="popup" id="cary" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+                        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                        <img class="popphoto" src="media/pmu.png" alt="PMU" style="width:800px; height:600px;">
+                        <div class="details">
+                            <h3>Cary Quadrangle</h3>
+                            <p>Suite-style A/C doubles</p>
+                        </div>
+                    </div>
+                            
+                    <!--EARHART-->
+                    <a href="#earhart"  data-rel="popup" >
+                        <div id="lodging_earhart">
+                            <img src="images/pins/pin_green.png" style="width:40px; height:40px;">
+                        </div>
+                    </a>
+                    <div data-role="popup" id="earhart" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+                        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                        <img class="popphoto" src="media/pmu.png" alt="PMU" style="width:800px; height:600px;">
+                        <div class="details">
+                            <h3>Earhart Residence Hall</h3>
+                            <p>Traditional A/C</p>
+                        </div>
+                    </div>
+                            
+                    <!--FIRST STREET TOWERS-->
+                    <a href="#firststreet"  data-rel="popup" >
+                        <div id="lodging_firststreet">
+                            <img src="images/pins/pin_green.png" style="width:40px; height:40px;">
+                        </div>
+                    </a>
+                    <div data-role="popup" id="firststreet" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+                        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                        <img class="popphoto" src="media/pmu.png" alt="PMU" style="width:800px; height:600px;">
+                        <div class="details">
+                            <h3>First Street Towers</h3>
+                            <p>Single A/C with Private Bath, Study Lounge, TV Lounge, Conference Room</p>
+                        </div>
+                    </div>
+                            
+                    <!--HARRISON-->
+                    <a href="#harrison"  data-rel="popup" >
+                        <div id="lodging_harrison">
+                            <img src="images/pins/pin_green.png" style="width:40px; height:40px;">
+                        </div>
+                    </a>
+                    <div data-role="popup" id="harrison" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+                        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                        <img class="popphoto" src="media/pmu.png" alt="PMU" style="width:800px; height:600px;">
+                        <div class="details">
+                            <h3>Harrison Residence Hall</h3>
+                            <p>Traditional A/C</p>
+                        </div>
+                    </div>
+                            
+                    <!--HILLENBRAND-->
+                    <a href="#hillenbrand"  data-rel="popup" >
+                        <div id="lodging_hillenbrand">
+                            <img src="images/pins/pin_green.png" style="width:40px; height:40px;">
+                        </div>
+                    </a>
+                    <div data-role="popup" id="hillenbrand" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+                        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                        <img class="popphoto" src="media/pmu.png" alt="PMU" style="width:800px; height:600px;">
+                        <div class="details">
+                            <h3>Hillenbrand Residence Hall</h3>
+                            <p>Suite-style A/C doubles</p>
+                        </div>
+                    </div>
+                            
+                    <!--MCCUTCHEON-->
+                    <a href="#mccutcheon"  data-rel="popup" >
+                        <div id="lodging_mccutcheon">
+                            <img src="images/pins/pin_green.png" style="width:40px; height:40px;">
+                        </div>
+                    </a>
+                    <div data-role="popup" id="mccutcheon" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+                        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                        <img class="popphoto" src="media/pmu.png" alt="PMU" style="width:800px; height:600px;">
+                        <div class="details">
+                            <h3>McCutcheon Residence Hall</h3>
+                            <p>Traditional A/C, Computer Lab, Conference Rooms</p>
+                        </div>
+                    </div>
+
+                    <!--SHREVE-->
+                    <a href="#shreve"  data-rel="popup" >
+                        <div id="lodging_shreve">
+                            <img src="images/pins/pin_green.png" style="width:40px; height:40px;">
+                        </div>
+                    </a>
+                    <div data-role="popup" id="shreve" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+                        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                        <img class="popphoto" src="media/pmu.png" alt="PMU" style="width:800px; height:600px;">
+                        <div class="details">
+                            <h3>Shreve Residence Hall</h3>
+                            <p>Traditional A/C</p>
+                        </div>
+                    </div>
+
+                    <!--WINDSOR HALL-->
+                    <a href="#windsor"  data-rel="popup" >
+                        <div id="lodging_windsor">
+                            <img src="images/pins/pin_green.png" style="width:40px; height:40px;">
+                        </div>
+                    </a>
+                    <div data-role="popup" id="windsor" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+                        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                        <img class="popphoto" src="media/pmu.png" alt="PMU" style="width:800px; height:600px;">
+                        <div class="details">
+                            <h3>Windsor Halls</h3>
+                            <p>Traditional A/C</p>
+                        </div>
+                    </div>
+                            
+                </div> <!-- Div #Lodging ends -->
+                            
+            <!-- PINS (blue) and popup photo for Theatre tab--> 
+                <div id="Theatre" style="display:none">
+                            
+                    <!--ELLIOT HALL-->
+                    <a href="#elliot"  data-rel="popup" >
+                        <div id="theatre_elliot">
+                            <img src="images/pins/pin_blue.png" style="width:40px; height:40px;">
+                        </div>
+                    </a>
+                    <div data-role="popup" id="elliot" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+                        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                        <img class="popphoto" src="media/elliot.JPG" alt="elliot" style="width:800px; height:600px;">
+                        <div class="details">
+                            <h3>Elliot Hall of Music</h3>
+                        </div>
+                    </div>
+                            
+                    <!--FOWLER HALL-->
+                    <a href="#fowler"  data-rel="popup" >
+                        <div id="theatre_fowler">
+                            <img src="images/pins/pin_blue.png" style="width:40px; height:40px;">
+                        </div>
+                    </a>
+                    <div data-role="popup" id="fowler" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+                        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                        <img class="popphoto" src="media/elliot.JPG" alt="elliot" style="width:800px; height:600px;">
+                        <div class="details">
+                            <h3>Fowler Hall</h3>
+                        </div>
+                    </div>
+                            
+                    <!--LOEB PLAYHOUSE-->
+                    <a href="#loeb"  data-rel="popup" >
+                        <div id="theatre_loeb">
+                            <img src="images/pins/pin_blue.png" style="width:40px; height:40px;">
+                        </div>
+                    </a>
+                    <div data-role="popup" id="loeb" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+                        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                        <img class="popphoto" src="media/elliot.JPG" alt="elliot" style="width:800px; height:600px;">
+                        <div class="details">
+                            <h3>Loeb Playhouse</h3>
+                        </div>
+                    </div>
+                            
+                    <!--SLAYTER HILL-->
+                    <a href="#slayter"  data-rel="popup" >
+                        <div id="theatre_slayter">
+                            <img src="images/pins/pin_blue.png" style="width:40px; height:40px;">
+                        </div>
+                    </a>
+                    <div data-role="popup" id="slayter" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+                        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                        <img class="popphoto" src="media/elliot.JPG" alt="elliot" style="width:800px; height:600px;">
+                        <div class="details">
+                            <h3>Slayter Hill</h3>
+                        </div>
+                    </div>
+                            
+                </div> <!-- Div #Theatre ends -->
+                            
+            <!-- PINS (yellow) and popup photo for Athletics tab--> 
+                <div id="Athletics" style="display:none">
+                    
+                    <!--RECREATIONAL SPORTS CENTER-->
+                    <a href="#reccenter"  data-rel="popup" >
+                           <div id="athletics_reccenter">
+                               <img src="images/pins/pin_yellow.png" style="width:40px; height:40px;">
+                           </div>
+                    </a>
+                    <div data-role="popup" id="reccenter" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+    	                 <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+    	                 <img class="popphoto" src="media/rossade.jpg" alt="Stadium" style="width:800px; height:600px;">
+                         <div class="details">
+                            <h3>Recreational Sports Center</h3>
+                         </div>
+                    </div>
+                    
+                    <!--ROSS ADE STADIUM-->
+                    <a href="#rossadestadium"  data-rel="popup" >
+                           <div id="athletics_rossadestadium">
+                               <img src="images/pins/pin_yellow.png" style="width:40px; height:40px;">
+                           </div>
+                    </a>
+                    <div data-role="popup" id="rossadestadium" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+    	                 <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+    	                 <img class="popphoto" src="media/rossade.jpg" alt="Stadium" style="width:800px; height:600px;">
+                         <div class="details">
+                            <h3>Ross Ade Stadium</h3>
+                         </div>
+                    </div>
+                             
+                    <!--MACKEY ARENA-->
+                    <a href="#mackey"  data-rel="popup" >
+                           <div id="athletics_mackey">
+                               <img src="images/pins/pin_yellow.png" style="width:40px; height:40px;">
+                           </div>
+                    </a>
+                    <div data-role="popup" id="mackey" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+    	                 <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+    	                 <img class="popphoto" src="media/rossade.jpg" alt="Stadium" style="width:800px; height:600px;">
+                         <div class="details">
+                            <h3>Mackey Arena</h3>
+                         </div>
+                    </div>
+                             
+                    <!--LAMBERT FIELDHOUSE-->
+                    <a href="#lambert"  data-rel="popup" >
+                           <div id="athletics_lambert">
+                               <img src="images/pins/pin_yellow.png" style="width:40px; height:40px;">
+                           </div>
+                    </a>
+                    <div data-role="popup" id="lambert" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+    	                 <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+    	                 <img class="popphoto" src="media/rossade.jpg" alt="Stadium" style="width:800px; height:600px;">
+                         <div class="details">
+                            <h3>Lambert Fieldhouse</h3>
+                         </div>
+                    </div>
+                             
+                    <!--BOILERMAKER GOLF COMPLEX-->
+                    <a href="#golfcomplex"  data-rel="popup" >
+                           <div id="athletics_golfcomplex">
+                               <img src="images/pins/pin_yellow.png" style="width:40px; height:40px;">
+                           </div>
+                    </a>
+                    <div data-role="popup" id="golfcomplex" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+    	                 <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+    	                 <img class="popphoto" src="media/rossade.jpg" alt="Stadium" style="width:800px; height:600px;">
+                         <div class="details">
+                            <h3>Boilermaker Golf Complex</h3>
+                         </div>
+                    </div>
+                             
+                    <!--SCHWARTZ TENNIS PAVILION-->
+                    <a href="#schwartz"  data-rel="popup" >
+                           <div id="athletics_schwartz">
+                               <img src="images/pins/pin_yellow.png" style="width:40px; height:40px;">
+                           </div>
+                    </a>
+                    <div data-role="popup" id="schwartz" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+    	                 <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+    	                 <img class="popphoto" src="media/rossade.jpg" alt="Stadium" style="width:800px; height:600px;">
+                         <div class="details">
+                            <h3>Schwartz Tennis Pavilion</h3>
+                         </div>
+                    </div>
+                             
+                    <!--BASEBALL COMPLEX-->
+                    <a href="#baseballcomplex"  data-rel="popup" >
+                           <div id="athletics_baseballcomplex">
+                               <img src="images/pins/pin_yellow.png" style="width:40px; height:40px;">
+                           </div>
+                    </a>
+                    <div data-role="popup" id="baseballcomplex" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+    	                 <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+    	                 <img class="popphoto" src="media/rossade.jpg" alt="Stadium" style="width:800px; height:600px;">
+                         <div class="details">
+                            <h3>Baseball Complex</h3>
+                         </div>
+                    </div>
+                             
+                    <!--BOILERMAKER AQUATIC CENTER-->
+                    <a href="#aquaticcenter"  data-rel="popup" >
+                           <div id="athletics_aquaticcenter">
+                               <img src="images/pins/pin_yellow.png" style="width:40px; height:40px;">
+                           </div>
+                    </a>
+                    <div data-role="popup" id="aquaticcenter" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+    	                 <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+    	                 <img class="popphoto" src="media/rossade.jpg" alt="Stadium" style="width:800px; height:600px;">
+                         <div class="details">
+                            <h3>Boilermaker Aquatic Center</h3>
+                         </div>
+                    </div>
+                             
+                    <!--RANKIN TRACK-->
+                    <a href="#rankintrack"  data-rel="popup" >
+                           <div id="athletics_rankintrack">
+                               <img src="images/pins/pin_yellow.png" style="width:40px; height:40px;">
+                           </div>
+                    </a>
+                    <div data-role="popup" id="rankintrack" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+    	                 <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+    	                 <img class="popphoto" src="media/rossade.jpg" alt="Stadium" style="width:800px; height:600px;">
+                         <div class="details">
+                            <h3>Rankin Track</h3>
+                         </div>
+                    </div>
+                             
+                    <!--ROPES COURSE-->
+                    <a href="#ropescourse"  data-rel="popup" >
+                           <div id="athletics_ropescourse">
+                               <img src="images/pins/pin_yellow.png" style="width:40px; height:40px;">
+                           </div>
+                    </a>
+                    <div data-role="popup" id="ropescourse" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+    	                 <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+    	                 <img class="popphoto" src="media/rossade.jpg" alt="Stadium" style="width:800px; height:600px;">
+                         <div class="details">
+                            <h3>Ropes Course</h3>
+                         </div>
+                    </div>
+                            
+                </div> <!-- Div #Athletics ends -->
+                            
+            <!-- PINS (orange) and popup photo for Dining tab--> 
+                <div id="Dining" style="display:none">
+                    
+                    <!--UNION COMMONS-->
+                    <a href="#unioncommons"  data-rel="popup" >
+                        <div id="dining_unioncommons">
+                            <img src="images/pins/pin_orange.png" style="width:40px; height:40px;">
+                        </div>
+                    </a>
+                    <div data-role="popup" id="unioncommons" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+                        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                        <img class="popphoto" src="media/pmu.png" alt="PMU" style="width:800px; height:600px;">
+                        <div class="details">
+                            <h3>Union Commons</h3>
+                            <p>Logos + copy</p>
+                        </div>
+                    </div>
+                            
+                    <!--FORD DINING COURT-->
+                    <a href="#fordcourt"  data-rel="popup" >
+                        <div id="dining_fordcourt">
+                            <img src="images/pins/pin_orange.png" style="width:40px; height:40px;">
+                        </div>
+                    </a>
+                    <div data-role="popup" id="fordcourt" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+                        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                        <img class="popphoto" src="media/pmu.png" alt="PMU" style="width:800px; height:600px;">
+                        <div class="details">
+                            <h3>Ford Dining Court</h3>
+                            <p>Asian, Pizza, Salad Bar, Grill, Comfort, Desserts</p>
+                        </div>
+                    </div>
+                            
+                    <!--EARHART DINING COURT-->
+                    <a href="#earhartcourt"  data-rel="popup" >
+                        <div id="dining_earhartcourt">
+                            <img src="images/pins/pin_orange.png" style="width:40px; height:40px;">
+                        </div>
+                    </a>
+                    <div data-role="popup" id="earhartcourt" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+                        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                        <img class="popphoto" src="media/pmu.png" alt="PMU" style="width:800px; height:600px;">
+                        <div class="details">
+                            <h3>Earhart Dining Court</h3>
+                            <p>Mongolian Barbeque</p>
+                        </div>
+                    </div>
+                            
+                    <!--WILEY DINING COURT-->
+                    <a href="#wileycourt"  data-rel="popup" >
+                        <div id="dining_wileycourt">
+                            <img src="images/pins/pin_orange.png" style="width:40px; height:40px;">
+                        </div>
+                    </a>
+                    <div data-role="popup" id="wileycourt" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+                        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                        <img class="popphoto" src="media/pmu.png" alt="PMU" style="width:800px; height:600px;">
+                        <div class="details">
+                            <h3>Wiley Dining Court</h3>
+                            <p>Churascuria</p>
+                        </div>
+                    </div>
+                            
+                    <!--HILLENBRAND DINING COURT-->
+                    <a href="#hillenbrandcourt"  data-rel="popup" >
+                        <div id="dining_hillenbrandcourt">
+                            <img src="images/pins/pin_orange.png" style="width:40px; height:40px;">
+                        </div>
+                    </a>
+                    <div data-role="popup" id="hillenbrandcourt" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+                        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                        <img class="popphoto" src="media/pmu.png" alt="PMU" style="width:800px; height:600px;">
+                        <div class="details">
+                            <h3>Hillenbrand Dining Court</h3>
+                            <p>BYO Quesadilla</p>
+                        </div>
+                    </div>
+                            
+                    <!--WINDSOR DINING COURT-->
+                    <a href="#windsorcourt"  data-rel="popup" >
+                        <div id="dining_windsorcourt">
+                            <img src="images/pins/pin_orange.png" style="width:40px; height:40px;">
+                        </div>
+                    </a>
+                    <div data-role="popup" id="windsorcourt" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+                        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                        <img class="popphoto" src="media/pmu.png" alt="PMU" style="width:800px; height:600px;">
+                        <div class="details">
+                            <h3>Windsor Dining Court</h3>
+                            <p>Sizzling Salads</p>
+                        </div>
+                    </div>
+                            
+                </div> <!-- Div #Dining ends -->
+
+            </div>
+
+                <div data-role="footer" data-position="fixed" data-fullscreen="true" align="center">
+                    <div data-role="controlgroup" data-type="horizontal" data-mini="true">
+                        <a href="#home" data-role="button" data-icon="home">Home</a>
+					    <a href="#campus_map" data-role="button" data-icon="star">Campus Map</a>
+					    <a href="#services" data-role="button" data-icon="gear">Services</a>
+					    <a href="#about" data-role="button" data-icon="info">About</a>
+					    <a href="#staff" data-role="button" data-icon="refresh">Staff</a>
+                        
 				    </div>
                 </div>
        
 		</div>
-
+    <!--END CAMPUS MAP PAGE-->
+                            
+    <!--START SERVICES PAGE-->
 		<div data-role="page" id="services" data-title=" ">
-			<a href="#popupPhoto" data-rel="popup" data-transition="flip">
-				<img src="images/services/tile_event.png" width="30%" >
-			</a>
-			<div data-role="popup" id="popupPhoto" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-				<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-				<img class="popphoto" src="images/services/tile_event.png" alt="kid">
-				<div>This is the text I think we need to put CSS to make pretty.</div>
-			</div>
-
-			<a href="#popupPhoto1" data-rel="popup" >
-				<img src="images/services/tile_onsite.png" width="30%" >
-			</a>
-			<div data-role="popup" id="popupPhoto1" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-				<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-				<img class="popphoto1" src="images/services/tile_onsite.png" alt="kid">
-			</div>
-
-			<a href="#popupPhoto2" data-rel="popup" >
-				<img src="images/services/tile_register.png" width="30%" >
-			</a>
-			<div data-role="popup" id="popupPhoto2" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-				<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-				<img class="popphoto2" src="images/services/tile_register.png" alt="kid">
-			</div>
-
-			<a href="#popupPhoto3" data-rel="popup" >
-				<img src="images/services/tile_speaker.png" width="30%" >
-			</a>
-			<div data-role="popup" id="popupPhoto3" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-				<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-				<img class="popphoto3" src="images/services/tile_speaker.png" alt="kid">
-			</div>
-
-			<a href="#popupPhoto4" data-rel="popup" >
-				<img src="images/services/tile_site.png" width="30%" >
-			</a>
-			<div data-role="popup" id="popupPhoto4" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-				<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-				<img class="popphoto4" src="images/services/tile_site.png" alt="kid">
-			</div>
+            <div data-role="header"><h1>SERVICES</h1></div>
+            
+            <div data-role="content" style="padding:3%;">
+                
+                <div class="ui-grid-b">
                     
-                <div data-role="footer" data-position="fixed" data-fullscreen="true">
-                    <div data-role="navbar">
-                        <ul>
-					    <li><a href="#home" data-icon="home">Home</a></li>
-					    <li><a href="#campus_map" data-icon="star">Campus Map</a></li>
-					    <li><a href="#services" data-icon="gear">Services</a></li>
-					    <li><a href="#button1" data-icon="info">Button1</a></li>
-					    <li><a href="#button2" data-icon="refresh">Button2</a></li>
-                        </ul>
+                    <div class="ui-block-a">
+                        <a href="#popupPhoto" data-rel="popup" data-transition="flip">
+						    <img src="images/services/tile_event.png" width="99%">
+                        </a>
+					    <div data-role="popup" id="popupPhoto" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+						    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+						    <img class="popphoto" src="images/services/popup_event.png" alt="Event Planning">
+						</div>
+					</div>
+                    <div class="ui-block-b">
+                        <a href="#popupPhoto1" data-rel="popup" data-transition="flip">
+						    <img src="images/services/tile_offsite.png" width="99%" >
+					    </a>
+					    <div data-role="popup" id="popupPhoto1" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+						    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+						    <img class="popphoto1" src="images/services/popup_offsite.png" alt="Off-site Facilitation">
+                        </div>
+                    </div>
+                    <div class="ui-block-c">
+                        <a href="#popupPhoto3" data-rel="popup"  data-transition="flip">
+						    <img src="images/services/tile_speaker.png" width="99%" >
+                        </a>
+                        <div data-role="popup" id="popupPhoto3" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+						    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+						    <img class="popphoto3" src="images/services/popup_speaker.png" alt="Speaker and Entertainment">
+                        </div>
+                    </div>
+                    <div class="ui-block-a">
+                        <a href="#popupPhoto" data-rel="popup" data-transition="flip">
+						    <img src="images/services/tile_event.png" width="99%">
+                        </a>
+					    <div data-role="popup" id="popupPhoto" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+						    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+						    <img class="popphoto" src="images/services/popup_event.png" alt="Event Planning">
+						</div>
+					</div>
+                    <div class="ui-block-b">
+                        <a href="#popupPhoto1" data-rel="popup" data-transition="flip">
+						    <img src="images/services/tile_offsite.png" width="99%" >
+					    </a>
+					    <div data-role="popup" id="popupPhoto1" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+						    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+						    <img class="popphoto1" src="images/services/popup_offsite.png" alt="Off-site Facilitation">
+                        </div>
+                    </div>
+                    <div class="ui-block-c">
+                        <a href="#popupPhoto3" data-rel="popup"  data-transition="flip">
+						    <img src="images/services/tile_speaker.png" width="99%" >
+                        </a>
+                        <div data-role="popup" id="popupPhoto3" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+						    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+						    <img class="popphoto3" src="images/services/popup_speaker.png" alt="Speaker and Entertainment">
+                        </div>
+                    </div>
+                                
+                </div><!--END of ui-grid-b-->
+
+					<!--<a href="#popupPhoto" data-rel="popup" data-transition="flip" style="color:black;">
+						<img src="images/services/tile_event.png" width="32.9%">
+					</a>
+					<div data-role="popup" id="popupPhoto" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+						<img class="popphoto" src="images/services/popup_event.png" alt="kid">
+						<div></div>
+					</div>
+					<a href="#popupPhoto1" data-rel="popup" data-transition="flip" style="color:black;">
+						<img src="images/services/tile_offsite.png" width="32.9%" >
+					</a>
+					<div data-role="popup" id="popupPhoto1" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+						<img class="popphoto1" src="images/services/popup_offsite.png" alt="kid">
+					</div>
+					<a href="#popupPhoto2" data-rel="popup" data-transition="flip" style="color:black;">
+						<img src="images/services/tile_register.png" width="32.9%" >
+					</a>
+					<div data-role="popup" id="popupPhoto2" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+						<img class="popphoto2" src="images/services/popup_register.png" alt="kid">
+					</div>
+					<a href="#popupPhoto3" data-rel="popup"  data-transition="flip" style="color:black;">
+						<img src="images/services/tile_speaker.png" width="32.9%" >
+					</a>
+					<div data-role="popup" id="popupPhoto3" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+						<img class="popphoto3" src="images/services/popup_speaker.png" alt="kid">
+					</div>
+					<a href="#popupPhoto4" data-rel="popup"  data-transition="flip" style="color:black;">
+						<img src="images/services/tile_site.png" width="32.9%" >
+					</a>
+					<div data-role="popup" id="popupPhoto4" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+						<img class="popphoto4" src="images/services/tile_site.png" alt="kid">
+					</div>-->
+  
+            </div><!--END of data-role="content" for Services Page-->
+                    
+			<div data-role="footer" data-position="fixed" data-fullscreen="true" align="center">
+                    <div data-role="controlgroup" data-type="horizontal" data-mini="true">
+                        <a href="#home" data-role="button" data-icon="home">Home</a>
+					    <a href="#campus_map" data-role="button" data-icon="star">Campus Map</a>
+					    <a href="#services" data-role="button" data-icon="gear">Services</a>
+					    <a href="#about" data-role="button" data-icon="info">About</a>
+					    <a href="#staff" data-role="button" data-icon="refresh">Staff</a>
 				    </div>
-                </div>
+			</div>
 
     
         </div>
-        
-		<div data-role="page" id="button1" data-title=" ">
-            button1
+    <!--END SERVICES PAGE-->
+                            
+    <!--START ABOUT PAGE-->
+		<div data-role="page" id="about" data-title=" ">
+            <div data-role="header"><h1>PURDUE CONFERENCE DIVISION</h1></div>
+            <div data-role="content" style="padding:3%; font-size: 24px;">
             
-                <div data-role="footer" data-position="fixed" data-fullscreen="true">
-                    <div data-role="navbar">
-                        <ul>
-					    <li><a href="#home" data-icon="home">Home</a></li>
-					    <li><a href="#campus_map" data-icon="star">Campus Map</a></li>
-					    <li><a href="#services" data-icon="gear">Services</a></li>
-					    <li><a href="#button1" data-icon="info">Button1</a></li>
-					    <li><a href="#button2" data-icon="refresh">Button2</a></li>
-                        </ul>
+			<p>Almost 70,000 participants attended a conference, purchased tickets for a festival, golfed in an outing, or attended a webinar last year.</p>
+			<p>Today, Purdue's Conference Division services over 700 events annually, striving to meet the unique needs and objectives of each one. From a professional staff of experienced conference coordinators, to state-of-the-art facilities and services, Purdue upholds a tradition of excellence with one of the largest collegiate conference programs in the nation.</p>
+			<p>Whether you are looking to bring a group of 5 or a group of 5,000, you can put your confidence in Purdue Conference Division's 20 coordinators, registration assistants, and clerical assistants, who are supported by over 20 business and IT staff members. We currently have 2 Certified Meeting Planners, with 2 more working toward certification. We have the expertise to assist you with everything from online registration and abstract management to technology and business needs.</p>
+			
+            </div>
+
+            <div data-role="footer" data-position="fixed" data-fullscreen="true" align="center">
+                    <div data-role="controlgroup" data-type="horizontal" data-mini="true">
+                        <a href="#home" data-role="button" data-icon="home">Home</a>
+					    <a href="#campus_map" data-role="button" data-icon="star">Campus Map</a>
+					    <a href="#services" data-role="button" data-icon="gear">Services</a>
+					    <a href="#about" data-role="button" data-icon="info">About</a>
+					    <a href="#staff" data-role="button" data-icon="refresh">Staff</a>
 				    </div>
-                </div>
+            </div>
             
         </div>
+    <!--END ABOUT PAGE-->
         
-		<div data-role="page" id="button2" data-title=" ">
-            button2
+    <!--START STAFF PAGE-->
+		<div data-role="page" id="staff" data-title=" ">
+            <div data-role="header"><h1>CONFERENCE STAFF</h1></div>
+            <div data-role="content" style="padding:3%;">
+                
+                <div class="ui-grid-b">
+                    
+                    <div class="ui-block-a">
+                        <a href="#popupPhoto" data-rel="popup" data-transition="flip">
+						    <img src="images/staff/tile_geni.png" width="99%">
+                        </a>
+					    <div data-role="popup" id="popupPhoto" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+						    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+						    <img class="popphoto" src="images/services/popup_event.png" alt="Event Planning">
+						</div>
+					</div>
+                    <div class="ui-block-b">
+                        <a href="#popupPhoto1" data-rel="popup" data-transition="flip">
+						    <img src="images/staff/tile_nick.png" width="99%" >
+					    </a>
+					    <div data-role="popup" id="popupPhoto1" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+						    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+						    <img class="popphoto1" src="images/services/popup_offsite.png" alt="Off-site Facilitation">
+                        </div>
+                    </div>
+                    <div class="ui-block-c">
+                        <a href="#popupPhoto3" data-rel="popup"  data-transition="flip">
+						    <img src="images/staff/tile_stephanie.png" width="99%" >
+                        </a>
+                        <div data-role="popup" id="popupPhoto3" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+						    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+						    <img class="popphoto3" src="images/services/popup_speaker.png" alt="Speaker and Entertainment">
+                        </div>
+                    </div>
+                                
+                    <div class="ui-block-a">
+                        <a href="#popupPhoto" data-rel="popup" data-transition="flip">
+						    <img src="images/staff/tile_emily.png" width="99%">
+                        </a>
+					    <div data-role="popup" id="popupPhoto" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+						    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+						    <img class="popphoto" src="images/services/popup_event.png" alt="Event Planning">
+						</div>
+					</div>
+                    <div class="ui-block-b">
+                        <a href="#popupPhoto1" data-rel="popup" data-transition="flip">
+						    <img src="images/staff/tile_ed.png" width="99%" >
+					    </a>
+					    <div data-role="popup" id="popupPhoto1" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+						    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+						    <img class="popphoto1" src="images/services/popup_offsite.png" alt="Off-site Facilitation">
+                        </div>
+                    </div>
+                    <div class="ui-block-c">
+                        <a href="#popupPhoto3" data-rel="popup"  data-transition="flip">
+						    <img src="images/staff/tile_tom.png" width="99%" >
+                        </a>
+                        <div data-role="popup" id="popupPhoto3" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+						    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+						    <img class="popphoto3" src="images/services/popup_speaker.png" alt="Speaker and Entertainment">
+                        </div>
+                    </div>
+                                
+                    <div class="ui-block-a">
+                        <a href="#popupPhoto" data-rel="popup" data-transition="flip">
+						    <img src="images/staff/tile_beth.png" width="99%">
+                        </a>
+					    <div data-role="popup" id="popupPhoto" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+						    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+						    <img class="popphoto" src="images/services/popup_event.png" alt="Event Planning">
+						</div>
+					</div>
+                    <div class="ui-block-b">
+                        <a href="#popupPhoto1" data-rel="popup" data-transition="flip">
+						    <img src="images/staff/tile_kathy.png" width="99%" >
+					    </a>
+					    <div data-role="popup" id="popupPhoto1" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+						    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+						    <img class="popphoto1" src="images/services/popup_offsite.png" alt="Off-site Facilitation">
+                        </div>
+                    </div>
+                    <div class="ui-block-c">
+                        <a href="#popupPhoto3" data-rel="popup"  data-transition="flip">
+						    <img src="images/staff/tile_erica.png" width="99%" >
+                        </a>
+                        <div data-role="popup" id="popupPhoto3" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+						    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+						    <img class="popphoto3" src="images/services/popup_speaker.png" alt="Speaker and Entertainment">
+                        </div>
+                    </div>
+                                
+                    <div class="ui-block-a">
+                        <a href="#popupPhoto" data-rel="popup" data-transition="flip">
+						    <img src="images/staff/tile_susan.png" width="99%">
+                        </a>
+					    <div data-role="popup" id="popupPhoto" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+						    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+						    <img class="popphoto" src="images/services/popup_event.png" alt="Event Planning">
+						</div>
+					</div>
+                    <div class="ui-block-b">
+                        <a href="#popupPhoto1" data-rel="popup" data-transition="flip">
+						    <img src="images/staff/tile_kaitlin.png" width="99%" >
+					    </a>
+					    <div data-role="popup" id="popupPhoto1" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+						    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+						    <img class="popphoto1" src="images/services/popup_offsite.png" alt="Off-site Facilitation">
+                        </div>
+                    </div>
+                    <div class="ui-block-c">
+                        <a href="#popupPhoto3" data-rel="popup"  data-transition="flip">
+						    <img src="images/staff/tile_sherry.png" width="99%" >
+                        </a>
+                        <div data-role="popup" id="popupPhoto3" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+						    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+						    <img class="popphoto3" src="images/services/popup_speaker.png" alt="Speaker and Entertainment">
+                        </div>
+                    </div>
+                                
+                    <div class="ui-block-a">
+                        <a href="#popupPhoto" data-rel="popup" data-transition="flip">
+						    <img src="images/staff/tile_wendy.png" width="99%">
+                        </a>
+					    <div data-role="popup" id="popupPhoto" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+						    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+						    <img class="popphoto" src="images/services/popup_event.png" alt="Event Planning">
+						</div>
+					</div>
+                    <div class="ui-block-b">
+                        <a href="#popupPhoto1" data-rel="popup" data-transition="flip">
+						    <img src="images/staff/tile_amy.png" width="99%" >
+					    </a>
+					    <div data-role="popup" id="popupPhoto1" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+						    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+						    <img class="popphoto1" src="images/services/popup_offsite.png" alt="Off-site Facilitation">
+                        </div>
+                    </div>
+                    <div class="ui-block-c">
+                        <a href="#popupPhoto3" data-rel="popup"  data-transition="flip">
+						    <img src="images/staff/tile_lisa.png" width="99%" >
+                        </a>
+                        <div data-role="popup" id="popupPhoto3" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+						    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+						    <img class="popphoto3" src="images/services/popup_speaker.png" alt="Speaker and Entertainment">
+                        </div>
+                    </div>
+                                
+                </div><!--END of ui-grid-b-->
+            </div>
             
-                <div data-role="footer" data-position="fixed" data-fullscreen="true">
-                    <div data-role="navbar">
-                        <ul>
-					    <li><a href="#home" data-icon="home">Home</a></li>
-					    <li><a href="#campus_map" data-icon="star">Campus Map</a></li>
-					    <li><a href="#services" data-icon="gear">Services</a></li>
-					    <li><a href="#button1" data-icon="info">Button1</a></li>
-					    <li><a href="#button2" data-icon="refresh">Button2</a></li>
-                        </ul>
+                <div data-role="footer" data-position="fixed" data-fullscreen="true" align="center">
+                    <div data-role="controlgroup" data-type="horizontal" data-mini="true">
+                        <a href="#home" data-role="button" data-icon="home">Home</a>
+					    <a href="#campus_map" data-role="button" data-icon="star">Campus Map</a>
+					    <a href="#services" data-role="button" data-icon="gear">Services</a>
+					    <a href="#about" data-role="button" data-icon="info">About</a>
+					    <a href="#staff" data-role="button" data-icon="refresh">Staff</a>
 				    </div>
                 </div>
         </div>
+    <!--END STAFF PAGE-->
         
 	</body>
 </html>

@@ -25,42 +25,584 @@ body
 	padding: 7px;
 }
 
-#main
+#services, #staff, #about
 {
-    background: url(../images/pyt_07_balc_view_small.jpg) no-repeat center center fixed; 
+    background: #000000;
+}
+
+#about
+{
+    color: #ffffff;
+}
+
+
+/* START - CSS FOR PORTRAIT ORIENTATION*/
+@media (orientation:portrait) { 
+    
+    #home
+    {
+    background: url(../images/home/Default-Portrait@2x~ipad.png) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-    height: 890px;
-    width: 100%;
-}
+    /*height: 890px;
+    width: 100%;*/
+    }
 
-#main h1 
-{
+    /*#main h1 
+    {
     color: #ffffff;
     font-size: 118px;
     text-align: center;
-    margin: 0px 0px 0px 0px;
-    padding: 80px 0px 0px 0px;
+    margin: 30% auto;
+    padding: auto;
     background-color: rgba(0,0,0,.5);
-}
-
-#campus_map
-{
-    background: url(../images/CampusMap82112.png) no-repeat top left fixed; 
+    }*/
+    
+    #campus_map
+    {
+    background: url(../images/maps/CampusMap_Portrait.png) no-repeat top left fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-    height: 1500px;
-    width: 100%;
-}
+    /*height: 1500px;
+    width: 100%;*/
+    }
 
-#campus_map h1 
-{
+    /*#campus_map h1 
+    {
     visibility: hidden;
     margin: 0;
     padding: 0;
-}
+    }*/
+    
+/*ARNAV Portrait CSS - PIN POSITION - PORTRAIT*/
+    /*img.map{
+    position:absolute;
+    width:100%;
+    height:100%;
+    }*/
 
+/*Venues - RED PIN POSITION - PORTRAIT*/
+    #venues_stew{
+    position:absolute; 
+    top:54%; 
+    left:75%;
+    }
+
+    #venues_pmu{
+    position:absolute; 
+    top:54%; 
+    left:82%;
+    }
+    
+    #venues_arts{
+    position:absolute; 
+    top:54%; 
+    left:66%;
+    }
+    
+    #venues_class50{
+    position:absolute; 
+    top:49%; 
+    left:69%;
+    }
+    
+    #venues_business{
+    position:absolute; 
+    top:60%; 
+    left:85%;
+    }
+    
+    #venues_engineer{
+    position:absolute; 
+    top:40%; 
+    left:75%;
+    }
+    
+    #venues_dauch{
+    position:absolute; 
+    top:65%; 
+    left:85%;
+    }
+    
+    #venues_rossadepavilion{
+    position:absolute; 
+    top:22%; 
+    left:55%;
+    }
+    
+    #venues_discoverypark{
+    position:absolute; 
+    top:61%; 
+    left:43%;
+    }
+
+    
+/*Lodging - GREEN PIN POSITION - PORTRAIT*/
+    #lodging_unionhotel{
+    position:absolute; 
+    top:53%; 
+    left:84%;
+    }
+    
+    #lodging_cary{
+    position:absolute; 
+    top:29%; 
+    left:58%;
+    }
+    
+    #lodging_earhart{
+    position:absolute; 
+    top:51%; 
+    left:33%;
+    }
+    
+    #lodging_firststreet{
+    position:absolute; 
+    top:54%; 
+    left:36%;
+    }
+    
+    #lodging_harrison{
+    position:absolute; 
+    top:54%; 
+    left:28%;
+    }
+    
+    #lodging_hillenbrand{
+    position:absolute; 
+    top:48%; 
+    left:28%;
+    }
+    
+    #lodging_mccutcheon{
+    position:absolute; 
+    top:54%; 
+    left:23%;
+    }
+    
+    #lodging_shreve{
+    position:absolute; 
+    top:48%; 
+    left:33%;
+    }
+    
+    #lodging_windsor{
+    position:absolute; 
+    top:49%; 
+    left:48%;
+    }
+
+/*Theatre - BLUE PIN POSITION - PORTRAIT*/
+    #theatre_elliot{
+    position:absolute; 
+    top:44%; 
+    left:69%;
+    }
+    
+    #theatre_fowler{
+    position:absolute; 
+    top:54%; 
+    left:78%;
+    }
+    
+    #theatre_loeb{
+    position:absolute; 
+    top:53%; 
+    left:75%;
+    }
+    
+    #theatre_slayter{
+    position:absolute; 
+    top:29%; 
+    left:42%;
+    }
+
+/*Athletics - YELLOW PIN POSITION - PORTRAIT*/
+    #athletics_reccenter{
+    position:absolute; 
+    top:40%; 
+    left:43%;
+    }
+    
+    #athletics_rossadestadium{
+    position:absolute; 
+    top:22%; 
+    left:57%;
+    }
+    
+    #athletics_mackey{
+    position:absolute; 
+    top:25%; 
+    left:65%;
+    }
+    
+    #athletics_lambert{
+    position:absolute; 
+    top:29%; 
+    left:65%;
+    }
+    
+    #athletics_golfcomplex{
+    position:absolute; 
+    top:4%; 
+    left:31%;
+    }
+    
+    #athletics_schwartz{
+    position:absolute; 
+    top:5%; 
+    left:3%;
+    }
+    
+    #athletics_baseballcomplex{
+    position:absolute; 
+    top:33%; 
+    left:33%;
+    }
+    
+    #athletics_aquaticcenter{
+    position:absolute; 
+    top:44%; 
+    left:39%;
+    }
+    
+    #athletics_rankintrack{
+    position:absolute; 
+    top:33%; 
+    left:43%;
+    }
+    
+    #athletics_ropescourse{
+    position:absolute; 
+    top:50%; 
+    left:50%;
+    }
+
+/*Dining - ORANGE PIN POSITION - PORTRAIT*/
+    #dining_unioncommons{
+    position:absolute; 
+    top:55%; 
+    left:82%;
+    }
+    
+    #dining_fordcourt{
+    position:absolute; 
+    top:28%; 
+    left:53%;
+    }
+    
+    #dining_earhartcourt{
+    position:absolute; 
+    top:51%; 
+    left:35%;
+    }
+    
+    #dining_wileycourt{
+    position:absolute; 
+    top:38%; 
+    left:48%;
+    }
+    
+    #dining_hillenbrandcourt{
+    position:absolute; 
+    top:49%; 
+    left:26%;
+    }
+    
+    #dining_windsorcourt{
+    position:absolute; 
+    top:48%; 
+    left:48%;
+    }
+    
+}
+/* END - CSS FOR PORTRAIT ORIENTATION*/
+
+/* START - CSS FOR LANDSCAPE ORIENTATION*/
+@media (orientation:landscape) { 
+    
+    #home
+    {
+    background: url(../images/home/Default-Landscape@2x~ipad.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    /*height: 890px;
+    width: 100%;*/
+    }
+
+    /*#main h1 
+    {
+    color: #ffffff;
+    font-size: 118px;
+    text-align: center;
+    margin: 30% auto;
+    padding: auto;
+    background-color: rgba(0,0,0,.5);
+    }*/
+    
+    #campus_map
+    {
+    background: url(../images/maps/CampusMap_Landscape.png) no-repeat top left fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    /*height: 1500px;
+    width: 100%;*/
+    }
+
+    /*#campus_map h1 
+    {
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+    }*/
+    
+/*ARNAV Landscape CSS - PIN POSITION - LANDSCAPE*/
+    /*img.map{
+    position:absolute;
+    width:100%;
+    height:100%;
+    }*/
+    
+/*Venues - RED PIN POSITION - LANDSCAPE*/
+    #venues_stew{
+    position:absolute; 
+    top:77%; 
+    left:41%;
+    }
+
+    #venues_pmu{
+    position:absolute; 
+    top:82%; 
+    left:41%;
+    }
+    
+    #venues_arts{
+    position:absolute; 
+    top:66%; 
+    left:42%;
+    }
+    
+    #venues_class50{
+    position:absolute; 
+    top:68%; 
+    left:46%;
+    }
+    
+    #venues_business{
+    position:absolute; 
+    top:83%; 
+    left:37%;
+    }
+    
+    #venues_engineer{
+    position:absolute; 
+    top:75%; 
+    left:55%;
+    }
+    
+    #venues_dauch{
+    position:absolute; 
+    top:84%; 
+    left:30%;
+    }
+    
+    #venues_rossadepavilion{
+    position:absolute; 
+    top:54%; 
+    left:73%;
+    }
+    
+    #venues_discoverypark{
+    position:absolute; 
+    top:40%; 
+    left:35%;
+    }
+
+    
+/*Lodging - GREEN PIN POSITION - LANDSCAPE*/
+    #lodging_unionhotel{
+    position:absolute; 
+    top:85%; 
+    left:43%;
+    }
+    
+    #lodging_cary{
+    position:absolute; 
+    top:59%; 
+    left:66%;
+    }
+    
+    #lodging_earhart{
+    position:absolute; 
+    top:32%; 
+    left:44%;
+    }
+    
+    #lodging_firststreet{
+    position:absolute; 
+    top:34%; 
+    left:41%;
+    }
+    
+    #lodging_harrison{
+    position:absolute; 
+    top:26%; 
+    left:43%;
+    }
+    
+    #lodging_hillenbrand{
+    position:absolute; 
+    top:26%; 
+    left:47%;
+    }
+    
+    #lodging_mccutcheon{
+    position:absolute; 
+    top:20%; 
+    left:43%;
+    }
+    
+    #lodging_shreve{
+    position:absolute; 
+    top:32%; 
+    left:48%;
+    }
+    
+    #lodging_windsor{
+    position:absolute; 
+    top:46%; 
+    left:46%;
+    }
+
+/*Theatre - BLUE PIN POSITION - LANDSCAPE*/
+    #theatre_elliot{
+    position:absolute; 
+    top:69%; 
+    left:52%;
+    }
+    
+    #theatre_fowler{
+    position:absolute; 
+    top:76%; 
+    left:41%;
+    }
+    
+    #theatre_loeb{
+    position:absolute; 
+    top:76%; 
+    left:43%;
+    }
+    
+    #theatre_slayter{
+    position:absolute; 
+    top:41%; 
+    left:66%;
+    }
+
+/*Athletics - YELLOW PIN POSITION - LANDSCAPE*/
+    #athletics_reccenter{
+    position:absolute; 
+    top:42%; 
+    left:55%;
+    }
+    
+    #athletics_rossadestadium{
+    position:absolute; 
+    top:57%; 
+    left:73%;
+    }
+    
+    #athletics_mackey{
+    position:absolute; 
+    top:65%; 
+    left:71%;
+    }
+    
+    #athletics_lambert{
+    position:absolute; 
+    top:65%; 
+    left:67%;
+    }
+    
+    #athletics_golfcomplex{
+    position:absolute; 
+    top:30%; 
+    left:92%;
+    }
+    
+    #athletics_schwartz{
+    position:absolute; 
+    top:6%; 
+    left:92%;
+    }
+    
+    #athletics_baseballcomplex{
+    position:absolute; 
+    top:32%; 
+    left:62%;
+    }
+    
+    #athletics_aquaticcenter{
+    position:absolute; 
+    top:38%; 
+    left:52%;
+    }
+    
+    #athletics_rankintrack{
+    position:absolute; 
+    top:40%; 
+    left:62%;
+    }
+    
+    #athletics_ropescourse{
+    position:absolute; 
+    top:50%; 
+    left:50%;
+    }
+
+/*Dining - ORANGE PIN POSITION - LANDSCAPE*/
+    #dining_unioncommons{
+    position:absolute; 
+    top:85%; 
+    left:41%;
+    }
+    
+    #dining_fordcourt{
+    position:absolute; 
+    top:52%; 
+    left:66%;
+    }
+    
+    #dining_earhartcourt{
+    position:absolute; 
+    top:32%; 
+    left:45%;
+    }
+    
+    #dining_wileycourt{
+    position:absolute; 
+    top:47%; 
+    left:57%;
+    }
+    
+    #dining_hillenbrandcourt{
+    position:absolute; 
+    top:26%; 
+    left:48%;
+    }
+    
+    #dining_windsorcourt{
+    position:absolute; 
+    top:46%; 
+    left:47%;
+    }
+    
+}/* END - CSS FOR LANDSCAPE ORIENTATION*/

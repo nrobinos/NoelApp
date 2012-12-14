@@ -29,6 +29,10 @@
       <Platform>Android</Platform>
     </Folder>
     <Folder Include="images" />
+    <Folder Include="images\home" />
+    <Folder Include="images\maps" />
+    <Folder Include="images\staff" />
+    <Folder Include="images\pins" />
     <Folder Include="images\services" />
     <Folder Include="scripts" />
   </ItemGroup>
@@ -54,19 +58,39 @@
     <Resource Include="App_Resources\Android\drawable-ldpi\icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="index_original.html" />
-    <Content Include="images\CampusMap82112.png" />
-    <Content Include="images\close.png" />
-    <Content Include="images\pic1.jpg" />
-    <Content Include="images\pic1_large.jpg" />
-    <Content Include="images\pic2.jpg" />
-    <Content Include="images\pic2_large.jpg" />
-    <Content Include="images\pyt_07_balc_view_small.jpg" />
+    <Content Include="images\home\Default-Landscape@2x~ipad.png" />
+    <Content Include="images\home\Default-Portrait@2x~ipad.png" />
+    <Content Include="images\maps\CampusMap_Landscape.png" />
+    <Content Include="images\maps\CampusMap_Portrait.png" />
+    <Content Include="images\pins\pin_blue.png" />
+    <Content Include="images\pins\pin_green.png" />
+    <Content Include="images\pins\pin_orange.png" />
+    <Content Include="images\pins\pin_red.png" />
+    <Content Include="images\pins\pin_yellow.png" />
+    <Content Include="images\services\popup_event.png" />
+    <Content Include="images\services\popup_offsite.png" />
+    <Content Include="images\services\popup_register.png" />
+    <Content Include="images\services\popup_speaker.png" />
     <Content Include="images\services\tile_event.png" />
-    <Content Include="images\services\tile_onsite.png" />
+    <Content Include="images\services\tile_offsite.png" />
     <Content Include="images\services\tile_register.png" />
     <Content Include="images\services\tile_site.png" />
     <Content Include="images\services\tile_speaker.png" />
+    <Content Include="images\staff\tile_amy.png" />
+    <Content Include="images\staff\tile_beth.png" />
+    <Content Include="images\staff\tile_ed.png" />
+    <Content Include="images\staff\tile_emily.png" />
+    <Content Include="images\staff\tile_erica.png" />
+    <Content Include="images\staff\tile_geni.png" />
+    <Content Include="images\staff\tile_kaitlin.png" />
+    <Content Include="images\staff\tile_kathy.png" />
+    <Content Include="images\staff\tile_lisa.png" />
+    <Content Include="images\staff\tile_nick.png" />
+    <Content Include="images\staff\tile_sherry.png" />
+    <Content Include="images\staff\tile_stephanie.png" />
+    <Content Include="images\staff\tile_susan.png" />
+    <Content Include="images\staff\tile_tom.png" />
+    <Content Include="images\staff\tile_wendy.png" />
     <Content Include="index.html" />
     <Content Include="kendo\js\jquery.min.js" />
     <Content Include="kendo\js\kendo.mobile.min.js" />
@@ -75,7 +99,6 @@
     <Content Include="kendo\styles\images\iconmasks.svg" />
     <Content Include="kendo\styles\images\android-sprite.png" />
     <Content Include="kendo\styles\kendo.mobile.all.min.css" />
-    <Content Include="styles\main_original.css" />
     <Content Include="styles\main.css" />
     <Content Include="cordova.ios.js">
       <Platform>iOS</Platform>
