@@ -30,18 +30,23 @@ body
     background: #000000;
 }
 
-#about
-{
-    color: #ffffff;
-}
-
-
 /* START - CSS FOR PORTRAIT ORIENTATION*/
 @media (orientation:portrait) { 
     
     #home
     {
-    background: url(../images/home/Default-Portrait@2x~ipad.png) no-repeat center center fixed;
+    background: url(../images/home/Default-Portrait@2x~ipad.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    /*height: 890px;
+    width: 100%;*/
+    }
+    
+    #about
+    {
+    background: url(../images/about/about_portrait.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -327,7 +332,18 @@ body
     
     #home
     {
-    background: url(../images/home/Default-Landscape@2x~ipad.png) no-repeat center center fixed;
+    background: url(../images/home/Default-Landscape@2x~ipad.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    /*height: 890px;
+    width: 100%;*/
+    }
+    
+    #about
+    {
+    background: url(../images/about/about_landscape.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;

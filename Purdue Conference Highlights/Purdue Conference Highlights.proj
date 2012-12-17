@@ -31,6 +31,7 @@
     <Folder Include="images" />
     <Folder Include="images\home" />
     <Folder Include="images\maps" />
+    <Folder Include="images\about" />
     <Folder Include="images\staff" />
     <Folder Include="images\pins" />
     <Folder Include="images\services" />
@@ -58,8 +59,10 @@
     <Resource Include="App_Resources\Android\drawable-ldpi\icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="images\home\Default-Landscape@2x~ipad.png" />
-    <Content Include="images\home\Default-Portrait@2x~ipad.png" />
+    <Content Include="images\about\about_landscape.jpg" />
+    <Content Include="images\about\about_portrait.jpg" />
+    <Content Include="images\home\Default-Landscape@2x~ipad.jpg" />
+    <Content Include="images\home\Default-Portrait@2x~ipad.jpg" />
     <Content Include="images\maps\CampusMap_Landscape.png" />
     <Content Include="images\maps\CampusMap_Portrait.png" />
     <Content Include="images\pins\pin_blue.png" />
