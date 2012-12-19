@@ -25,7 +25,7 @@
 	</head>
     
 	<body>
-    <!--START ARNAV's SAMPLE-->
+    <!--START TOGGLE VISIBILITY OF PINS-->
 		<script>
 			$(function() {
 				$("#toggle1").click(function() { 
@@ -62,7 +62,7 @@
 				});
 			});
 		</script>
-	<!--END ARNAV's SAMPLE-->	
+	<!--END TOGGLE VISIBILITY OF PINS-->	
 		
     <!--START MAIN PAGE-->
 		<div data-role="page" id="home" data-title=" ">
@@ -121,10 +121,28 @@
                     <div data-role="popup" id="stew" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
                         <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
                         
-                        <div class="details" style="display:inline-block;">
-                            <img class="popphoto" src="media/stew.jpg" alt="Stewart Center" style="width:800px; height:600px; float:left;">
-                            <h3 style="float:left; padding-left:10px;">The Stewart Center</h3>
-                        </div>
+                        <div class="details"><!--START of details-->
+                            
+                            <div class="ui-grid-a"><!--START of ui-grid-b-->
+                    
+                                <div class="ui-block-a" style="padding:.25%;">
+                                    <img src="images/maps/venues/f_stew.jpg" width="99%">
+                                </div>
+                                <div class="ui-block-b" style="padding:.25%;">
+                                    <img src="images/maps/venues/f_Stew026.jpg" width="99%">
+                                </div>
+                                <div class="ui-block-a" style="padding:.25%;">
+                                    <img src="images/maps/venues/f_stew206.jpg" width="99%">
+                                </div>
+                                <div class="ui-block-b" style="padding:0px 10px 0px 10px;">
+                                    <h1>Stewart Center</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempus consequat magna at lacinia. Maecenas sit amet turpis non est interdum condimentum. Maecenas sit amet urna vel sapien tempus auctor vel quis sapien. Vivamus enim velit, aliquam quis tempor vel, eleifend nec orci. Nulla est erat, auctor eget lacinia quis, scelerisque vel magna. Duis sagittis venenatis condimentum. Mauris accumsan facilisis lectus eu pulvinar. Proin nec diam ut enim malesuada consectetur. Donec aliquam rhoncus ultricies. Phasellus id turpis massa, eu adipiscing libero.</p>
+                                </div>
+                                
+                            </div><!--END of ui-grid-b-->
+                                
+                        </div><!--END of details-->
+                                        
                     </div>
                     
                     <!--PMU-->
@@ -859,7 +877,7 @@
                         </a>
 					    <div data-role="popup" id="popupPhoto" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
 						    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-						    <img class="popphoto" src="images/services/popup_event.png" alt="Event Planning">
+						    <img class="popphoto" src="images/staff/popup_geni.png" alt="Geni Greiner">
 						</div>
 					</div>
                     <div class="ui-block-b">
@@ -868,7 +886,7 @@
 					    </a>
 					    <div data-role="popup" id="popupPhoto1" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
 						    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-						    <img class="popphoto1" src="images/services/popup_offsite.png" alt="Off-site Facilitation">
+						    <img class="popphoto1" src="images/staff/popup_nick.png" alt="Off-site Facilitation">
                         </div>
                     </div>
                     <div class="ui-block-c">
@@ -955,25 +973,7 @@
 						    <img class="popphoto1" src="images/services/popup_offsite.png" alt="Off-site Facilitation">
                         </div>
                     </div>
-                    <div class="ui-block-c">
-                        <a href="#popupPhoto3" data-rel="popup"  data-transition="flip">
-						    <img src="images/staff/tile_sherry.png" width="99%" >
-                        </a>
-                        <div data-role="popup" id="popupPhoto3" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-						    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-						    <img class="popphoto3" src="images/services/popup_speaker.png" alt="Speaker and Entertainment">
-                        </div>
-                    </div>
                                 
-                    <div class="ui-block-a">
-                        <a href="#popupPhoto" data-rel="popup" data-transition="flip">
-						    <img src="images/staff/tile_wendy.png" width="99%">
-                        </a>
-					    <div data-role="popup" id="popupPhoto" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-						    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-						    <img class="popphoto" src="images/services/popup_event.png" alt="Event Planning">
-						</div>
-					</div>
                     <div class="ui-block-b">
                         <a href="#popupPhoto1" data-rel="popup" data-transition="flip">
 						    <img src="images/staff/tile_amy.png" width="99%" >

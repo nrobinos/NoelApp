@@ -32,6 +32,7 @@
     <Folder Include="images\home" />
     <Folder Include="images\maps" />
     <Folder Include="images\about" />
+    <Folder Include="images\maps\venues" />
     <Folder Include="images\staff" />
     <Folder Include="images\pins" />
     <Folder Include="images\services" />
@@ -65,6 +66,9 @@
     <Content Include="images\home\Default-Portrait@2x~ipad.jpg" />
     <Content Include="images\maps\CampusMap_Landscape.png" />
     <Content Include="images\maps\CampusMap_Portrait.png" />
+    <Content Include="images\maps\venues\f_stew.jpg" />
+    <Content Include="images\maps\venues\f_Stew026.jpg" />
+    <Content Include="images\maps\venues\f_stew206.jpg" />
     <Content Include="images\pins\pin_blue.png" />
     <Content Include="images\pins\pin_green.png" />
     <Content Include="images\pins\pin_orange.png" />
@@ -79,6 +83,8 @@
     <Content Include="images\services\tile_register.png" />
     <Content Include="images\services\tile_site.png" />
     <Content Include="images\services\tile_speaker.png" />
+    <Content Include="images\staff\popup_geni.png" />
+    <Content Include="images\staff\popup_nick.png" />
     <Content Include="images\staff\tile_amy.png" />
     <Content Include="images\staff\tile_beth.png" />
     <Content Include="images\staff\tile_ed.png" />
@@ -89,11 +95,9 @@
     <Content Include="images\staff\tile_kathy.png" />
     <Content Include="images\staff\tile_lisa.png" />
     <Content Include="images\staff\tile_nick.png" />
-    <Content Include="images\staff\tile_sherry.png" />
     <Content Include="images\staff\tile_stephanie.png" />
     <Content Include="images\staff\tile_susan.png" />
     <Content Include="images\staff\tile_tom.png" />
-    <Content Include="images\staff\tile_wendy.png" />
     <Content Include="index.html" />
     <Content Include="kendo\js\jquery.min.js" />
     <Content Include="kendo\js\kendo.mobile.min.js" />
