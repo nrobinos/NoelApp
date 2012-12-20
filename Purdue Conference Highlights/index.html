@@ -37,7 +37,7 @@
 			$(function() {
 				$("#toggle2").click(function() {
 					// Toggles Lodging Div  
-					$("#Lodging").toggle();
+					$("#Lodging").toggle(); 
 				});
 			});
 			
@@ -97,7 +97,7 @@
                 <div data-role="navbar">
     	        <ul>
                     <li id="toggle1"><a href="javascript:void(0)" >Venues <img src="images/pins/pin_red.png" style="width:20px; height:20px;"></a></li>
-            		<li id="toggle2"><a href="javascript:void(0)" >Lodging <img src="images/pins/pin_green.png" style="width:20px; height:20px;"></a></li>
+            		<li id="toggle2"><a href="javascript:void(0)">Lodging <img src="images/pins/pin_green.png" style="width:20px; height:20px;"></a></li>
             		<li id="toggle3"><a href="javascript:void(0)" >Theatre <img src="images/pins/pin_blue.png" style="width:20px; height:20px;"></a></li>
             		<li id="toggle4"><a href="javascript:void(0)" >Athletics <img src="images/pins/pin_yellow.png" style="width:20px; height:20px;"></a></li>
             		<li id="toggle5"><a href="javascript:void(0)" >Dining <img src="images/pins/pin_orange.png" style="width:20px; height:20px;"></a></li>
@@ -265,25 +265,63 @@
                 </div> <!-- Div #Venues ends -->
                 
             <!-- PINS (green) and popup photo for Lodging tab-->
-                <div id="Lodging" style="display:none">
+                
+<div id="Lodging" style="display:none" >
+   <!-- MANI ADDED-->
+                <script type="text/javascript">
+                    function lodgingxml() {
+                        if (window.XMLHttpRequest) {
+                            xhttp = new XMLHttpRequest();
+                        }
+                        else // for IE 5/6
+                        {
+                            xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                        }
+                        xhttp.open("GET", "pinlocations.xml", false);
+                        xhttp.send();
+                        xmlDoc = xhttp.responseXML;
+
+                        var x = xmlDoc.getElementsByTagName("Location");
+                        
+                        for (i = 0; i < x.length; i++) {
+                            document.writeln("<a href='" + x[i].getElementsByTagName("Link")[0].childNodes[0].nodeValue + "' data-rel='popup'>");
+                            document.writeln("<div id='" + x[i].getElementsByTagName("Title")[0].childNodes[0].nodeValue + "' >");
+                            document.writeln("<img src='" + x[i].getElementsByTagName("image")[0].childNodes[0].nodeValue + "'style='width:40px; height:40px;' >");
+                            document.writeln("</div>");
+                            document.writeln("</a>");
+                            document.writeln("<div data-role='popup' id='" + x[i].getElementsByTagName("Id")[0].childNodes[0].nodeValue + "' data-overlay-theme='a' data-theme='d' data-corners='false' data-position-to='window'>");
+                            document.writeln("<a href='#' data-rel='back' data-role='button' data-theme='a' data-icon='delete' data-iconpos='notext' class='ui-btn-right'>Close</a>");
+                            document.writeln("<img class='popphoto' src='" + x[i].getElementsByTagName("Media")[0].childNodes[0].nodeValue + "' alt='PMU' style='width:800px; height:600px;' >");
+                            document.writeln(" <div class='details'>");
+                            document.writeln("<h3>" + x[i].getElementsByTagName("Heading")[0].childNodes[0].nodeValue + "</h3>");
+                            document.writeln("<p>" + x[i].getElementsByTagName("Description")[0].childNodes[0].nodeValue + "</p>");
+                            document.writeln("</div>");
+                            document.writeln("</div>");
+                        }
+                        
+                    }
+</script>
+</div>
+<!--MANI-->
 
                     <!--UNION CLUB HOTEL-->
-                    <a href="#unionhotel"  data-rel="popup" >
-                        <div id="lodging_unionhotel">
-                            <img src="images/pins/pin_green.png" style="width:40px; height:40px;">
+                    <!--<a href="#unionhotel"  data-rel="popup" >
+                        <div id="lodging_unionhotel" >
+                            <img src="images/pins/pin_green.png" style="width:40px; height:40px;" >
                         </div>
                     </a>
                     <div data-role="popup" id="unionhotel" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
                         <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-                        <img class="popphoto" src="media/pmu.png" alt="PMU" style="width:800px; height:600px;">
+                        <img class="popphoto" src="media/pmu.png" alt="PMU" style="width:800px; height:600px;" >
                         <div class="details">
                             <h3>Union Club Hotel</h3>
                             <p>Deluxe Room, Double Twin, Queen</p>
                         </div>
-                    </div>
+                        
+                    </div>-->
                             
                     <!--CARY QUAD-->
-                    <a href="#cary"  data-rel="popup" >
+                    <!--<a href="#cary"  data-rel="popup" >
                         <div id="lodging_cary">
                             <img src="images/pins/pin_green.png" style="width:40px; height:40px;">
                         </div>
@@ -295,10 +333,10 @@
                             <h3>Cary Quadrangle</h3>
                             <p>Suite-style A/C doubles</p>
                         </div>
-                    </div>
+                    </div>-->
                             
                     <!--EARHART-->
-                    <a href="#earhart"  data-rel="popup" >
+                    <!--<a href="#earhart"  data-rel="popup" >
                         <div id="lodging_earhart">
                             <img src="images/pins/pin_green.png" style="width:40px; height:40px;">
                         </div>
@@ -310,10 +348,10 @@
                             <h3>Earhart Residence Hall</h3>
                             <p>Traditional A/C</p>
                         </div>
-                    </div>
+                    </div>-->
                             
                     <!--FIRST STREET TOWERS-->
-                    <a href="#firststreet"  data-rel="popup" >
+                    <!--<a href="#firststreet"  data-rel="popup" >
                         <div id="lodging_firststreet">
                             <img src="images/pins/pin_green.png" style="width:40px; height:40px;">
                         </div>
@@ -325,10 +363,10 @@
                             <h3>First Street Towers</h3>
                             <p>Single A/C with Private Bath, Study Lounge, TV Lounge, Conference Room</p>
                         </div>
-                    </div>
+                    </div>-->
                             
                     <!--HARRISON-->
-                    <a href="#harrison"  data-rel="popup" >
+                    <!--<a href="#harrison"  data-rel="popup" >
                         <div id="lodging_harrison">
                             <img src="images/pins/pin_green.png" style="width:40px; height:40px;">
                         </div>
@@ -340,10 +378,10 @@
                             <h3>Harrison Residence Hall</h3>
                             <p>Traditional A/C</p>
                         </div>
-                    </div>
+                    </div>-->
                             
                     <!--HILLENBRAND-->
-                    <a href="#hillenbrand"  data-rel="popup" >
+                    <!--<a href="#hillenbrand"  data-rel="popup" >
                         <div id="lodging_hillenbrand">
                             <img src="images/pins/pin_green.png" style="width:40px; height:40px;">
                         </div>
@@ -355,10 +393,10 @@
                             <h3>Hillenbrand Residence Hall</h3>
                             <p>Suite-style A/C doubles</p>
                         </div>
-                    </div>
+                    </div>-->
                             
                     <!--MCCUTCHEON-->
-                    <a href="#mccutcheon"  data-rel="popup" >
+                    <!--<a href="#mccutcheon"  data-rel="popup" >
                         <div id="lodging_mccutcheon">
                             <img src="images/pins/pin_green.png" style="width:40px; height:40px;">
                         </div>
@@ -370,10 +408,10 @@
                             <h3>McCutcheon Residence Hall</h3>
                             <p>Traditional A/C, Computer Lab, Conference Rooms</p>
                         </div>
-                    </div>
+                    </div>-->
 
                     <!--SHREVE-->
-                    <a href="#shreve"  data-rel="popup" >
+                   <!-- <a href="#shreve"  data-rel="popup" >
                         <div id="lodging_shreve">
                             <img src="images/pins/pin_green.png" style="width:40px; height:40px;">
                         </div>
@@ -385,10 +423,10 @@
                             <h3>Shreve Residence Hall</h3>
                             <p>Traditional A/C</p>
                         </div>
-                    </div>
+                    </div>-->
 
                     <!--WINDSOR HALL-->
-                    <a href="#windsor"  data-rel="popup" >
+                    <!--<a href="#windsor"  data-rel="popup" >
                         <div id="lodging_windsor">
                             <img src="images/pins/pin_green.png" style="width:40px; height:40px;">
                         </div>
@@ -400,9 +438,9 @@
                             <h3>Windsor Halls</h3>
                             <p>Traditional A/C</p>
                         </div>
-                    </div>
-                            
-                </div> <!-- Div #Lodging ends -->
+                    </div>-->
+                         
+                <!--</div> --><!-- Div #Lodging ends -->
                             
             <!-- PINS (blue) and popup photo for Theatre tab--> 
                 <div id="Theatre" style="display:none">
