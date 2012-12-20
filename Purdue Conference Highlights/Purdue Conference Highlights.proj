@@ -39,6 +39,8 @@
     <Folder Include="images\staff" />
     <Folder Include="images\pins" />
     <Folder Include="images\services" />
+    <Folder Include="jquery-mobile" />
+    <Folder Include="jquery-mobile\images" />
     <Folder Include="scripts" />
   </ItemGroup>
   <ItemGroup>
@@ -102,6 +104,11 @@
     <Content Include="images\staff\tile_susan.png" />
     <Content Include="images\staff\tile_tom.png" />
     <Content Include="index.html" />
+    <Content Include="jquery-mobile\images\ajax-loader.gif" />
+    <Content Include="jquery-mobile\images\icons-18-black.png" />
+    <Content Include="jquery-mobile\images\icons-18-white.png" />
+    <Content Include="jquery-mobile\images\icons-36-black.png" />
+    <Content Include="jquery-mobile\images\icons-36-white.png" />
     <Content Include="kendo\js\jquery.min.js" />
     <Content Include="kendo\js\kendo.mobile.min.js" />
     <Content Include="kendo\styles\images\ios-sprite.png" />
