@@ -90,6 +90,8 @@
     <Content Include="images\services\tile_speaker.png" />
     <Content Include="images\staff\popup_geni.png" />
     <Content Include="images\staff\popup_nick.png" />
+    <Content Include="images\staff\popup_stephanie.png" />
+    <Content Include="images\staff\popup_susan.png" />
     <Content Include="images\staff\tile_amy.png" />
     <Content Include="images\staff\tile_beth.png" />
     <Content Include="images\staff\tile_ed.png" />

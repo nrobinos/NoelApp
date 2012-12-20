@@ -76,24 +76,14 @@
 				<div id="main"></div>
 			</div>
 
-			<div data-role="footer"data-id="footer_ID" data-position="fixed" >
+			<div data-role="footer" data-id="footer_ID" data-position="fixed" data-fullscreen="true" >
 				<div data-role="navbar">
 					<ul>
-						<li>
-							<a href="#home" data-role="button" data-icon="home">Home</a>
-						</li>
-						<li>
-							<a href="#campus_map" data-role="button" data-icon="star">Campus Map</a>
-						</li>
-						<li>
-							<a href="#services" data-role="button" data-icon="gear">Services</a>
-						</li>
-						<li>
-							<a href="#staff" data-role="button" data-icon="refresh">Staff</a>
-						</li>
-						<li>
-							<a href="#about" data-role="button" data-icon="info">About</a>
-						</li>
+						<li><a href="#home" data-role="button" data-icon="home">Home</a></li>
+						<li><a href="#campus_map" data-role="button" data-icon="star">Campus Map</a></li>
+						<li><a href="#services" data-role="button" data-icon="gear">Services</a></li>
+						<li><a href="#staff" data-role="button" data-icon="refresh">Staff</a></li>
+						<li><a href="#about" data-role="button" data-icon="info">About</a></li>
 					</ul>
 				</div>
 			</div>
@@ -102,7 +92,7 @@
 
 		<!--START CAMPUS MAP PAGE-->
 		<div data-role="page" id="campus_map" data-title=" ">
-			<div data-role="header" data-position="fixed" data-fullscreen="true" align="center">
+			<div data-role="header" data-position="fixed" data-fullscreen="true">
 				<!--<div data-role="controlgroup" data-type="horizontal" data-mini="true">
 				<a href="#venues" data-role="button"><span style="color:red; font-size:50px; float:left; padding-right:10px;">&#8226;</span> Venues</a>
 				<a href="#lodging" data-role="button"><span style="color:green; font-size:50px; float:left; padding-right:10px;">&#8226;</span> Lodging</a>
@@ -113,29 +103,19 @@
 				<div data-role="navbar">
 					<ul>
 						<li id="toggle1">
-							<a href="javascript:void(0)" >
-								Venues <img src="images/pins/pin_red.png" style="width:20px; height:20px;">
-							</a>
+							<a href="javascript:void(0)" >Venues <img src="images/pins/pin_red.png" style="width:20px; height:20px;"></a>
 						</li>
 						<li id="toggle2">
-							<a href="javascript:void(0)" >
-								Lodging <img src="images/pins/pin_green.png" style="width:20px; height:20px;">
-							</a>
+							<a href="javascript:void(0)" >Lodging <img src="images/pins/pin_green.png" style="width:20px; height:20px;"></a>
 						</li>
 						<li id="toggle3">
-							<a href="javascript:void(0)" >
-								Theatre <img src="images/pins/pin_blue.png" style="width:20px; height:20px;">
-							</a>
+							<a href="javascript:void(0)" >Theatre <img src="images/pins/pin_blue.png" style="width:20px; height:20px;"></a>
 						</li>
 						<li id="toggle4">
-							<a href="javascript:void(0)" >
-								Athletics <img src="images/pins/pin_yellow.png" style="width:20px; height:20px;">
-							</a>
+							<a href="javascript:void(0)" >Athletics <img src="images/pins/pin_yellow.png" style="width:20px; height:20px;"></a>
 						</li>
 						<li id="toggle5">
-							<a href="javascript:void(0)" >
-								Dining <img src="images/pins/pin_orange.png" style="width:20px; height:20px;">
-							</a>
+							<a href="javascript:void(0)" >Dining <img src="images/pins/pin_orange.png" style="width:20px; height:20px;"></a>
 						</li>
 					</ul>
 				</div>
@@ -745,24 +725,14 @@
 
 			</div>
 
-			<div data-role="footer" data-id="footer_ID" data-position="fixed" >
+			<div data-role="footer" data-id="footer_ID" data-position="fixed" data-fullscreen="true" >
 				<div data-role="navbar">
 					<ul>
-						<li>
-							<a href="#home" data-role="button" data-icon="home">Home</a>
-						</li>
-						<li>
-							<a href="#campus_map" data-role="button" data-icon="star">Campus Map</a>
-						</li>
-						<li>
-							<a href="#services" data-role="button" data-icon="gear">Services</a>
-						</li>
-						<li>
-							<a href="#staff" data-role="button" data-icon="refresh">Staff</a>
-						</li>
-						<li>
-							<a href="#about" data-role="button" data-icon="info">About</a>
-						</li>
+						<li><a href="#home" data-role="button" data-icon="home">Home</a></li>
+						<li><a href="#campus_map" data-role="button" data-icon="star">Campus Map</a></li>
+						<li><a href="#services" data-role="button" data-icon="gear">Services</a></li>
+						<li><a href="#staff" data-role="button" data-icon="refresh">Staff</a></li>
+						<li><a href="#about" data-role="button" data-icon="info">About</a></li>
 					</ul>
 				</div>
 			</div>
@@ -778,122 +748,48 @@
 
 			<div data-role="content" style="padding:3%;">
 
-				<div class="ui-grid-b">
+				<!--<div class="ui-grid-b">START of ui-grid-b-->
 
-					<div class="ui-block-a">
+					<div>
 						<a href="#popupPhoto" data-rel="popup" data-transition="flip">
-							<img src="images/services/tile_event.png" width="99%">
+							<img src="images/services/tile_event.png" width="100%">
 						</a>
 						<div data-role="popup" id="popupPhoto" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
 							<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
 							<img class="popphoto" src="images/services/popup_event.png" alt="Event Planning">
 						</div>
 					</div>
-					<div class="ui-block-b">
+					<div>
 						<a href="#popupPhoto1" data-rel="popup" data-transition="flip">
-							<img src="images/services/tile_offsite.png" width="99%" >
+							<img src="images/services/tile_offsite.png" width="100%">
 						</a>
 						<div data-role="popup" id="popupPhoto1" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
 							<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
 							<img class="popphoto1" src="images/services/popup_offsite.png" alt="Off-site Facilitation">
 						</div>
 					</div>
-					<div class="ui-block-c">
+					<div>
 						<a href="#popupPhoto3" data-rel="popup"  data-transition="flip">
-							<img src="images/services/tile_speaker.png" width="99%" >
+							<img src="images/services/tile_speaker.png" width="100%">
 						</a>
 						<div data-role="popup" id="popupPhoto3" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
 							<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
 							<img class="popphoto3" src="images/services/popup_speaker.png" alt="Speaker and Entertainment">
 						</div>
 					</div>
-					<!--<div class="ui-block-a">
-					<a href="#popupPhoto" data-rel="popup" data-transition="flip">
-					<img src="images/services/tile_event.png" width="99%">
-					</a>
-					<div data-role="popup" id="popupPhoto" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-					<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-					<img class="popphoto" src="images/services/popup_event.png" alt="Event Planning">
-					</div>
-					</div>
-					<div class="ui-block-b">
-					<a href="#popupPhoto1" data-rel="popup" data-transition="flip">
-					<img src="images/services/tile_offsite.png" width="99%" >
-					</a>
-					<div data-role="popup" id="popupPhoto1" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-					<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-					<img class="popphoto1" src="images/services/popup_offsite.png" alt="Off-site Facilitation">
-					</div>
-					</div>
-					<div class="ui-block-c">
-					<a href="#popupPhoto3" data-rel="popup"  data-transition="flip">
-					<img src="images/services/tile_speaker.png" width="99%" >
-					</a>
-					<div data-role="popup" id="popupPhoto3" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-					<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-					<img class="popphoto3" src="images/services/popup_speaker.png" alt="Speaker and Entertainment">
-					</div>
-					</div>-->
 
-				</div><!--END of ui-grid-b-->
-
-				<!--<a href="#popupPhoto" data-rel="popup" data-transition="flip" style="color:black;">
-				<img src="images/services/tile_event.png" width="32.9%">
-				</a>
-				<div data-role="popup" id="popupPhoto" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-				<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-				<img class="popphoto" src="images/services/popup_event.png" alt="kid">
-				<div></div>
-				</div>
-				<a href="#popupPhoto1" data-rel="popup" data-transition="flip" style="color:black;">
-				<img src="images/services/tile_offsite.png" width="32.9%" >
-				</a>
-				<div data-role="popup" id="popupPhoto1" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-				<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-				<img class="popphoto1" src="images/services/popup_offsite.png" alt="kid">
-				</div>
-				<a href="#popupPhoto2" data-rel="popup" data-transition="flip" style="color:black;">
-				<img src="images/services/tile_register.png" width="32.9%" >
-				</a>
-				<div data-role="popup" id="popupPhoto2" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-				<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-				<img class="popphoto2" src="images/services/popup_register.png" alt="kid">
-				</div>
-				<a href="#popupPhoto3" data-rel="popup"  data-transition="flip" style="color:black;">
-				<img src="images/services/tile_speaker.png" width="32.9%" >
-				</a>
-				<div data-role="popup" id="popupPhoto3" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-				<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-				<img class="popphoto3" src="images/services/popup_speaker.png" alt="kid">
-				</div>
-				<a href="#popupPhoto4" data-rel="popup"  data-transition="flip" style="color:black;">
-				<img src="images/services/tile_site.png" width="32.9%" >
-				</a>
-				<div data-role="popup" id="popupPhoto4" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-				<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-				<img class="popphoto4" src="images/services/tile_site.png" alt="kid">
-				</div>-->
+				<!--</div>END of ui-grid-b-->
 
 			</div><!--END of data-role="content" for Services Page-->
 
-			<div data-role="footer" data-id="footer_ID" data-position="fixed" >
+			<div data-role="footer" data-id="footer_ID" data-position="fixed" data-fullscreen="true" >
 				<div data-role="navbar">
 					<ul>
-						<li>
-							<a href="#home" data-role="button" data-icon="home">Home</a>
-						</li>
-						<li>
-							<a href="#campus_map" data-role="button" data-icon="star">Campus Map</a>
-						</li>
-						<li>
-							<a href="#services" data-role="button" data-icon="gear">Services</a>
-						</li>
-						<li>
-							<a href="#staff" data-role="button" data-icon="refresh">Staff</a>
-						</li>
-						<li>
-							<a href="#about" data-role="button" data-icon="info">About</a>
-						</li>
+						<li><a href="#home" data-role="button" data-icon="home">Home</a></li>
+						<li><a href="#campus_map" data-role="button" data-icon="star">Campus Map</a></li>
+						<li><a href="#services" data-role="button" data-icon="gear">Services</a></li>
+						<li><a href="#staff" data-role="button" data-icon="refresh">Staff</a></li>
+						<li><a href="#about" data-role="button" data-icon="info">About</a></li>
 					</ul>
 				</div>
 			</div>
@@ -916,24 +812,14 @@
 
 			</div>
 
-			<div data-role="footer" data-id="footer_ID" data-position="fixed" >
+			<div data-role="footer" data-id="footer_ID" data-position="fixed" data-fullscreen="true" >
 				<div data-role="navbar">
 					<ul>
-						<li>
-							<a href="#home" data-role="button" data-icon="home">Home</a>
-						</li>
-						<li>
-							<a href="#campus_map" data-role="button" data-icon="star">Campus Map</a>
-						</li>
-						<li>
-							<a href="#services" data-role="button" data-icon="gear">Services</a>
-						</li>
-						<li>
-							<a href="#staff" data-role="button" data-icon="refresh">Staff</a>
-						</li>
-						<li>
-							<a href="#about" data-role="button" data-icon="info">About</a>
-						</li>
+						<li><a href="#home" data-role="button" data-icon="home">Home</a></li>
+						<li><a href="#campus_map" data-role="button" data-icon="star">Campus Map</a></li>
+						<li><a href="#services" data-role="button" data-icon="gear">Services</a></li>
+						<li><a href="#staff" data-role="button" data-icon="refresh">Staff</a></li>
+						<li><a href="#about" data-role="button" data-icon="info">About</a></li>
 					</ul>
 				</div>
 			</div>
@@ -965,7 +851,7 @@
 						</a>
 						<div data-role="popup" id="popupPhoto1" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
 							<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-							<img class="popphoto1" src="images/staff/popup_nick.png" alt="Off-site Facilitation">
+							<img class="popphoto1" src="images/staff/popup_nick.png" alt="Nick Bonora">
 						</div>
 					</div>
 					<div class="ui-block-c">
@@ -974,125 +860,115 @@
 						</a>
 						<div data-role="popup" id="popupPhoto3" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
 							<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-							<img class="popphoto3" src="images/services/popup_speaker.png" alt="Speaker and Entertainment">
+							<img class="popphoto3" src="images/staff/popup_stephanie.png" alt="Stephanie Botkin">
 						</div>
 					</div>
 
 					<div class="ui-block-a">
-						<a href="#popupPhoto" data-rel="popup" data-transition="flip">
+						<a href="#popupPhoto4" data-rel="popup" data-transition="flip">
 							<img src="images/staff/tile_emily.png" width="99%">
 						</a>
-						<div data-role="popup" id="popupPhoto" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+						<div data-role="popup" id="popupPhoto4" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
 							<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-							<img class="popphoto" src="images/services/popup_event.png" alt="Event Planning">
+							<img class="popphoto" src="images/staff/popup_emily.png" alt="Emily Gillis">
 						</div>
 					</div>
 					<div class="ui-block-b">
-						<a href="#popupPhoto1" data-rel="popup" data-transition="flip">
+						<a href="#popupPhoto5" data-rel="popup" data-transition="flip">
 							<img src="images/staff/tile_ed.png" width="99%" >
 						</a>
-						<div data-role="popup" id="popupPhoto1" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+						<div data-role="popup" id="popupPhoto5" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
 							<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-							<img class="popphoto1" src="images/services/popup_offsite.png" alt="Off-site Facilitation">
+							<img class="popphoto1" src="images/staff/popup_ed.png" alt="Ed Keller">
 						</div>
 					</div>
 					<div class="ui-block-c">
-						<a href="#popupPhoto3" data-rel="popup"  data-transition="flip">
+						<a href="#popupPhoto6" data-rel="popup"  data-transition="flip">
 							<img src="images/staff/tile_tom.png" width="99%" >
 						</a>
-						<div data-role="popup" id="popupPhoto3" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+						<div data-role="popup" id="popupPhoto6" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
 							<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-							<img class="popphoto3" src="images/services/popup_speaker.png" alt="Speaker and Entertainment">
+							<img class="popphoto3" src="images/staff/popup_tom.png" alt="Tom Robertson">
 						</div>
 					</div>
 
 					<div class="ui-block-a">
-						<a href="#popupPhoto" data-rel="popup" data-transition="flip">
+						<a href="#popupPhoto7" data-rel="popup" data-transition="flip">
 							<img src="images/staff/tile_beth.png" width="99%">
 						</a>
-						<div data-role="popup" id="popupPhoto" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+						<div data-role="popup" id="popupPhoto7" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
 							<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-							<img class="popphoto" src="images/services/popup_event.png" alt="Event Planning">
+							<img class="popphoto" src="images/staff/popup_beth.png" alt="Beth Scharf">
 						</div>
 					</div>
 					<div class="ui-block-b">
-						<a href="#popupPhoto1" data-rel="popup" data-transition="flip">
+						<a href="#popupPhoto8" data-rel="popup" data-transition="flip">
 							<img src="images/staff/tile_kathy.png" width="99%" >
 						</a>
-						<div data-role="popup" id="popupPhoto1" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+						<div data-role="popup" id="popupPhoto8" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
 							<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-							<img class="popphoto1" src="images/services/popup_offsite.png" alt="Off-site Facilitation">
+							<img class="popphoto1" src="images/staff/popup_kathy.png" alt="Kathy Walters">
 						</div>
 					</div>
 					<div class="ui-block-c">
-						<a href="#popupPhoto3" data-rel="popup"  data-transition="flip">
+						<a href="#popupPhoto9" data-rel="popup"  data-transition="flip">
 							<img src="images/staff/tile_erica.png" width="99%" >
 						</a>
-						<div data-role="popup" id="popupPhoto3" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+						<div data-role="popup" id="popupPhoto9" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
 							<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-							<img class="popphoto3" src="images/services/popup_speaker.png" alt="Speaker and Entertainment">
+							<img class="popphoto3" src="images/staff/popup_erica.png" alt="Erica Wilson">
 						</div>
 					</div>
 
 					<div class="ui-block-a">
-						<a href="#popupPhoto" data-rel="popup" data-transition="flip">
+						<a href="#popupPhoto10" data-rel="popup" data-transition="flip">
 							<img src="images/staff/tile_susan.png" width="99%">
 						</a>
-						<div data-role="popup" id="popupPhoto" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+						<div data-role="popup" id="popupPhoto10" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
 							<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-							<img class="popphoto" src="images/services/popup_event.png" alt="Event Planning">
+							<img class="popphoto" src="images/staff/popup_susan.png" alt="Susan Xioufaridou">
 						</div>
 					</div>
 					<div class="ui-block-b">
-						<a href="#popupPhoto1" data-rel="popup" data-transition="flip">
+						<a href="#popupPhoto11" data-rel="popup" data-transition="flip">
 							<img src="images/staff/tile_kaitlin.png" width="99%" >
 						</a>
-						<div data-role="popup" id="popupPhoto1" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+						<div data-role="popup" id="popupPhoto11" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
 							<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-							<img class="popphoto1" src="images/services/popup_offsite.png" alt="Off-site Facilitation">
+							<img class="popphoto1" src="images/staff/popup_kaitlin.png" alt="Kaitlin Floyd">
 						</div>
 					</div>
 
 					<div class="ui-block-b">
-						<a href="#popupPhoto1" data-rel="popup" data-transition="flip">
+						<a href="#popupPhoto12" data-rel="popup" data-transition="flip">
 							<img src="images/staff/tile_amy.png" width="99%" >
 						</a>
-						<div data-role="popup" id="popupPhoto1" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+						<div data-role="popup" id="popupPhoto12" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
 							<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-							<img class="popphoto1" src="images/services/popup_offsite.png" alt="Off-site Facilitation">
+							<img class="popphoto1" src="images/staff/popup_amy.png" alt="Amy Kingma">
 						</div>
 					</div>
 					<div class="ui-block-c">
-						<a href="#popupPhoto3" data-rel="popup"  data-transition="flip">
+						<a href="#popupPhoto13" data-rel="popup"  data-transition="flip">
 							<img src="images/staff/tile_lisa.png" width="99%" >
 						</a>
-						<div data-role="popup" id="popupPhoto3" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+						<div data-role="popup" id="popupPhoto13" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
 							<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-							<img class="popphoto3" src="images/services/popup_speaker.png" alt="Speaker and Entertainment">
+							<img class="popphoto3" src="images/staff/popup_lisa.png" alt="Lisa Peters">
 						</div>
 					</div>
 
 				</div><!--END of ui-grid-b-->
 			</div>
 
-			<div data-role="footer" data-id="footer_ID" data-position="fixed" >
+			<div data-role="footer" data-id="footer_ID" data-position="fixed" data-fullscreen="true" >
 				<div data-role="navbar">
 					<ul>
-						<li>
-							<a href="#home" data-role="button" data-icon="home">Home</a>
-						</li>
-						<li>
-							<a href="#campus_map" data-role="button" data-icon="star">Campus Map</a>
-						</li>
-						<li>
-							<a href="#services" data-role="button" data-icon="gear">Services</a>
-						</li>
-						<li>
-							<a href="#staff" data-role="button" data-icon="refresh">Staff</a>
-						</li>
-						<li>
-							<a href="#about" data-role="button" data-icon="info">About</a>
-						</li>
+						<li><a href="#home" data-role="button" data-icon="home">Home</a></li>
+						<li><a href="#campus_map" data-role="button" data-icon="star">Campus Map</a></li>
+						<li><a href="#services" data-role="button" data-icon="gear">Services</a></li>
+						<li><a href="#staff" data-role="button" data-icon="refresh">Staff</a></li>
+						<li><a href="#about" data-role="button" data-icon="info">About</a></li>
 					</ul>
 				</div>
 			</div>
