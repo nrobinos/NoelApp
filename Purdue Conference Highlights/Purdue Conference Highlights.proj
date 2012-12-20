@@ -109,6 +109,9 @@
     <Content Include="jquery-mobile\images\icons-18-white.png" />
     <Content Include="jquery-mobile\images\icons-36-black.png" />
     <Content Include="jquery-mobile\images\icons-36-white.png" />
+    <Content Include="jquery-mobile\jquery-1.8.2.min.js" />
+    <Content Include="jquery-mobile\jquery.mobile-1.2.0.min.css" />
+    <Content Include="jquery-mobile\jquery.mobile-1.2.0.min.js" />
     <Content Include="kendo\js\jquery.min.js" />
     <Content Include="kendo\js\kendo.mobile.min.js" />
     <Content Include="kendo\styles\images\ios-sprite.png" />
