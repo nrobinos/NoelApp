@@ -15,49 +15,6 @@
     <H_Ipad_horiz_place></H_Ipad_horiz_place>
     <H_Ipad_vert_place></H_Ipad_vert_place>
   </Location>
-  <Location>
+ 
 
-    <Type>"Lodging"</Type>
-    <Link>#cary</Link>
-    <Title>lodging_cary</Title>
-    <image>images/pins/pin_green.png</image>
-    <Id>cary</Id>
-    <Media>media/pmu.png</Media>
-    <Heading>Cary Quadrangle</Heading>
-    <Description>Suite-style A/C doubles</Description>
-    <V_Ipad_horiz_place></V_Ipad_horiz_place>
-    <V_Ipad_vert_place></V_Ipad_vert_place>
-    <H_Ipad_horiz_place></H_Ipad_horiz_place>
-    <H_Ipad_vert_place></H_Ipad_vert_place>
-  </Location>
-  <Location>
-
-    <Type>"Lodging"</Type>
-    <Link>#earhart</Link>
-    <Title>lodging_earhart</Title>
-    <image>images/pins/pin_green.png</image>
-    <Id>earhart</Id>
-    <Media>media/pmu.png</Media>
-    <Heading>Earhart Residence Hall</Heading>
-    <Description>Traditional A/C</Description>
-    <V_Ipad_horiz_place></V_Ipad_horiz_place>
-    <V_Ipad_vert_place></V_Ipad_vert_place>
-    <H_Ipad_horiz_place></H_Ipad_horiz_place>
-    <H_Ipad_vert_place></H_Ipad_vert_place>
-  </Location>
-  <Location>
-
-    <Type>"Lodging"</Type>
-    <Link>#firststreet</Link>
-    <Title>lodging_firststreet</Title>
-    <image>images/pins/pin_green.png</image>
-    <Id>firststreet</Id>
-    <Media>media/pmu.png</Media>
-    <Heading>First Street Towers</Heading>
-    <Description>Single A/C with Private Bath, Study Lounge, TV Lounge, Conference Room</Description>
-    <V_Ipad_horiz_place></V_Ipad_horiz_place>
-    <V_Ipad_vert_place></V_Ipad_vert_place>
-    <H_Ipad_horiz_place></H_Ipad_horiz_place>
-    <H_Ipad_vert_place></H_Ipad_vert_place>
-  </Location>
 </Records>
