@@ -74,6 +74,7 @@
     <Content Include="images\maps\venues\f_stew.jpg" />
     <Content Include="images\maps\venues\f_Stew026.jpg" />
     <Content Include="images\maps\venues\f_stew206.jpg" />
+    <Content Include="images\maps\venues\stew.png" />
     <Content Include="images\pins\pin_blue.png" />
     <Content Include="images\pins\pin_green.png" />
     <Content Include="images\pins\pin_orange.png" />
