@@ -71,6 +71,7 @@
     <Content Include="images\home\Default-Portrait@2x~ipad.jpg" />
     <Content Include="images\maps\CampusMap_Landscape.png" />
     <Content Include="images\maps\CampusMap_Portrait.png" />
+    <Content Include="images\maps\venues\elliot.png" />
     <Content Include="images\maps\venues\stew.png" />
     <Content Include="images\pins\pin_blue.png" />
     <Content Include="images\pins\pin_green.png" />

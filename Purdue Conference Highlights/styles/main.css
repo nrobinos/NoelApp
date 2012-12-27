@@ -32,7 +32,7 @@ body
 
 .details 
 {
-    position:absolute; top:0px; left:20px; padding:0px 10px 0px 10px; background-color:rgba(0,0,0,.6); color:#ffffff;
+    position:absolute; top:0px; left:20px; padding:0px 20px 0px 20px; background-color:rgba(0,0,0,.7); color:#ffffff;
 }
 
 /* START - CSS FOR PORTRAIT ORIENTATION*/ @media (orientation:portrait) { 
@@ -98,7 +98,7 @@ body
     #venues_stew{
     position:absolute; 
     top:62%; 
-    left:82%;
+    left:80%;
     }
 
     #venues_pmu{
@@ -109,44 +109,44 @@ body
     
     #venues_arts{
     position:absolute; 
-    top:61%; 
-    left:68%;
+    top:60%; 
+    left:68.7%;
     }
     
     #venues_class50{
     position:absolute; 
-    top:56%; 
+    top:54.5%; 
     left:71%;
     }
     
     #venues_business{
     position:absolute; 
-    top:68%; 
-    left:85%;
+    top:67.3%; 
+    left:92%;
     }
     
     #venues_engineer{
     position:absolute; 
-    top:43%; 
-    left:79.15%;
+    top:42%; 
+    left:79.8%;
     }
     
     #venues_dauch{
     position:absolute; 
     top:76.6%; 
-    left:84.3%;
+    left:92.3%;
     }
     
     #venues_rossadepavilion{
     position:absolute; 
-    top:19%; 
+    top:18%; 
     left:52%;
     }
     
     #venues_discoverypark{
     position:absolute; 
-    top:72%; 
-    left:32.2%;
+    top:71%; 
+    left:36.2%;
     }
 
     
@@ -154,25 +154,25 @@ body
     #lodging_unionhotel{
     position:absolute; 
     top:61%; 
-    left:91.6%;
+    left:92.2%;
     }
     
     #lodging_cary{
     position:absolute; 
-    top:27%; 
-    left:57%;
+    top:26%; 
+    left:58%;
     }
     
     #lodging_earhart{
     position:absolute; 
-    top:58%; 
-    left:23.8%;
+    top:57%; 
+    left:24.3%;
     }
     
     #lodging_firststreet{
     position:absolute; 
-    top:62.6%; 
-    left:26%;
+    top:62.3%; 
+    left:26.5%;
     }
     
     #lodging_harrison{
@@ -195,14 +195,14 @@ body
     
     #lodging_shreve{
     position:absolute; 
-    top:53.2%; 
-    left:23.8%;
+    top:52.2%; 
+    left:24.3%;
     }
     
     #lodging_windsor{
     position:absolute; 
-    top:53%; 
-    left:44%;
+    top:52.7%; 
+    left:44.6%;
     }
 
 /*Theatre - BLUE PIN POSITION - PORTRAIT*/
@@ -214,7 +214,7 @@ body
     
     #theatre_fowler{
     position:absolute; 
-    top:62.9%; 
+    top:62.4%; 
     left:82.8%;
     }
     
@@ -226,8 +226,8 @@ body
     
     #theatre_slayter{
     position:absolute; 
-    top:29%; 
-    left:35%;
+    top:28.7%; 
+    left:35.4%;
     }
 
 /*Athletics - YELLOW PIN POSITION - PORTRAIT*/
@@ -239,13 +239,13 @@ body
     
     #athletics_rossadestadium{
     position:absolute; 
-    top:17%; 
+    top:16%; 
     left:55%;
     }
     
     #athletics_mackey{
     position:absolute; 
-    top:22%; 
+    top:21.8%; 
     left:66%;
     }
     
@@ -258,31 +258,31 @@ body
     #athletics_golfcomplex{
     position:absolute; 
     top:6%; 
-    left:24%;
+    left:32%;
     }
     
     #athletics_schwartz{
     position:absolute; 
-    top:10%; 
-    left:6.3%;
+    top:12%; 
+    left:12.3%;
     }
     
     #athletics_baseballcomplex{
     position:absolute; 
-    top:37.5%; 
-    left:27.5%;
+    top:37.2%; 
+    left:27.9%;
     }
     
     #athletics_aquaticcenter{
     position:absolute; 
     top:46.5%; 
-    left:32%;
+    left:32.6%;
     }
     
     #athletics_rankintrack{
     position:absolute; 
-    top:35.5%; 
-    left:35%;
+    top:35.1%; 
+    left:35.3%;
     }
     
     /*#athletics_ropescourse{
@@ -295,7 +295,7 @@ body
     #dining_unioncommons{
     position:absolute; 
     top:63%; 
-    left:88%;
+    left:88.3%;
     }
     #dining_fordcourt{
     position:absolute; 
@@ -305,25 +305,25 @@ body
     
     #dining_earhartcourt{
     position:absolute; 
-    top:58.6%; 
-    left:23%;
+    top:58%; 
+    left:24%;
     }
     
     #dining_wileycourt{
     position:absolute; 
-    top:45%; 
-    left:43%;
+    top:44.5%; 
+    left:44%;
     }
     
     #dining_hillenbrandcourt{
     position:absolute; 
-    top:52.4%; 
-    left:15.8%;
+    top:52.2%; 
+    left:15.9%;
     }
     
     #dining_windsorcourt{
     position:absolute; 
-    top:51.6%; 
+    top:51.2%; 
     left:45.6%;
     }
     
@@ -404,8 +404,8 @@ body
     
     #venues_arts{
     position:absolute; 
-    top:65%; 
-    left:68%;
+    top:65.3%; 
+    left:68.4%;
     }
     
     #venues_class50{
@@ -416,20 +416,20 @@ body
     
     #venues_business{
     position:absolute; 
-    top:76%; 
-    left:81%;
+    top:75.8%; 
+    left:86%;
     }
     
     #venues_engineer{
     position:absolute; 
-    top:42%; 
-    left:77%;
+    top:41.6%; 
+    left:76.8%;
     }
     
     #venues_dauch{
     position:absolute; 
-    top:86.5%; 
-    left:81%;
+    top:87.3%; 
+    left:86%;
     }
     
     #venues_rossadepavilion{
@@ -440,8 +440,8 @@ body
     
     #venues_discoverypark{
     position:absolute; 
-    top:81%; 
-    left:42%;
+    top:80.5%; 
+    left:44%;
     }
 
     
@@ -455,12 +455,12 @@ body
     #lodging_cary{
     position:absolute; 
     top:20%; 
-    left:60.5%;
+    left:60.2%;
     }
     
     #lodging_earhart{
     position:absolute; 
-    top:61.2%; 
+    top:61%; 
     left:35.2%;
     }
     
@@ -478,8 +478,8 @@ body
     
     #lodging_hillenbrand{
     position:absolute; 
-    top:56%; 
-    left:28.2%;
+    top:57.2%; 
+    left:27.2%;
     }
     
     #lodging_mccutcheon{
@@ -496,7 +496,7 @@ body
     
     #lodging_windsor{
     position:absolute; 
-    top:56%; 
+    top:54.6%; 
     left:50.5%;
     }
 
@@ -540,7 +540,7 @@ body
     
     #athletics_mackey{
     position:absolute; 
-    top:14.4%; 
+    top:14.0%; 
     left:66.6%;
     }
     
@@ -576,14 +576,14 @@ body
     
     #athletics_rankintrack{
     position:absolute; 
-    top:31.8%; 
+    top:31.6%; 
     left:43.7%;
     }
     
     #athletics_ropescourse{
     position:absolute; 
-    top:87.5%; 
-    left:2.7%;
+    top:87.4%; 
+    left:2.4%;
     }
 
 /*Dining - ORANGE PIN POSITION - LANDSCAPE*/
@@ -601,7 +601,7 @@ body
     
     #dining_earhartcourt{
     position:absolute; 
-    top:62%; 
+    top:62.8%; 
     left:35%;
     }
     
