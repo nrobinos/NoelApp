@@ -97,7 +97,7 @@
                 <div data-role="navbar">
     	        <ul>
                     <li id="toggle1"><a href="javascript:void(0)" >Venues <img src="images/pins/pin_red.png" style="width:20px; height:20px;"></a></li>
-            		<li id="toggle2"><a href="javascript:void(0)">Lodging <img src="images/pins/pin_green.png" style="width:20px; height:20px;"></a></li>
+            		<li id="toggle2" onclick = "lodgingxml()"><a href="javascript:void(0)">Lodging <img src="images/pins/pin_green.png" style="width:20px; height:20px;"></a></li>
             		<li id="toggle3"><a href="javascript:void(0)" >Theatre <img src="images/pins/pin_blue.png" style="width:20px; height:20px;"></a></li>
             		<li id="toggle4"><a href="javascript:void(0)" >Athletics <img src="images/pins/pin_yellow.png" style="width:20px; height:20px;"></a></li>
             		<li id="toggle5"><a href="javascript:void(0)" >Dining <img src="images/pins/pin_orange.png" style="width:20px; height:20px;"></a></li>
@@ -268,27 +268,52 @@
                 
 <div id="Lodging" style="display:none" >
 <div id="Lodge"></div>
-<a href="#unionhotel"  data-rel="popup" >
+<!--<a href="#unionhotel"  data-rel="popup">
                         <div id="lodging_unionhotel" >
-                            <img src="images/pins/pin_green.png" style="width:40px; height:40px;" onclick = "testxml()">
+                            <img src="images/pins/pin_green.png" style="width:40px; height:40px;" onclick = "testxml(0)">
                         </div>
-                    </a>
-<div id="desc"></div>
-<div data-role="popup" id="unionhotel" data-overlay-theme='a' data-theme='d' data-corners='false' data-position-to='window'>                       
+                    </a>-->
+<div id="unionhotel" data-role='popup' data-overlay-theme='a' data-theme='d' data-corners='false' data-position-to='window'> 
+                  
                     </div>
+                    
+
+                    <!--<a href="#cary"  data-rel="popup">
+                        <div id="lodging_cary">
+                            <img src="images/pins/pin_green.png" style="width:40px; height:40px;" onclick = "testxml(1)">
+                        </div>
+                    </a>-->
+                    <div data-role="popup" id="cary" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+                     </div>   
+
+                     <div data-role="popup" id="earhart" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
+<div data-role="popup" id="firststreet" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
+<div data-role="popup" id="harrison" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
+<div data-role="popup" id="hillenbrand" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
+<div data-role="popup" id="mccutcheon" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
+<div data-role="popup" id="shreve" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
+<div data-role="popup" id="windsor" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
+
 
 <script type="text/javascript">
-function testxml()
+function testxml(i)
 {
-//var temp ="<a href='#' data-rel='back' data-role='button' data-theme='a' data-icon='delete' data-iconpos='notext' class='ui-btn-right'>Close</a>";
-var temp = "<img class='popphoto' src='media/pmu.png' alt='PMU' style='width:800px; height:600px;' >";
-     temp +="<div class='details'>";
-     temp += "<h3>Union Club Hotel</h3>";
-temp +="<p>Deluxe Room, Double Twin, Queen</p>";
-temp += "</div>";
-// var temp = "Hello"
-document.getElementById("unionhotel").innerHTML = temp;
-  //  document.write("hello");
+    xhttp = new XMLHttpRequest();
+    xhttp.open("GET", "pinlocations.xml", false);
+    xhttp.send();
+    xmlDoc = xhttp.responseXML;
+
+    var x = xmlDoc.getElementsByTagName("Location");
+
+      
+var temp1 = "<img class='popphoto' src='" + x[i].getElementsByTagName("Media")[0].childNodes[0].nodeValue + "' alt='PMU' style='width:800px; height:600px;' >";
+temp1 += "<a href='#campus_map' style='text-decoration:none; color: #000000' ' data-role='button' data-theme='a' data-icon='delete' data-iconpos='notext' class='ui-btn-right'><b>X</b></a>";
+temp1 += " <div class='details'>";
+temp1 += "<h3>" + x[i].getElementsByTagName("Heading")[0].childNodes[0].nodeValue + "</h3>";
+temp1 += "<p>" + x[i].getElementsByTagName("Description")[0].childNodes[0].nodeValue + "</p>";
+temp1 += "</div>";
+document.getElementById(x[i].getElementsByTagName("Id")[0].childNodes[0].nodeValue).innerHTML = temp1;
+  //document.write(temp1);
        }
 
 </script>
@@ -312,30 +337,18 @@ document.getElementById("unionhotel").innerHTML = temp;
 
             temp += "<a href='" + x[i].getElementsByTagName("Link")[0].childNodes[0].nodeValue + "' data-rel='popup'>";
             temp += "<div id='" + x[i].getElementsByTagName("Title")[0].childNodes[0].nodeValue + "' >";
-            temp += "<img src='" + x[i].getElementsByTagName("image")[0].childNodes[0].nodeValue + "'style='width:40px; height:40px;' >";
+            temp += "<img src='" + x[i].getElementsByTagName("image")[0].childNodes[0].nodeValue + "'style='width:40px; height:40px;' onclick = 'testxml(" + i + ")'>";
             temp += "</div>";
             temp += "</a>";
+          
+           
         }
         document.getElementById("Lodge").innerHTML = temp;
         //document.write(temp);
-    }
+        }
 
 </script>
-<script>
-    $(function () {
-        $("#lodging_unionhote").click(function () {
-           "<div data-role="popup" id="unionhotel" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">"+
-                     "   <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>"+
-                      "  <img class="popphoto" src="media/pmu.png" alt="PMU" style="width:800px; height:600px;" >"+
-                       " <div class="details">"+
-                           " <h3>Union Club Hotel</h3>"+
-                         "   <p>Deluxe Room, Double Twin, Queen</p>"+
-                      "  </div>"+
-                        
-                   " </div>"
-        });
-    });
-</script>
+
 
 
    <!-- MANI ADDED-->
