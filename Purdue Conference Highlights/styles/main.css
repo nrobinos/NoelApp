@@ -297,6 +297,13 @@ body
     top:63%; 
     left:88.3%;
     }
+    
+    #dining_stewcatering{
+    position:absolute; 
+    top:62.5%; 
+    left:80.3%;
+    }
+    
     #dining_fordcourt{
     position:absolute; 
     top:27.5%; 
@@ -591,6 +598,12 @@ body
     position:absolute; 
     top:69%; 
     left:83.4%;
+    }
+    
+    #dining_stewcatering{
+    position:absolute; 
+    top:68%; 
+    left:77.8%;
     }
     
     #dining_fordcourt{

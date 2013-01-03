@@ -88,7 +88,8 @@
     <Content Include="images\maps\dining\earhart_dining.png" />
     <Content Include="images\maps\dining\ford.png" />
     <Content Include="images\maps\dining\hillenbrand_dining.png" />
-    <Content Include="images\maps\dining\pmu_dining.png" />
+    <Content Include="images\maps\dining\pmu_commons.png" />
+    <Content Include="images\maps\dining\stew_catering.png" />
     <Content Include="images\maps\dining\wiley.png" />
     <Content Include="images\maps\dining\windsor_dining.png" />
     <Content Include="images\maps\lodging\cary.png" />
