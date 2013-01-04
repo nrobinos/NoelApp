@@ -3,7 +3,7 @@
   <PropertyGroup>
     <ProjectGuid>22ea3807-9c59-479d-b1c1-a0a78d1c0994</ProjectGuid>
     <ProjectTypeGuids>{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}</ProjectTypeGuids>
-    <AppIdentifier>com.telerik.Purdue_Conference</AppIdentifier>
+    <AppIdentifier>com.telerik.PurdueConferences</AppIdentifier>
     <ProjectName>Purdue Conference Highlights</ProjectName>
     <IsRunnable>true</IsRunnable>
     <TemplateAppName>Cordova220</TemplateAppName>
