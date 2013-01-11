@@ -102,55 +102,36 @@
 				</div>-->
 				<div data-role="navbar">
 					<ul>
-						<li id="toggle1" onclick = "venuexml()">
+						<li id="toggle1" onclick = "xml_function('Venue')">
 							<a href="javascript:void(0)" >Venues <img src="images/pins/pin_red.png" style="width:20px; height:20px;"></a>
 						</li>
-						<li id="toggle2" onclick = "lodgingxml()">
+						<li id="toggle2" onclick = "xml_function('Lodge')">
 							<a href="javascript:void(0)" >Lodging <img src="images/pins/pin_green.png" style="width:20px; height:20px;"></a>
 						</li>
-						<li id="toggle3" onclick = "theatrexml()">
+						<li id="toggle3" onclick = "xml_function('Theatres')">
 							<a href="javascript:void(0)" >Theatre <img src="images/pins/pin_blue.png" style="width:20px; height:20px;"></a>
 						</li>
-						<li id="toggle4" onclick = "athleticxml()">
+						<li id="toggle4" onclick = "xml_function('Athletic')">
 							<a href="javascript:void(0)" >Athletics <img src="images/pins/pin_yellow.png" style="width:20px; height:20px;"></a>
 						</li>
-						<li id="toggle5" onclick = "diningxml()">
+						<li id="toggle5" onclick = "xml_function('Dine')">
 							<a href="javascript:void(0)" >Dining <img src="images/pins/pin_orange.png" style="width:20px; height:20px;"></a>
 						</li>
 					</ul>
 				</div>
 			</div>
 
-			<div data-role="content">
-				<!--MAP -->
-				<!--<img class="map" src="media/map.jpg">-->
-
-				<!-- PINS (red) and popup photo for Venues tab-->
-				<div id="Venues" style="display:none">
-                <div id="Venue"></div>
-
-<div data-role="popup" id="stew" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
-<div data-role="popup" id="pmu" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
-<div data-role="popup" id="arts" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
-<div data-role="popup" id="class50" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
-<div data-role="popup" id="business" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
-<div data-role="popup" id="engineer" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
-<div data-role="popup" id="dauch" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
-<div data-role="popup" id="rossadepavilion" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
-<div data-role="popup" id="discoverypark" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
-
+            
 <script type="text/javascript">
-    function venue_popup(i) {
+    function popup_function(i, name) {
         xhttp = new XMLHttpRequest();
         xhttp.open("GET", "pinlocations.xml", false);
         xhttp.send();
         xmlDoc = xhttp.responseXML;
-
-        var x = xmlDoc.getElementsByTagName("Venues");
-
+        
+        var x = xmlDoc.getElementsByTagName(name);
 
         var html_replace = "<img class='popphoto' src='" + x[i].getElementsByTagName("Media")[0].childNodes[0].nodeValue + "' alt='PMU' style='width:800px; height:550px;' >";
-        //html_replace += "<a href='#campus_map' style='text-decoration:none; color: #000000' ' data-role='button' data-theme='a' data-icon='delete' data-iconpos='notext' class='ui-btn-right'><b>X</b></a>";
         html_replace += "<a href='#' data-rel='back' data-role='button' data-theme='a' data-icon='delete' data-iconpos='notext' class='ui-btn-right'> <img src='images/delete/delete_icon.png' style='width:30px; height:30px;'></a>";
         html_replace += " <div class='details'>";
         html_replace += "<h3>" + x[i].getElementsByTagName("Heading")[0].childNodes[0].nodeValue + "</h3>";
@@ -166,29 +147,47 @@
 </script>
 
 <script>
-    function venuexml() {
+    function xml_function(name) {
         xhttp = new XMLHttpRequest();
         xhttp.open("GET", "pinlocations.xml", false);
         xhttp.send();
         xmlDoc = xhttp.responseXML;
 
-        var x = xmlDoc.getElementsByTagName("Venues");
+        var x = xmlDoc.getElementsByTagName(name);
+        
         var html_replace = null;
         for (i = 0; i < x.length; i++) {
 
             html_replace += "<a href='" + x[i].getElementsByTagName("Link")[0].childNodes[0].nodeValue + "' data-rel='popup'>";
             html_replace += "<div id='" + x[i].getElementsByTagName("Title")[0].childNodes[0].nodeValue + "' >";
-            html_replace += "<img src='" + x[i].getElementsByTagName("image")[0].childNodes[0].nodeValue + "'style='width:40px; height:40px;' onclick = 'venue_popup(" + i + ")'>";
+            html_replace += "<img src='" + x[i].getElementsByTagName("image")[0].childNodes[0].nodeValue + "'style='width:40px; height:40px;' onclick = popup_function(" + i + ",'" + name + "')>";
             html_replace += "</div>";
             html_replace += "</a>";
 
-
         }
-        document.getElementById("Venue").innerHTML = html_replace;
-
+        document.getElementById(name).innerHTML = html_replace;
+       
     }
 
 </script>
+
+			<div data-role="content">
+				<!--MAP -->
+				<!--<img class="map" src="media/map.jpg">-->
+
+				<!-- PINS (red) and popup photo for Venues tab-->
+				<div id="Venues" style="display:none">
+                <div id='Venue'></div>
+
+<div data-role="popup" id="stew" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
+<div data-role="popup" id="pmu" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
+<div data-role="popup" id="arts" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
+<div data-role="popup" id="class50" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
+<div data-role="popup" id="business" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
+<div data-role="popup" id="engineer" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
+<div data-role="popup" id="dauch" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
+<div data-role="popup" id="rossadepavilion" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
+<div data-role="popup" id="discoverypark" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
 
 				</div> <!-- Div #Venues ends -->
 
@@ -206,118 +205,17 @@
 <div data-role="popup" id="shreve" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
 <div data-role="popup" id="windsor" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
 
-
-<script type="text/javascript">
-    function lodge_popup(i) {
-        xhttp = new XMLHttpRequest();
-        xhttp.open("GET", "pinlocations.xml", false);
-        xhttp.send();
-        xmlDoc = xhttp.responseXML;
-
-        var x = xmlDoc.getElementsByTagName("Lodging");
-
-
-        var html_replace = "<img class='popphoto' src='" + x[i].getElementsByTagName("Media")[0].childNodes[0].nodeValue + "' alt='PMU' style='width:800px; height:550px;' >";
-        //html_replace += "<a href='#campus_map' style='text-decoration:none; color: #000000' ' data-role='button' data-theme='a' data-icon='delete' data-iconpos='notext' class='ui-btn-right'><b>X</b></a>";
-        html_replace += "<a href='#' data-rel='back' data-role='button' data-theme='a' data-icon='delete' data-iconpos='notext' class='ui-btn-right'> <img src='images/delete/delete_icon.png' style='width:30px; height:30px;'></a>";
-        html_replace += " <div class='details'>";
-        html_replace += "<h3>" + x[i].getElementsByTagName("Heading")[0].childNodes[0].nodeValue + "</h3>";
-        html_replace += "<p>" + x[i].getElementsByTagName("Description")[0].childNodes[0].nodeValue + "</p>";
-        html_replace += "</div>";
-
-        document.getElementById(x[i].getElementsByTagName("Id")[0].childNodes[0].nodeValue).innerHTML = html_replace;
-       
-    }
-
-</script>
-
-<script>
-    function lodgingxml() {
-        xhttp = new XMLHttpRequest();
-        xhttp.open("GET", "pinlocations.xml", false);
-        xhttp.send();
-        xmlDoc = xhttp.responseXML;
-
-        var x = xmlDoc.getElementsByTagName("Lodging");
-        var html_replace = null;
-        for (i = 0; i < x.length; i++) {
-
-            html_replace += "<a href='" + x[i].getElementsByTagName("Link")[0].childNodes[0].nodeValue + "' data-rel='popup'>";
-            html_replace += "<div id='" + x[i].getElementsByTagName("Title")[0].childNodes[0].nodeValue + "' >";
-            html_replace += "<img src='" + x[i].getElementsByTagName("image")[0].childNodes[0].nodeValue + "'style='width:40px; height:40px;' onclick = 'lodge_popup(" + i + ")'>";
-            html_replace += "</div>";
-            html_replace += "</a>";
-
-
-        }
-        document.getElementById("Lodge").innerHTML = html_replace;
-       
-    }
-
-</script>
-
 				</div> <!-- Div #Lodging ends -->
 
 				<!-- PINS (blue) and popup photo for Theatre tab-->
 				<div id="Theatre" style="display:none">
 
-                <div id="Theatrexml"></div>
+                <div id="Theatres"></div>
 <div data-role="popup" id="elliot" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
 <div data-role="popup" id="fowler" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
 <div data-role="popup" id="loeb" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
 <div data-role="popup" id="slayter" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
 
-                <script type="text/javascript">
-                    function theatre_popup(i) {
-                        xhttp = new XMLHttpRequest();
-                        xhttp.open("GET", "pinlocations.xml", false);
-                        xhttp.send();
-                        xmlDoc = xhttp.responseXML;
-
-                        var x = xmlDoc.getElementsByTagName("Theatre");
-
-
-                        var html_replace = "<img class='popphoto' src='" + x[i].getElementsByTagName("Media")[0].childNodes[0].nodeValue + "' alt='PMU' style='width:800px; height:550px;' >";
-                        //html_replace += "<a href='#campus_map' style='text-decoration:none; color: #000000' ' data-role='button' data-theme='a' data-icon='delete' data-iconpos='notext' class='ui-btn-right'><b>X</b></a>";
-                        html_replace += "<a href='#' data-rel='back' data-role='button' data-theme='a' data-icon='delete' data-iconpos='notext' class='ui-btn-right'> <img src='images/delete/delete_icon.png' style='width:30px; height:30px;'></a>";
-                        html_replace += " <div class='details'>";
-                        html_replace += "<h3>" + x[i].getElementsByTagName("Heading")[0].childNodes[0].nodeValue + "</h3>";
-                        if (x[i].getElementsByTagName("Description")[0].childNodes[0].nodeValue != "null") {
-                            html_replace += "<p>" + x[i].getElementsByTagName("Description")[0].childNodes[0].nodeValue + "</p>";
-                        }
-                        html_replace += "</div>";
-
-                        document.getElementById(x[i].getElementsByTagName("Id")[0].childNodes[0].nodeValue).innerHTML = html_replace;
-
-                    }
-
-</script>
-
-<script>
-    function theatrexml() {
-        xhttp = new XMLHttpRequest();
-        xhttp.open("GET", "pinlocations.xml", false);
-        xhttp.send();
-        xmlDoc = xhttp.responseXML;
-
-        var x = xmlDoc.getElementsByTagName("Theatre");
-        var html_replace = null;
-        for (i = 0; i < x.length; i++) {
-
-            html_replace += "<a href='" + x[i].getElementsByTagName("Link")[0].childNodes[0].nodeValue + "' data-rel='popup'>";
-            html_replace += "<div id='" + x[i].getElementsByTagName("Title")[0].childNodes[0].nodeValue + "' >";
-            html_replace += "<img src='" + x[i].getElementsByTagName("image")[0].childNodes[0].nodeValue + "'style='width:40px; height:40px;' onclick = 'theatre_popup(" + i + ")'>";
-            html_replace += "</div>";
-            html_replace += "</a>";
-
-
-        }
-        document.getElementById("Theatrexml").innerHTML = html_replace;
-       
-    }
-
-	</script>				
-   
 				</div> <!-- Div #Theatre ends -->
 
 				<!-- PINS (yellow) and popup photo for Athletics tab-->
@@ -334,59 +232,7 @@
 <div data-role="popup" id="aquaticcenter" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
 <div data-role="popup" id="rankintrack" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
 <div data-role="popup" id="ropescourse" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
-
-                <script type="text/javascript">
-                    function athletic_popup(i) {
-                        xhttp = new XMLHttpRequest();
-                        xhttp.open("GET", "pinlocations.xml", false);
-                        xhttp.send();
-                        xmlDoc = xhttp.responseXML;
-
-                        var x = xmlDoc.getElementsByTagName("Athletics");
-
-
-                        var html_replace = "<img class='popphoto' src='" + x[i].getElementsByTagName("Media")[0].childNodes[0].nodeValue + "' alt='PMU' style='width:800px; height:550px;' >";
-                        //html_replace += "<a href='#campus_map' style='text-decoration:none; color: #000000' ' data-role='button' data-theme='a' data-icon='delete' data-iconpos='notext' class='ui-btn-right'><b>X</b></a>";
-                        html_replace += "<a href='#' data-rel='back' data-role='button' data-theme='a' data-icon='delete' data-iconpos='notext' class='ui-btn-right'> <img src='images/delete/delete_icon.png' style='width:30px; height:30px;'></a>";
-                        html_replace += " <div class='details'>";
-                        html_replace += "<h3>" + x[i].getElementsByTagName("Heading")[0].childNodes[0].nodeValue + "</h3>";
-                        if (x[i].getElementsByTagName("Description")[0].childNodes[0].nodeValue != "null") {
-                            html_replace += "<p>" + x[i].getElementsByTagName("Description")[0].childNodes[0].nodeValue + "</p>";
-                        }
-                        html_replace += "</div>";
-
-                        document.getElementById(x[i].getElementsByTagName("Id")[0].childNodes[0].nodeValue).innerHTML = html_replace;
-
-                    }
-
-</script>
-
-<script>
-    function athleticxml() {
-        xhttp = new XMLHttpRequest();
-        xhttp.open("GET", "pinlocations.xml", false);
-        xhttp.send();
-        xmlDoc = xhttp.responseXML;
-
-        var x = xmlDoc.getElementsByTagName("Athletics");
-        var html_replace = null;
-        for (i = 0; i < x.length; i++) {
-
-            html_replace += "<a href='" + x[i].getElementsByTagName("Link")[0].childNodes[0].nodeValue + "' data-rel='popup'>";
-            html_replace += "<div id='" + x[i].getElementsByTagName("Title")[0].childNodes[0].nodeValue + "' >";
-            html_replace += "<img src='" + x[i].getElementsByTagName("image")[0].childNodes[0].nodeValue + "'style='width:40px; height:40px;' onclick = 'athletic_popup(" + i + ")'>";
-            html_replace += "</div>";
-            html_replace += "</a>";
-
-
-        }
-        document.getElementById("Athletic").innerHTML = html_replace;
-
-    }
-
-	</script>	
-					
-
+       
 				</div> <!-- Div #Athletics ends -->
 
 				<!-- PINS (orange) and popup photo for Dining tab-->
@@ -401,59 +247,7 @@
 <div data-role="popup" id="hillenbrandcourt" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
 <div data-role="popup" id="windsorcourt" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
 
-                 <script type="text/javascript">
-                     function dining_popup(i) {
-                         xhttp = new XMLHttpRequest();
-                         xhttp.open("GET", "pinlocations.xml", false);
-                         xhttp.send();
-                         xmlDoc = xhttp.responseXML;
-
-                         var x = xmlDoc.getElementsByTagName("Dining");
-
-
-                         var html_replace = "<img class='popphoto' src='" + x[i].getElementsByTagName("Media")[0].childNodes[0].nodeValue + "' alt='PMU' style='width:800px; height:550px;' >";
-                         //html_replace += "<a href='#campus_map' style='text-decoration:none; color: #000000' ' data-role='button' data-theme='a' data-icon='delete' data-iconpos='notext' class='ui-btn-right'><b>X</b></a>";
-                         html_replace += "<a href='#' data-rel='back' data-role='button' data-theme='a' data-icon='delete' data-iconpos='notext' class='ui-btn-right'> <img src='images/delete/delete_icon.png' style='width:30px; height:30px;'></a>";
-                         html_replace += " <div class='details'>";
-                         html_replace += "<h3>" + x[i].getElementsByTagName("Heading")[0].childNodes[0].nodeValue + "</h3>";
-                         if (x[i].getElementsByTagName("Description")[0].childNodes[0].nodeValue != "null") {
-                             html_replace += "<p>" + x[i].getElementsByTagName("Description")[0].childNodes[0].nodeValue + "</p>";
-                         }
-                         html_replace += "</div>";
-
-                         document.getElementById(x[i].getElementsByTagName("Id")[0].childNodes[0].nodeValue).innerHTML = html_replace;
-
-                     }
-
-</script>
-
-<script>
-    function diningxml() {
-        xhttp = new XMLHttpRequest();
-        xhttp.open("GET", "pinlocations.xml", false);
-        xhttp.send();
-        xmlDoc = xhttp.responseXML;
-
-        var x = xmlDoc.getElementsByTagName("Dining");
-        var html_replace = null;
-        for (i = 0; i < x.length; i++) {
-
-            html_replace += "<a href='" + x[i].getElementsByTagName("Link")[0].childNodes[0].nodeValue + "' data-rel='popup'>";
-            html_replace += "<div id='" + x[i].getElementsByTagName("Title")[0].childNodes[0].nodeValue + "' >";
-            html_replace += "<img src='" + x[i].getElementsByTagName("image")[0].childNodes[0].nodeValue + "'style='width:40px; height:40px;' onclick = 'dining_popup(" + i + ")'>";
-            html_replace += "</div>";
-            html_replace += "</a>";
-
-
-        }
-        document.getElementById("Dine").innerHTML = html_replace;
-
-    }
-
-	</script>	
-				
-
-				</div> <!-- Div #Dining ends -->
+     			</div> <!-- Div #Dining ends -->
 
 			</div>
 

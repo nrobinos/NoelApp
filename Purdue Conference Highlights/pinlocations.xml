@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Records>
-  <Venues>
+  <Venue>
 
     <Type>"Venues"</Type>
     <Link>#stew</Link>
@@ -11,9 +11,9 @@
     <Heading>Stewart Center</Heading>
     <Description>null</Description>
     
-  </Venues>
+  </Venue>
 
-  <Venues>
+  <Venue>
 
     <Type>"Venues"</Type>
     <Link>#pmu</Link>
@@ -26,9 +26,9 @@
       North Ballroom, South Ballroom, East Faculty Lounge, West Faculty Lounge, Anniversary Drawing Room
     </Description>
 
-  </Venues>
+  </Venue>
 
-    <Venues>
+    <Venue>
 
     <Type>"Venues"</Type>
     <Link>#arts</Link>
@@ -39,8 +39,8 @@
     <Heading>Liberal Arts Mall</Heading>
     <Description>UNIV, REC, STON, MTHW, BRNG, MAT, PSYCH</Description>
 
-  </Venues>
-  <Venues>
+  </Venue>
+  <Venue>
 
     <Type>"Venues"</Type>
     <Link>#class50</Link>
@@ -51,9 +51,9 @@
     <Heading>Class of 50</Heading>
     <Description>null</Description>
 
-  </Venues>
+  </Venue>
 
-  <Venues>
+  <Venue>
 
     <Type>"Venues"</Type>
     <Link>#business</Link>
@@ -64,9 +64,9 @@
     <Heading>Business Campus</Heading>
     <Description>KRAN, RAWLS, KRANNERT CENTER, YONG</Description>
 
-  </Venues>
+  </Venue>
 
-  <Venues>
+  <Venue>
 
     <Type>"Venues"</Type>
     <Link>#engineer</Link>
@@ -77,8 +77,8 @@
     <Heading>Engineering Mall</Heading>
     <Description>ARMS, CIVL, PHYS, ME, EE, KNOY</Description>
 
-  </Venues>
-  <Venues>
+  </Venue>
+  <Venue>
 
     <Type>"Venues"</Type>
     <Link>#dauch</Link>
@@ -89,9 +89,9 @@
     <Heading>Dauch Alumni Center</Heading>
     <Description>null</Description>
 
-  </Venues>
+  </Venue>
 
-  <Venues>
+  <Venue>
 
     <Type>"Venues"</Type>
     <Link>#rossadepavilion</Link>
@@ -102,8 +102,8 @@
     <Heading>Ross Ade Stadium Pavilion</Heading>
     <Description>Shively Club, Buchanan Club, Buchanan Mingling, Media Suite</Description>
 
-  </Venues>
-  <Venues>
+  </Venue>
+  <Venue>
 
     <Type>"Venues"</Type>
     <Link>#discoverypark</Link>
@@ -114,9 +114,9 @@
     <Heading>Discovery Park</Heading>
     <Description>null</Description>
 
-  </Venues>
+  </Venue>
 
-  <Lodging>
+  <Lodge>
 
     <Type>"Lodging"</Type>
     <Link>#unionhotel</Link>
@@ -127,9 +127,9 @@
     <Heading>Union Club Hotel</Heading>
     <Description>Deluxe Room, Double Twin, Queen</Description>
     
-  </Lodging>
+  </Lodge>
 
-  <Lodging>
+  <Lodge>
 
     <Type>"Lodging"</Type>
     <Link>#cary</Link>
@@ -140,9 +140,9 @@
     <Heading>Cary Quadrangle</Heading>
     <Description>Suite-style A/C doubles</Description>
     
-  </Lodging>
+  </Lodge>
 
-  <Lodging>
+  <Lodge>
 
     <Type>"Lodging"</Type>
     <Link>#earhart</Link>
@@ -152,8 +152,8 @@
     <Media>images/maps/lodging/earhart_lodging.png</Media>
     <Heading>Earhart Residence Hall</Heading>
     <Description>Traditional A/C</Description>
-  </Lodging>
-  <Lodging>
+  </Lodge>
+  <Lodge>
 
     <Type>"Lodging"</Type>
     <Link>#firststreet</Link>
@@ -164,9 +164,9 @@
     <Heading>First Street Towers</Heading>
     <Description>Single A/C with Private Bath, Study Lounge, TV Lounge, Conference Room</Description>
    
-  </Lodging>
+  </Lodge>
 
-  <Lodging>
+  <Lodge>
 
     <Type>"Lodging"</Type>
     <Link>#harrison</Link>
@@ -177,9 +177,9 @@
     <Heading>Harrison Residence Hall</Heading>
     <Description>Traditional A/C</Description>
    
-  </Lodging>
+  </Lodge>
 
-  <Lodging>
+  <Lodge>
 
     <Type>"Lodging"</Type>
     <Link>#hillenbrand</Link>
@@ -190,9 +190,9 @@
     <Heading>Hillenbrand Residence Hall</Heading>
     <Description>Suite-style A/C doubles</Description>
    
-  </Lodging>
+  </Lodge>
 
-  <Lodging>
+  <Lodge>
 
     <Type>"Lodging"</Type>
     <Link>#mccutcheon</Link>
@@ -203,9 +203,9 @@
     <Heading>McCutcheon Residence Hall</Heading>
     <Description>Traditional A/C, Computer Lab, Conference Rooms</Description>
    
-  </Lodging>
+  </Lodge>
 
-  <Lodging>
+  <Lodge>
 
     <Type>"Lodging"</Type>
     <Link>#shreve</Link>
@@ -216,9 +216,9 @@
     <Heading>Shreve Residence Hall</Heading>
     <Description>Traditional A/C</Description>
 
-  </Lodging>
+  </Lodge>
 
-  <Lodging>
+  <Lodge>
 
     <Type>"Lodging"</Type>
     <Link>#windsor</Link>
@@ -229,9 +229,9 @@
     <Heading>Windsor Halls</Heading>
     <Description>Traditional A/C</Description>
    
-  </Lodging>
+  </Lodge>
 
-  <Theatre>
+  <Theatres>
 
     <Type>"Theatre"</Type>
     <Link>#elliot</Link>
@@ -251,9 +251,9 @@
         ]]>
     </Description>
 
-  </Theatre>
+  </Theatres>
 
-  <Theatre>
+  <Theatres>
 
     <Type>"Theatre"</Type>
     <Link>#fowler</Link>
@@ -264,9 +264,9 @@
     <Heading>Fowler Hall</Heading>
     <Description>null</Description>
 
-  </Theatre>
+  </Theatres>
 
-  <Theatre>
+  <Theatres>
 
     <Type>"Theatre"</Type>
     <Link>#loeb</Link>
@@ -277,9 +277,9 @@
     <Heading>Loeb Playhouse</Heading>
     <Description>null</Description>
 
-  </Theatre>
+  </Theatres>
 
-  <Theatre>
+  <Theatres>
 
     <Type>"Theatre"</Type>
     <Link>#slayter</Link>
@@ -290,9 +290,9 @@
     <Heading>Slayter Hill</Heading>
     <Description>null</Description>
 
-  </Theatre>
+  </Theatres>
 
-  <Athletics>
+  <Athletic>
 
     <Type>"Athletics"</Type>
     <Link>#reccenter</Link>
@@ -303,9 +303,9 @@
     <Heading>Recreational Sports Center</Heading>
     <Description>null</Description>
 
-  </Athletics>
+  </Athletic>
 
-  <Athletics>
+  <Athletic>
 
     <Type>"Athletics"</Type>
     <Link>#rossadestadium</Link>
@@ -316,22 +316,9 @@
     <Heading>Ross Ade Stadium</Heading>
     <Description>null</Description>
 
-  </Athletics>
+  </Athletic>
 
-  <Athletics>
-
-    <Type>"Athletics"</Type>
-    <Link>#mackey</Link>
-    <Title>athletics_mackey</Title>
-    <image>images/pins/pin_yellow.png</image>
-    <Id>mackey</Id>
-    <Media>images/maps/athletics/mackey.png</Media>
-    <Heading>Mackey Arena</Heading>
-    <Description>null</Description>
-
-  </Athletics>
-
-  <Athletics>
+  <Athletic>
 
     <Type>"Athletics"</Type>
     <Link>#mackey</Link>
@@ -342,9 +329,22 @@
     <Heading>Mackey Arena</Heading>
     <Description>null</Description>
 
-  </Athletics>
+  </Athletic>
 
-  <Athletics>
+  <Athletic>
+
+    <Type>"Athletics"</Type>
+    <Link>#mackey</Link>
+    <Title>athletics_mackey</Title>
+    <image>images/pins/pin_yellow.png</image>
+    <Id>mackey</Id>
+    <Media>images/maps/athletics/mackey.png</Media>
+    <Heading>Mackey Arena</Heading>
+    <Description>null</Description>
+
+  </Athletic>
+
+  <Athletic>
 
     <Type>"Athletics"</Type>
     <Link>#lambert</Link>
@@ -355,9 +355,9 @@
     <Heading>Lambert Fieldhouse</Heading>
     <Description>null</Description>
 
-  </Athletics>
+  </Athletic>
 
-  <Athletics>
+  <Athletic>
 
     <Type>"Athletics"</Type>
     <Link>#golfcomplex</Link>
@@ -368,9 +368,9 @@
     <Heading>Boilermaker Golf Complex</Heading>
     <Description>null</Description>
 
-  </Athletics>
+  </Athletic>
 
-  <Athletics>
+  <Athletic>
 
     <Type>"Athletics"</Type>
     <Link>#schwartz</Link>
@@ -381,9 +381,9 @@
     <Heading>Schwartz Tennis Pavilion</Heading>
     <Description>null</Description>
 
-  </Athletics>
+  </Athletic>
 
-  <Athletics>
+  <Athletic>
 
     <Type>"Athletics"</Type>
     <Link>#baseballcomplex</Link>
@@ -394,9 +394,9 @@
     <Heading>Baseball Complex</Heading>
     <Description>null</Description>
 
-  </Athletics>
+  </Athletic>
 
-  <Athletics>
+  <Athletic>
 
     <Type>"Athletics"</Type>
     <Link>#aquaticcenter</Link>
@@ -407,22 +407,9 @@
     <Heading>Boilermaker Aquatic Center</Heading>
     <Description>null</Description>
 
-  </Athletics>
+  </Athletic>
 
-  <Athletics>
-
-    <Type>"Athletics"</Type>
-    <Link>#rankintrack</Link>
-    <Title>athletics_rankintrack</Title>
-    <image>images/pins/pin_yellow.png</image>
-    <Id>rankintrack</Id>
-    <Media>images/maps/athletics/rankin.png</Media>
-    <Heading>Rankin Track</Heading>
-    <Description>null</Description>
-
-  </Athletics>
-
-  <Athletics>
+  <Athletic>
 
     <Type>"Athletics"</Type>
     <Link>#rankintrack</Link>
@@ -433,9 +420,22 @@
     <Heading>Rankin Track</Heading>
     <Description>null</Description>
 
-  </Athletics>
+  </Athletic>
 
-  <Athletics>
+  <Athletic>
+
+    <Type>"Athletics"</Type>
+    <Link>#rankintrack</Link>
+    <Title>athletics_rankintrack</Title>
+    <image>images/pins/pin_yellow.png</image>
+    <Id>rankintrack</Id>
+    <Media>images/maps/athletics/rankin.png</Media>
+    <Heading>Rankin Track</Heading>
+    <Description>null</Description>
+
+  </Athletic>
+
+  <Athletic>
 
     <Type>"Athletics"</Type>
     <Link>#ropescourse</Link>
@@ -446,9 +446,9 @@
     <Heading>Ropes Course</Heading>
     <Description>null</Description>
 
-  </Athletics>
+  </Athletic>
 
-  <Dining>
+  <Dine>
 
     <Type>"Dining"</Type>
     <Link>#unioncommons</Link>
@@ -459,9 +459,9 @@
     <Heading>Union Commons</Heading>
     <Description>null</Description>
 
-  </Dining>
+  </Dine>
 
-  <Dining>
+  <Dine>
 
     <Type>"Dining"</Type>
     <Link>#stewcatering</Link>
@@ -472,9 +472,9 @@
     <Heading>Catering</Heading>
     <Description>null</Description>
 
-  </Dining>
+  </Dine>
 
-  <Dining>
+  <Dine>
 
     <Type>"Dining"</Type>
     <Link>#fordcourt</Link>
@@ -485,9 +485,9 @@
     <Heading>Ford Dining Court</Heading>
     <Description>Asian, Pizza, Salad Bar, Grill, Comfort, Desserts</Description>
 
-  </Dining>
+  </Dine>
 
-  <Dining>
+  <Dine>
 
     <Type>"Dining"</Type>
     <Link>#earhartcourt</Link>
@@ -498,22 +498,9 @@
     <Heading>Earhart Dining Court</Heading>
     <Description>Mongolian Barbeque</Description>
 
-  </Dining>
+  </Dine>
 
-  <Dining>
-
-    <Type>"Dining"</Type>
-    <Link>#wileycourt</Link>
-    <Title>dining_wileycourt</Title>
-    <image>images/pins/pin_orange.png</image>
-    <Id>wileycourt</Id>
-    <Media>images/maps/dining/wiley.png</Media>
-    <Heading>Wiley Dining Court</Heading>
-    <Description>Churascuria</Description>
-
-  </Dining>
-
-  <Dining>
+  <Dine>
 
     <Type>"Dining"</Type>
     <Link>#wileycourt</Link>
@@ -524,5 +511,19 @@
     <Heading>Wiley Dining Court</Heading>
     <Description>Churascuria</Description>
 
-  </Dining>
+  </Dine>
+
+  <Dine>
+
+    <Type>"Dining"</Type>
+    <Link>#wileycourt</Link>
+    <Title>dining_wileycourt</Title>
+    <image>images/pins/pin_orange.png</image>
+    <Id>wileycourt</Id>
+    <Media>images/maps/dining/wiley.png</Media>
+    <Heading>Wiley Dining Court</Heading>
+    <Description>Churascuria</Description>
+
+  </Dine>
+
 </Records>
