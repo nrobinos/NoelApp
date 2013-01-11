@@ -131,7 +131,7 @@
         
         var x = xmlDoc.getElementsByTagName(name);
 
-        var html_replace = "<img class='popphoto' src='" + x[i].getElementsByTagName("Media")[0].childNodes[0].nodeValue + "' alt='PMU' style='width:800px; height:550px;' >";
+        var html_replace = "<img class='popphoto' src='" + x[i].getElementsByTagName("Media")[0].childNodes[0].nodeValue + "' alt='PMU' style='width:800px; height:600px;' >";
         html_replace += "<a href='#' data-rel='back' data-role='button' data-theme='a' data-icon='delete' data-iconpos='notext' class='ui-btn-right'> <img src='images/delete/delete_icon.png' style='width:30px; height:30px;'></a>";
         html_replace += " <div class='details'>";
         html_replace += "<h3>" + x[i].getElementsByTagName("Heading")[0].childNodes[0].nodeValue + "</h3>";
