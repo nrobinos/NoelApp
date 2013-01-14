@@ -122,6 +122,7 @@
     <Content Include="images\services\popup_event.png" />
     <Content Include="images\services\popup_offsite.png" />
     <Content Include="images\services\popup_register.png" />
+    <Content Include="images\services\popup_site.png" />
     <Content Include="images\services\popup_speaker.png" />
     <Content Include="images\services\tile_event.png" />
     <Content Include="images\services\tile_offsite.png" />
