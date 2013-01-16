@@ -1,0 +1,589 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Records>
+  <Locations>
+  <Venue>
+
+    <Type>"Venues"</Type>
+    <Link>#stew</Link>
+    <Title>venues_stew</Title>
+    <image>images/pins/pin_red.png</image>
+    <Id>stew</Id>
+    <Media>images/maps/venues/stew.png</Media>
+    <Heading>Stewart Center</Heading>
+    <Description>null</Description>
+    
+  </Venue>
+  </Locations>
+  <Locations>
+  <Venue>
+
+    <Type>"Venues"</Type>
+    <Link>#pmu</Link>
+    <Title>venues_pmu</Title>
+    <image>images/pins/pin_red.png</image>
+    <Id>pmu</Id>
+    <Media>images/maps/venues/pmu_venue.png</Media>
+    <Heading>Purdue Memorial Union</Heading>
+    <Description>
+      North Ballroom, South Ballroom, East Faculty Lounge, West Faculty Lounge, Anniversary Drawing Room
+    </Description>
+
+  </Venue>
+  </Locations>
+  <Locations>
+    <Venue>
+
+    <Type>"Venues"</Type>
+    <Link>#arts</Link>
+    <Title>venues_arts</Title>
+    <image>images/pins/pin_red.png</image>
+    <Id>arts</Id>
+    <Media>images/maps/venues/la.png</Media>
+    <Heading>Liberal Arts Mall</Heading>
+    <Description>UNIV, REC, STON, MTHW, BRNG, MAT, PSYCH</Description>
+
+  </Venue>
+  </Locations>
+  <Locations>
+  <Venue>
+
+    <Type>"Venues"</Type>
+    <Link>#class50</Link>
+    <Title>venues_class50</Title>
+    <image>images/pins/pin_red.png</image>
+    <Id>class50</Id>
+    <Media>images/maps/venues/cl50.png</Media>
+    <Heading>Class of 50</Heading>
+    <Description>null</Description>
+
+  </Venue>
+  </Locations>
+  <Locations>
+  <Venue>
+
+    <Type>"Venues"</Type>
+    <Link>#business</Link>
+    <Title>venues_business</Title>
+    <image>images/pins/pin_red.png</image>
+    <Id>business</Id>
+    <Media>images/maps/venues/business.png</Media>
+    <Heading>Business Campus</Heading>
+    <Description>KRAN, RAWLS, KRANNERT CENTER, YONG</Description>
+
+  </Venue>
+  </Locations>
+  <Locations>
+  <Venue>
+
+    <Type>"Venues"</Type>
+    <Link>#engineer</Link>
+    <Title>venues_engineer</Title>
+    <image>images/pins/pin_red.png</image>
+    <Id>engineer</Id>
+    <Media>images/maps/venues/engineering.png</Media>
+    <Heading>Engineering Mall</Heading>
+    <Description>ARMS, CIVL, PHYS, ME, EE, KNOY</Description>
+
+  </Venue>
+  </Locations>
+  <Locations>
+  <Venue>
+
+    <Type>"Venues"</Type>
+    <Link>#dauch</Link>
+    <Title>venues_dauch</Title>
+    <image>images/pins/pin_red.png</image>
+    <Id>dauch</Id>
+    <Media>images/maps/venues/dauch.png</Media>
+    <Heading>Dauch Alumni Center</Heading>
+    <Description>null</Description>
+
+  </Venue>
+  </Locations>
+  <Locations>
+  <Venue>
+
+    <Type>"Venues"</Type>
+    <Link>#rossadepavilion</Link>
+    <Title>venues_rossadepavilion</Title>
+    <image>images/pins/pin_red.png</image>
+    <Id>rossadepavilion</Id>
+    <Media>images/maps/venues/rossade_facilities.png</Media>
+    <Heading>Ross Ade Stadium Pavilion</Heading>
+    <Description>Shively Club, Buchanan Club, Buchanan Mingling, Media Suite</Description>
+
+  </Venue>
+  </Locations>
+  <Locations>
+  <Venue>
+
+    <Type>"Venues"</Type>
+    <Link>#discoverypark</Link>
+    <Title>venues_discoverypark</Title>
+    <image>images/pins/pin_red.png</image>
+    <Id>discoverypark</Id>
+    <Media>images/maps/venues/discovery.png</Media>
+    <Heading>Discovery Park</Heading>
+    <Description>null</Description>
+
+  </Venue>
+  </Locations>
+  <Locations>
+  <Lodge>
+
+    <Type>"Lodging"</Type>
+    <Link>#unionhotel</Link>
+    <Title>lodging_unionhotel</Title>
+    <image>images/pins/pin_green.png</image>
+    <Id>unionhotel</Id>
+    <Media>images/maps/lodging/pmu_lodging.png</Media>
+    <Heading>Union Club Hotel</Heading>
+    <Description>Deluxe Room, Double Twin, Queen</Description>
+    
+  </Lodge>
+    </Locations>
+  <Locations>
+  <Lodge>
+
+    <Type>"Lodging"</Type>
+    <Link>#cary</Link>
+    <Title>lodging_cary</Title>
+    <image>images/pins/pin_green.png</image>
+    <Id>cary</Id>
+    <Media>images/maps/lodging/cary.png</Media>
+    <Heading>Cary Quadrangle</Heading>
+    <Description>Suite-style A/C doubles</Description>
+    
+  </Lodge>
+    </Locations>
+  <Locations>
+  <Lodge>
+
+    <Type>"Lodging"</Type>
+    <Link>#earhart</Link>
+    <Title>lodging_earhart</Title>
+    <image>images/pins/pin_green.png</image>
+    <Id>earhart</Id>
+    <Media>images/maps/lodging/earhart_lodging.png</Media>
+    <Heading>Earhart Residence Hall</Heading>
+    <Description>Traditional A/C</Description>
+  </Lodge>
+    </Locations>
+  <Locations>
+  <Lodge>
+
+    <Type>"Lodging"</Type>
+    <Link>#firststreet</Link>
+    <Title>lodging_firststreet</Title>
+    <image>images/pins/pin_green.png</image>
+    <Id>firststreet</Id>
+    <Media>images/maps/lodging/first.png</Media>
+    <Heading>First Street Towers</Heading>
+    <Description>Single A/C with Private Bath, Study Lounge, TV Lounge, Conference Room</Description>
+   
+  </Lodge>
+    </Locations>
+  <Locations>
+  <Lodge>
+
+    <Type>"Lodging"</Type>
+    <Link>#harrison</Link>
+    <Title>lodging_harrison</Title>
+    <image>images/pins/pin_green.png</image>
+    <Id>harrison</Id>
+    <Media>images/maps/lodging/harrison.png</Media>
+    <Heading>Harrison Residence Hall</Heading>
+    <Description>Traditional A/C</Description>
+   
+  </Lodge>
+    </Locations>
+  <Locations>
+  <Lodge>
+
+    <Type>"Lodging"</Type>
+    <Link>#hillenbrand</Link>
+    <Title>lodging_hillenbrand</Title>
+    <image>images/pins/pin_green.png</image>
+    <Id>hillenbrand</Id>
+    <Media>images/maps/lodging/hillenbrand_lodging.png</Media>
+    <Heading>Hillenbrand Residence Hall</Heading>
+    <Description>Suite-style A/C doubles</Description>
+   
+  </Lodge>
+    </Locations>
+  <Locations>
+  <Lodge>
+
+    <Type>"Lodging"</Type>
+    <Link>#mccutcheon</Link>
+    <Title>lodging_mccutcheon</Title>
+    <image>images/pins/pin_green.png</image>
+    <Id>mccutcheon</Id>
+    <Media>images/maps/lodging/mccutcheon.png</Media>
+    <Heading>McCutcheon Residence Hall</Heading>
+    <Description>Traditional A/C, Computer Lab, Conference Rooms</Description>
+   
+  </Lodge>
+    </Locations>
+  <Locations>
+  <Lodge>
+
+    <Type>"Lodging"</Type>
+    <Link>#shreve</Link>
+    <Title>lodging_shreve</Title>
+    <image>images/pins/pin_green.png</image>
+    <Id>shreve</Id>
+    <Media>images/maps/lodging/shreve.png</Media>
+    <Heading>Shreve Residence Hall</Heading>
+    <Description>Traditional A/C</Description>
+
+  </Lodge>
+    </Locations>
+  <Locations>
+  <Lodge>
+
+    <Type>"Lodging"</Type>
+    <Link>#windsor</Link>
+    <Title>lodging_windsor</Title>
+    <image>images/pins/pin_green.png</image>
+    <Id>windsor</Id>
+    <Media>images/maps/lodging/windsor_lodging.png</Media>
+    <Heading>Windsor Halls</Heading>
+    <Description>Traditional A/C</Description>
+   
+  </Lodge>
+    </Locations>
+  <Locations>
+  <Theatres>
+
+    <Type>"Theatre"</Type>
+    <Link>#elliot</Link>
+    <Title>theatre_elliot</Title>
+    <image>images/pins/pin_blue.png</image>
+    <Id>elliot</Id>
+    <Media>images/maps/theatre/elliot.png</Media>
+    <Heading>Elliot Hall of Music</Heading>
+    <Description>
+      <![CDATA[
+        Seats 6005 on three levels <br />
+        Stage: 136’ wide x 37’ deep <br />
+        One of the largest proscenium theatres in the U.S. <br />
+        Two dressing rooms with private baths; other multiple dressing rooms<br />
+        Opened in 1940<br />
+        Purdue University landmark at Third and University Streets<br />
+        ]]>
+    </Description>
+
+  </Theatres>
+    </Locations>
+  <Locations>
+  <Theatres>
+
+    <Type>"Theatre"</Type>
+    <Link>#fowler</Link>
+    <Title>theatre_fowler</Title>
+    <image>images/pins/pin_blue.png</image>
+    <Id>fowler</Id>
+    <Media>images/maps/theatre/fowler.png</Media>
+    <Heading>Fowler Hall</Heading>
+    <Description>null</Description>
+
+  </Theatres>
+    </Locations>
+  <Locations>
+  <Theatres>
+
+    <Type>"Theatre"</Type>
+    <Link>#loeb</Link>
+    <Title>theatre_loeb</Title>
+    <image>images/pins/pin_blue.png</image>
+    <Id>loeb</Id>
+    <Media>images/maps/theatre/loeb.png</Media>
+    <Heading>Loeb Playhouse</Heading>
+    <Description>null</Description>
+
+  </Theatres>
+    </Locations>
+  <Locations>
+  <Theatres>
+
+    <Type>"Theatre"</Type>
+    <Link>#slayter</Link>
+    <Title>theatre_slayter</Title>
+    <image>images/pins/pin_blue.png</image>
+    <Id>slayter</Id>
+    <Media>images/maps/theatre/slayter.png</Media>
+    <Heading>Slayter Hill</Heading>
+    <Description>null</Description>
+
+  </Theatres>
+    </Locations>
+  <Locations>
+  <Athletic>
+
+    <Type>"Athletics"</Type>
+    <Link>#reccenter</Link>
+    <Title>athletics_reccenter</Title>
+    <image>images/pins/pin_yellow.png</image>
+    <Id>reccenter</Id>
+    <Media>images/maps/athletics/rsc.png</Media>
+    <Heading>Recreational Sports Center</Heading>
+    <Description>null</Description>
+
+  </Athletic>
+    </Locations>
+  <Locations>
+  <Athletic>
+
+    <Type>"Athletics"</Type>
+    <Link>#rossadestadium</Link>
+    <Title>athletics_rossadestadium</Title>
+    <image>images/pins/pin_yellow.png</image>
+    <Id>rossadestadium</Id>
+    <Media>images/maps/athletics/rossade_atheletics.png</Media>
+    <Heading>Ross Ade Stadium</Heading>
+    <Description>null</Description>
+
+  </Athletic>
+    </Locations>
+  <Locations>
+  <Athletic>
+
+    <Type>"Athletics"</Type>
+    <Link>#mackey</Link>
+    <Title>athletics_mackey</Title>
+    <image>images/pins/pin_yellow.png</image>
+    <Id>mackey</Id>
+    <Media>images/maps/athletics/mackey.png</Media>
+    <Heading>Mackey Arena</Heading>
+    <Description>null</Description>
+
+  </Athletic>
+    </Locations>
+  <Locations>
+  <Athletic>
+
+    <Type>"Athletics"</Type>
+    <Link>#mackey</Link>
+    <Title>athletics_mackey</Title>
+    <image>images/pins/pin_yellow.png</image>
+    <Id>mackey</Id>
+    <Media>images/maps/athletics/mackey.png</Media>
+    <Heading>Mackey Arena</Heading>
+    <Description>null</Description>
+
+  </Athletic>
+    </Locations>
+  <Locations>
+  <Athletic>
+
+    <Type>"Athletics"</Type>
+    <Link>#lambert</Link>
+    <Title>athletics_lambert</Title>
+    <image>images/pins/pin_yellow.png</image>
+    <Id>lambert</Id>
+    <Media>images/maps/athletics/lambert.png</Media>
+    <Heading>Lambert Fieldhouse</Heading>
+    <Description>null</Description>
+
+  </Athletic>
+    </Locations>
+  <Locations>
+  <Athletic>
+
+    <Type>"Athletics"</Type>
+    <Link>#golfcomplex</Link>
+    <Title>athletics_golfcomplex</Title>
+    <image>images/pins/pin_yellow.png</image>
+    <Id>golfcomplex</Id>
+    <Media>images/maps/athletics/golf.png</Media>
+    <Heading>Boilermaker Golf Complex</Heading>
+    <Description>null</Description>
+
+  </Athletic>
+    </Locations>
+  <Locations>
+  <Athletic>
+
+    <Type>"Athletics"</Type>
+    <Link>#schwartz</Link>
+    <Title>athletics_schwartz</Title>
+    <image>images/pins/pin_yellow.png</image>
+    <Id>schwartz</Id>
+    <Media>images/maps/athletics/tennis.png</Media>
+    <Heading>Schwartz Tennis Pavilion</Heading>
+    <Description>null</Description>
+
+  </Athletic>
+    </Locations>
+  <Locations>
+  <Athletic>
+
+    <Type>"Athletics"</Type>
+    <Link>#baseballcomplex</Link>
+    <Title>athletics_baseballcomplex</Title>
+    <image>images/pins/pin_yellow.png</image>
+    <Id>baseballcomplex</Id>
+    <Media>images/maps/athletics/baseball.png</Media>
+    <Heading>Baseball Complex</Heading>
+    <Description>null</Description>
+
+  </Athletic>
+    </Locations>
+  <Locations>
+  <Athletic>
+
+    <Type>"Athletics"</Type>
+    <Link>#aquaticcenter</Link>
+    <Title>athletics_aquaticcenter</Title>
+    <image>images/pins/pin_yellow.png</image>
+    <Id>aquaticcenter</Id>
+    <Media>images/maps/athletics/pool.png</Media>
+    <Heading>Boilermaker Aquatic Center</Heading>
+    <Description>null</Description>
+
+  </Athletic>
+    </Locations>
+  <Locations>
+  <Athletic>
+
+    <Type>"Athletics"</Type>
+    <Link>#rankintrack</Link>
+    <Title>athletics_rankintrack</Title>
+    <image>images/pins/pin_yellow.png</image>
+    <Id>rankintrack</Id>
+    <Media>images/maps/athletics/rankin.png</Media>
+    <Heading>Rankin Track</Heading>
+    <Description>null</Description>
+
+  </Athletic>
+    </Locations>
+  <Locations>
+  <Athletic>
+
+    <Type>"Athletics"</Type>
+    <Link>#rankintrack</Link>
+    <Title>athletics_rankintrack</Title>
+    <image>images/pins/pin_yellow.png</image>
+    <Id>rankintrack</Id>
+    <Media>images/maps/athletics/rankin.png</Media>
+    <Heading>Rankin Track</Heading>
+    <Description>null</Description>
+
+  </Athletic>
+    </Locations>
+  <Locations>
+  <Athletic>
+
+    <Type>"Athletics"</Type>
+    <Link>#ropescourse</Link>
+    <Title>athletics_ropescourse</Title>
+    <image>images/pins/pin_yellow.png</image>
+    <Id>ropescourse</Id>
+    <Media>images/maps/athletics/ropes.png</Media>
+    <Heading>Ropes Course</Heading>
+    <Description>null</Description>
+
+  </Athletic>
+    </Locations>
+  <Locations>
+  <Dine>
+
+    <Type>"Dining"</Type>
+    <Link>#unioncommons</Link>
+    <Title>dining_unioncommons</Title>
+    <image>images/pins/pin_orange.png</image>
+    <Id>unioncommons</Id>
+    <Media>images/maps/dining/pmu_commons.png</Media>
+    <Heading>Union Commons</Heading>
+    <Description>null</Description>
+    
+
+  </Dine>
+    </Locations>
+  <Locations>
+  <Dine>
+
+    <Type>"Dining"</Type>
+    <Link>#stewcatering</Link>
+    <Title>dining_stewcatering</Title>
+    <image>images/pins/pin_orange.png</image>
+    <Id>stewcatering</Id>
+    <Media>images/maps/dining/stew_catering.png</Media>
+    <Heading>Catering</Heading>
+    <Description>null</Description>
+    
+
+  </Dine>
+    </Locations>
+  <Locations>
+  <Dine>
+
+    <Type>"Dining"</Type>
+    <Link>#fordcourt</Link>
+    <Title>dining_fordcourt</Title>
+    <image>images/pins/pin_orange.png</image>
+    <Id>fordcourt</Id>
+    <Media>images/maps/dining/ford.png</Media>
+    <Heading>Ford Dining Court</Heading>
+    <Description>Asian, Pizza, Salad Bar, Grill, Comfort, Desserts</Description>
+   
+  </Dine>
+    </Locations>
+  <Locations>
+  <Dine>
+
+    <Type>"Dining"</Type>
+    <Link>#earhartcourt</Link>
+    <Title>dining_earhartcourt</Title>
+    <image>images/pins/pin_orange.png</image>
+    <Id>earhartcourt</Id>
+    <Media>images/maps/dining/earhart_dining.png</Media>
+    <Heading>Earhart Dining Court</Heading>
+    <Description>Mongolian Barbeque</Description>
+   
+  </Dine>
+    </Locations>
+  <Locations>
+  <Dine>
+
+    <Type>"Dining"</Type>
+    <Link>#wileycourt</Link>
+    <Title>dining_wileycourt</Title>
+    <image>images/pins/pin_orange.png</image>
+    <Id>wileycourt</Id>
+    <Media>images/maps/dining/wiley.png</Media>
+    <Heading>Wiley Dining Court</Heading>
+    <Description>Churascuria</Description>
+   
+  </Dine>
+    </Locations>
+  <Locations>
+  <Dine>
+
+    <Type>"Dining"</Type>
+    <Link>#hillenbrandcourt</Link>
+    <Title>dining_hillenbrandcourt</Title>
+    <image>images/pins/pin_orange.png</image>
+    <Id>hillenbrandcourt</Id>
+    <Media>images/maps/dining/hillenbrand_dining.png</Media>
+    <Heading>Hillenbrand Dining Court</Heading>
+    <Description>BYO Quesadilla</Description>
+   
+  </Dine>
+    </Locations>
+  <Locations>
+    <Dine>
+
+      <Type>"Dining"</Type>
+      <Link>#windsorcourt</Link>
+      <Title>dining_windsorcourt</Title>
+      <image>images/pins/pin_orange.png</image>
+      <Id>windsorcourt</Id>
+      <Media>images/maps/dining/windsor_dining.png</Media>
+      <Heading>Windsor Dining Court</Heading>
+      <Description>Sizzling Salads</Description>
+      
+    </Dine>
+  </Locations>
+</Records>
