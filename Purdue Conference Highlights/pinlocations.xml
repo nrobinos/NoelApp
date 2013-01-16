@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Records>
+  <Locations>
   <Venue>
 
     <Type>"Venues"</Type>
@@ -12,7 +13,8 @@
     <Description>null</Description>
     
   </Venue>
-
+  </Locations>
+  <Locations>
   <Venue>
 
     <Type>"Venues"</Type>
@@ -27,7 +29,8 @@
     </Description>
 
   </Venue>
-
+  </Locations>
+  <Locations>
     <Venue>
 
     <Type>"Venues"</Type>
@@ -40,6 +43,8 @@
     <Description>UNIV, REC, STON, MTHW, BRNG, MAT, PSYCH</Description>
 
   </Venue>
+  </Locations>
+  <Locations>
   <Venue>
 
     <Type>"Venues"</Type>
@@ -52,7 +57,8 @@
     <Description>null</Description>
 
   </Venue>
-
+  </Locations>
+  <Locations>
   <Venue>
 
     <Type>"Venues"</Type>
@@ -65,7 +71,8 @@
     <Description>KRAN, RAWLS, KRANNERT CENTER, YONG</Description>
 
   </Venue>
-
+  </Locations>
+  <Locations>
   <Venue>
 
     <Type>"Venues"</Type>
@@ -78,6 +85,8 @@
     <Description>ARMS, CIVL, PHYS, ME, EE, KNOY</Description>
 
   </Venue>
+  </Locations>
+  <Locations>
   <Venue>
 
     <Type>"Venues"</Type>
@@ -90,7 +99,8 @@
     <Description>null</Description>
 
   </Venue>
-
+  </Locations>
+  <Locations>
   <Venue>
 
     <Type>"Venues"</Type>
@@ -103,6 +113,8 @@
     <Description>Shively Club, Buchanan Club, Buchanan Mingling, Media Suite</Description>
 
   </Venue>
+  </Locations>
+  <Locations>
   <Venue>
 
     <Type>"Venues"</Type>
@@ -115,7 +127,8 @@
     <Description>null</Description>
 
   </Venue>
-
+  </Locations>
+  <Locations>
   <Lodge>
 
     <Type>"Lodging"</Type>
@@ -128,7 +141,8 @@
     <Description>Deluxe Room, Double Twin, Queen</Description>
     
   </Lodge>
-
+    </Locations>
+  <Locations>
   <Lodge>
 
     <Type>"Lodging"</Type>
@@ -141,7 +155,8 @@
     <Description>Suite-style A/C doubles</Description>
     
   </Lodge>
-
+    </Locations>
+  <Locations>
   <Lodge>
 
     <Type>"Lodging"</Type>
@@ -153,6 +168,8 @@
     <Heading>Earhart Residence Hall</Heading>
     <Description>Traditional A/C</Description>
   </Lodge>
+    </Locations>
+  <Locations>
   <Lodge>
 
     <Type>"Lodging"</Type>
@@ -165,7 +182,8 @@
     <Description>Single A/C with Private Bath, Study Lounge, TV Lounge, Conference Room</Description>
    
   </Lodge>
-
+    </Locations>
+  <Locations>
   <Lodge>
 
     <Type>"Lodging"</Type>
@@ -178,7 +196,8 @@
     <Description>Traditional A/C</Description>
    
   </Lodge>
-
+    </Locations>
+  <Locations>
   <Lodge>
 
     <Type>"Lodging"</Type>
@@ -191,7 +210,8 @@
     <Description>Suite-style A/C doubles</Description>
    
   </Lodge>
-
+    </Locations>
+  <Locations>
   <Lodge>
 
     <Type>"Lodging"</Type>
@@ -204,7 +224,8 @@
     <Description>Traditional A/C, Computer Lab, Conference Rooms</Description>
    
   </Lodge>
-
+    </Locations>
+  <Locations>
   <Lodge>
 
     <Type>"Lodging"</Type>
@@ -217,7 +238,8 @@
     <Description>Traditional A/C</Description>
 
   </Lodge>
-
+    </Locations>
+  <Locations>
   <Lodge>
 
     <Type>"Lodging"</Type>
@@ -230,7 +252,8 @@
     <Description>Traditional A/C</Description>
    
   </Lodge>
-
+    </Locations>
+  <Locations>
   <Theatres>
 
     <Type>"Theatre"</Type>
@@ -252,7 +275,8 @@
     </Description>
 
   </Theatres>
-
+    </Locations>
+  <Locations>
   <Theatres>
 
     <Type>"Theatre"</Type>
@@ -265,7 +289,8 @@
     <Description>null</Description>
 
   </Theatres>
-
+    </Locations>
+  <Locations>
   <Theatres>
 
     <Type>"Theatre"</Type>
@@ -278,7 +303,8 @@
     <Description>null</Description>
 
   </Theatres>
-
+    </Locations>
+  <Locations>
   <Theatres>
 
     <Type>"Theatre"</Type>
@@ -291,7 +317,8 @@
     <Description>null</Description>
 
   </Theatres>
-
+    </Locations>
+  <Locations>
   <Athletic>
 
     <Type>"Athletics"</Type>
@@ -304,7 +331,8 @@
     <Description>null</Description>
 
   </Athletic>
-
+    </Locations>
+  <Locations>
   <Athletic>
 
     <Type>"Athletics"</Type>
@@ -317,7 +345,8 @@
     <Description>null</Description>
 
   </Athletic>
-
+    </Locations>
+  <Locations>
   <Athletic>
 
     <Type>"Athletics"</Type>
@@ -330,7 +359,8 @@
     <Description>null</Description>
 
   </Athletic>
-
+    </Locations>
+  <Locations>
   <Athletic>
 
     <Type>"Athletics"</Type>
@@ -343,7 +373,8 @@
     <Description>null</Description>
 
   </Athletic>
-
+    </Locations>
+  <Locations>
   <Athletic>
 
     <Type>"Athletics"</Type>
@@ -356,7 +387,8 @@
     <Description>null</Description>
 
   </Athletic>
-
+    </Locations>
+  <Locations>
   <Athletic>
 
     <Type>"Athletics"</Type>
@@ -369,7 +401,8 @@
     <Description>null</Description>
 
   </Athletic>
-
+    </Locations>
+  <Locations>
   <Athletic>
 
     <Type>"Athletics"</Type>
@@ -382,7 +415,8 @@
     <Description>null</Description>
 
   </Athletic>
-
+    </Locations>
+  <Locations>
   <Athletic>
 
     <Type>"Athletics"</Type>
@@ -395,7 +429,8 @@
     <Description>null</Description>
 
   </Athletic>
-
+    </Locations>
+  <Locations>
   <Athletic>
 
     <Type>"Athletics"</Type>
@@ -408,7 +443,8 @@
     <Description>null</Description>
 
   </Athletic>
-
+    </Locations>
+  <Locations>
   <Athletic>
 
     <Type>"Athletics"</Type>
@@ -421,7 +457,8 @@
     <Description>null</Description>
 
   </Athletic>
-
+    </Locations>
+  <Locations>
   <Athletic>
 
     <Type>"Athletics"</Type>
@@ -434,7 +471,8 @@
     <Description>null</Description>
 
   </Athletic>
-
+    </Locations>
+  <Locations>
   <Athletic>
 
     <Type>"Athletics"</Type>
@@ -447,7 +485,8 @@
     <Description>null</Description>
 
   </Athletic>
-
+    </Locations>
+  <Locations>
   <Dine>
 
     <Type>"Dining"</Type>
@@ -458,9 +497,11 @@
     <Media>images/maps/dining/pmu_commons.png</Media>
     <Heading>Union Commons</Heading>
     <Description>null</Description>
+    
 
   </Dine>
-
+    </Locations>
+  <Locations>
   <Dine>
 
     <Type>"Dining"</Type>
@@ -471,9 +512,11 @@
     <Media>images/maps/dining/stew_catering.png</Media>
     <Heading>Catering</Heading>
     <Description>null</Description>
+    
 
   </Dine>
-
+    </Locations>
+  <Locations>
   <Dine>
 
     <Type>"Dining"</Type>
@@ -484,9 +527,10 @@
     <Media>images/maps/dining/ford.png</Media>
     <Heading>Ford Dining Court</Heading>
     <Description>Asian, Pizza, Salad Bar, Grill, Comfort, Desserts</Description>
-
+   
   </Dine>
-
+    </Locations>
+  <Locations>
   <Dine>
 
     <Type>"Dining"</Type>
@@ -497,9 +541,10 @@
     <Media>images/maps/dining/earhart_dining.png</Media>
     <Heading>Earhart Dining Court</Heading>
     <Description>Mongolian Barbeque</Description>
-
+   
   </Dine>
-
+    </Locations>
+  <Locations>
   <Dine>
 
     <Type>"Dining"</Type>
@@ -510,20 +555,35 @@
     <Media>images/maps/dining/wiley.png</Media>
     <Heading>Wiley Dining Court</Heading>
     <Description>Churascuria</Description>
-
+   
   </Dine>
-
+    </Locations>
+  <Locations>
   <Dine>
 
     <Type>"Dining"</Type>
-    <Link>#wileycourt</Link>
-    <Title>dining_wileycourt</Title>
+    <Link>#hillenbrandcourt</Link>
+    <Title>dining_hillenbrandcourt</Title>
     <image>images/pins/pin_orange.png</image>
-    <Id>wileycourt</Id>
-    <Media>images/maps/dining/wiley.png</Media>
-    <Heading>Wiley Dining Court</Heading>
-    <Description>Churascuria</Description>
-
+    <Id>hillenbrandcourt</Id>
+    <Media>images/maps/dining/hillenbrand_dining.png</Media>
+    <Heading>Hillenbrand Dining Court</Heading>
+    <Description>BYO Quesadilla</Description>
+   
   </Dine>
+    </Locations>
+  <Locations>
+    <Dine>
 
+      <Type>"Dining"</Type>
+      <Link>#windsorcourt</Link>
+      <Title>dining_windsorcourt</Title>
+      <image>images/pins/pin_orange.png</image>
+      <Id>windsorcourt</Id>
+      <Media>images/maps/dining/windsor_dining.png</Media>
+      <Heading>Windsor Dining Court</Heading>
+      <Description>Sizzling Salads</Description>
+      
+    </Dine>
+  </Locations>
 </Records>

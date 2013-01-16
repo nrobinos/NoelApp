@@ -9,7 +9,7 @@
 		<script src="scripts/JavaScript.js"></script>-->
 
 		<link href="styles/main.css" rel="stylesheet" />
-
+        
 		<!--META-->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -26,10 +26,10 @@
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 		<script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>-->
 		<!--END ARNAV's SAMPLE-->
-
+        
 	</head>
 
-	<body>
+	<body onload = "holders()">
 		<!--START TOGGLE VISIBILITY OF PINS-->
 		<script>
 			$(function() {
@@ -38,6 +38,7 @@
 					$("#Venues").toggle();
 				});
 			});
+
 			
 			$(function() {
 				$("#toggle2").click(function() {
@@ -94,7 +95,7 @@
 		<div data-role="page" id="campus_map" data-title=" ">
 			<div data-role="header" data-position="fixed" data-fullscreen="true">
 				<!--<div data-role="controlgroup" data-type="horizontal" data-mini="true">
-				<a href="#venues" data-role="button"><span style="color:red; font-size:50px; float:left; padding-right:10px;">&#8226;</span> Venues</a>
+				<a href="#Ven" data-role="button"><span style="color:red; font-size:50px; float:left; padding-right:10px;">&#8226;</span> Ven</a>
 				<a href="#lodging" data-role="button"><span style="color:green; font-size:50px; float:left; padding-right:10px;">&#8226;</span> Lodging</a>
 				<a href="#theatre" data-role="button"><span style="color:blue; font-size:50px; float:left; padding-right:10px;">&#8226;</span> Theatre</a>
 				<a href="#athletics" data-role="button"><span style="color:yellow; font-size:50px; float:left; padding-right:10px;">&#8226;</span> Athletics</a>
@@ -128,7 +129,7 @@
         xhttp.open("GET", "scripts/pinlocations.xml", false);
         xhttp.send();
         xmlDoc = xhttp.responseXML;
-        
+
         var x = xmlDoc.getElementsByTagName(name);
 
         var html_replace = "<img class='popphoto' src='" + x[i].getElementsByTagName("Media")[0].childNodes[0].nodeValue + "' alt='PMU' style='width:800px; height:600px;' >";
@@ -143,7 +144,6 @@
         document.getElementById(x[i].getElementsByTagName("Id")[0].childNodes[0].nodeValue).innerHTML = html_replace;
 
     }
-
 </script>
 
 <script>
@@ -163,47 +163,48 @@
             html_replace += "<img src='" + x[i].getElementsByTagName("image")[0].childNodes[0].nodeValue + "'style='width:40px; height:40px;' onclick = popup_function(" + i + ",'" + name + "')>";
             html_replace += "</div>";
             html_replace += "</a>";
+            //html_replace += "<div data-role=\"popup\"id=\"" + x[i].getElementsByTagName("Id")[0].childNodes[0].nodeValue + "\" data-overlay-theme=\"a\" data-theme=\"d\" data-corners=\"false\" data-position-to=\"window\"></div>";
 
         }
         document.getElementById(name).innerHTML = html_replace;
-       
+        
     }
 
 </script>
 
-			<div data-role="content">
-				<!--MAP -->
-				<!--<img class="map" src="media/map.jpg">-->
+<script>
+    function holders() {
+        xhttp = new XMLHttpRequest();
+        xhttp.open("GET", "pinlocations.xml", false);
+        xhttp.send();
+        xmlDoc = xhttp.responseXML;
 
-				<!-- PINS (red) and popup photo for Venues tab-->
+        var x = xmlDoc.getElementsByTagName("Locations");
+       
+        var html_replace ="";
+        for (i = 0; i < x.length; i++) 
+        {
+
+            html_replace += "<div data-role=\"popup\"id=\"" + x[i].getElementsByTagName("Id")[0].childNodes[0].nodeValue + "\" data-overlay-theme=\"a\" data-theme=\"d\" data-corners=\"false\" data-position-to=\"window\"></div>";
+
+        }
+        document.getElementById("popup_places").innerHTML = html_replace;
+    }
+</script>
+
+			<div data-role="content">
+				<div id="popup_places"></div>
+
+				<!-- PINS (red) and popup photo for Ven tab-->
 				<div id="Venues" style="display:none">
                 <div id='Venue'></div>
 
-<div data-role="popup" id="stew" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
-<div data-role="popup" id="pmu" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
-<div data-role="popup" id="arts" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
-<div data-role="popup" id="class50" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
-<div data-role="popup" id="business" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
-<div data-role="popup" id="engineer" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
-<div data-role="popup" id="dauch" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
-<div data-role="popup" id="rossadepavilion" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
-<div data-role="popup" id="discoverypark" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
-
-				</div> <!-- Div #Venues ends -->
+				</div> <!-- Div #Ven ends -->
 
 				<!-- PINS (green) and popup photo for Lodging tab-->
 				<div id="Lodging" style="display:none">
                 <div id="Lodge"></div>
 
-<div data-role="popup" id="unionhotel" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
-<div data-role="popup" id="earhart" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
-<div data-role="popup" id="cary" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
-<div data-role="popup" id="firststreet" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
-<div data-role="popup" id="harrison" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
-<div data-role="popup" id="hillenbrand" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
-<div data-role="popup" id="mccutcheon" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
-<div data-role="popup" id="shreve" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
-<div data-role="popup" id="windsor" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
 
 				</div> <!-- Div #Lodging ends -->
 
@@ -211,10 +212,7 @@
 				<div id="Theatre" style="display:none">
 
                 <div id="Theatres"></div>
-<div data-role="popup" id="elliot" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
-<div data-role="popup" id="fowler" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
-<div data-role="popup" id="loeb" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
-<div data-role="popup" id="slayter" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
+
 
 				</div> <!-- Div #Theatre ends -->
 
@@ -222,30 +220,12 @@
 				<div id="Athletics" style="display:none">
                 <div id="Athletic"></div>
 
-                <div data-role="popup" id="reccenter" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
-<div data-role="popup" id="rossadestadium" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
-<div data-role="popup" id="mackey" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
-<div data-role="popup" id="lambert" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
-<div data-role="popup" id="golfcomplex" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
-<div data-role="popup" id="schwartz" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
-<div data-role="popup" id="baseballcomplex" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
-<div data-role="popup" id="aquaticcenter" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
-<div data-role="popup" id="rankintrack" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
-<div data-role="popup" id="ropescourse" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
        
 				</div> <!-- Div #Athletics ends -->
 
 				<!-- PINS (orange) and popup photo for Dining tab-->
 				<div id="Dining" style="display:none">
                 <div id="Dine"></div>
-
-<div data-role="popup" id="unioncommons" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
-<div data-role="popup" id="stewcatering" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
-<div data-role="popup" id="fordcourt" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
-<div data-role="popup" id="earhartcourt" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
-<div data-role="popup" id="wileycourt" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
-<div data-role="popup" id="hillenbrandcourt" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
-<div data-role="popup" id="windsorcourt" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window"></div>
 
      			</div> <!-- Div #Dining ends -->
 
