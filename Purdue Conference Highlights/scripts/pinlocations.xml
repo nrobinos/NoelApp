@@ -165,7 +165,7 @@
     <image>images/pins/pin_green.png</image>
     <Id>earhart</Id>
     <Media>images/maps/lodging/earhart_lodging.png</Media>
-    <Heading>Earhart Residence Hall</Heading>
+    <Heading> Earhart Residence Hall</Heading>
     <Description>Traditional A/C</Description>
   </Lodge>
     </Locations>
