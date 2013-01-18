@@ -45,7 +45,6 @@
     <Folder Include="images\services" />
     <Folder Include="jquery-mobile" />
     <Folder Include="jquery-mobile\images" />
-    <Folder Include="test" />
     <Folder Include="scripts" />
   </ItemGroup>
   <ItemGroup>
@@ -183,7 +182,6 @@
       <Platform>Android</Platform>
       <TargetName>cordova.js</TargetName>
     </Content>
-    <Content Include="test\HtmlPage.html" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Telerik\ICE\Tools\Mobile\MobileTools.targets" />
 </Project>
