@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Conference Sales Application</title>
@@ -9,7 +9,7 @@
 		<script src="scripts/JavaScript.js"></script>-->
 
 		<link href="styles/main.css" rel="stylesheet" />
-        
+
 		<!--META-->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -19,17 +19,17 @@
 		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>-->
 		<link href="jquery-mobile/jquery.mobile-1.2.0.min.css" rel="stylesheet" type="text/css" />
 		<script src="jquery-mobile/jquery-1.8.2.min.js" type="text/javascript"></script>
-		<script src="jquery-mobile/jquery.mobile-1.2.0.min.js" type="text/javascript"></script>
+		<script src="jquery-mobile/jquery.mobile-1.2.0.min.js" type="text/javascript"></script> 
 
 		<!--START ARNAV's SAMPLE
 		<!--We don't need a reference to the lower version of jquery
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 		<script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>-->
 		<!--END ARNAV's SAMPLE-->
-        
+
 	</head>
-<!--END ARNAV's SAMPLE-->
-	<body onload = "holders()">
+
+	<body  onload = "holders()">
 		<!--START TOGGLE VISIBILITY OF PINS-->
 		<script>
 			$(function() {
@@ -38,7 +38,6 @@
 					$("#Venues").toggle();
 				});
 			});
-
 			
 			$(function() {
 				$("#toggle2").click(function() {
@@ -95,7 +94,7 @@
 		<div data-role="page" id="campus_map" data-title=" ">
 			<div data-role="header" data-position="fixed" data-fullscreen="true">
 				<!--<div data-role="controlgroup" data-type="horizontal" data-mini="true">
-				<a href="#Ven" data-role="button"><span style="color:red; font-size:50px; float:left; padding-right:10px;">&#8226;</span> Ven</a>
+				<a href="#venues" data-role="button"><span style="color:red; font-size:50px; float:left; padding-right:10px;">&#8226;</span> Venues</a>
 				<a href="#lodging" data-role="button"><span style="color:green; font-size:50px; float:left; padding-right:10px;">&#8226;</span> Lodging</a>
 				<a href="#theatre" data-role="button"><span style="color:blue; font-size:50px; float:left; padding-right:10px;">&#8226;</span> Theatre</a>
 				<a href="#athletics" data-role="button"><span style="color:yellow; font-size:50px; float:left; padding-right:10px;">&#8226;</span> Athletics</a>
@@ -122,28 +121,27 @@
 				</div>
 			</div>
 
-            
-<script type="text/javascript">
-    function popup_function(i, name) {
-        xhttp = new XMLHttpRequest();
-        xhttp.open("GET", "scripts/pinlocations.xml", false);
-        xhttp.send();
-        xmlDoc = xhttp.responseXML;
+			<script type="text/javascript">
+			    function popup_function(i, name) {
+			        xhttp = new XMLHttpRequest();
+			        xhttp.open("GET", "scripts/pinlocations.xml", false);
+			        xhttp.send();
+			        xmlDoc = xhttp.responseXML;
 
-        var x = xmlDoc.getElementsByTagName(name);
+			        var x = xmlDoc.getElementsByTagName(name);
 
-        var html_replace = "<img class='popphoto' src='" + x[i].getElementsByTagName("Media")[0].childNodes[0].nodeValue + "' alt='PMU' style='width:800px; height:600px;' >";
-        html_replace += "<a href='#' data-rel='back' data-role='button' data-theme='a' data-icon='delete' data-iconpos='notext' class='ui-btn-right'> <img src='images/delete/delete_icon.png' style='width:30px; height:30px;'></a>";
-        html_replace += " <div class='details'>";
-        html_replace += "<h3>" + x[i].getElementsByTagName("Heading")[0].childNodes[0].nodeValue + "</h3>";
-        if (x[i].getElementsByTagName("Description")[0].childNodes[0].nodeValue != "null") {
-            html_replace += "<p>" + x[i].getElementsByTagName("Description")[0].childNodes[0].nodeValue + "</p>";
-        }
-        html_replace += "</div>";
+			        var html_replace = "<img class='popphoto' src='" + x[i].getElementsByTagName("Media")[0].childNodes[0].nodeValue + "' alt='PMU' style='width:800px; height:600px;' >";
+			        html_replace += "<a href='#' data-rel='back' data-role='button' data-theme='a' data-icon='delete' data-iconpos='notext' class='ui-btn-right'> <img src='images/delete/delete_icon.png' style='width:30px; height:30px;'></a>";
+			        html_replace += " <div class='details'>";
+			        html_replace += "<h3>" + x[i].getElementsByTagName("Heading")[0].childNodes[0].nodeValue + "</h3>";
+			        if (x[i].getElementsByTagName("Description")[0].childNodes[0].nodeValue != "null") {
+			            html_replace += "<p>" + x[i].getElementsByTagName("Description")[0].childNodes[0].nodeValue + "</p>";
+			        }
+			        html_replace += "</div>";
 
-        document.getElementById(x[i].getElementsByTagName("Id")[0].childNodes[0].nodeValue).innerHTML = html_replace;
+			        document.getElementById(x[i].getElementsByTagName("Id")[0].childNodes[0].nodeValue).innerHTML = html_replace;
 
-    }
+			    }
 </script>
 
 <script>
@@ -154,7 +152,7 @@
         xmlDoc = xhttp.responseXML;
 
         var x = xmlDoc.getElementsByTagName(name);
-        
+
         var html_replace = null;
         for (i = 0; i < x.length; i++) {
 
@@ -167,7 +165,7 @@
 
         }
         document.getElementById(name).innerHTML = html_replace;
-        
+
     }
 
 </script>
@@ -180,10 +178,9 @@
         xmlDoc = xhttp.responseXML;
 
         var x = xmlDoc.getElementsByTagName("Locations");
-       
-        var html_replace ="";
-        for (i = 0; i < x.length; i++) 
-        {
+
+        var html_replace = "";
+        for (i = 0; i < x.length; i++) {
 
             html_replace += "<div data-role=\"popup\"id=\"" + x[i].getElementsByTagName("Id")[0].childNodes[0].nodeValue + "\" data-overlay-theme=\"a\" data-theme=\"d\" data-corners=\"false\" data-position-to=\"window\"></div>";
 
@@ -283,7 +280,6 @@
 							<img class="popphoto3" src="images/services/popup_speaker.png" alt="Speaker and Entertainment">
 						</div>
 					</div>
-
 					<div>
 						<a href="#popupPhoto4" data-rel="popup"  data-transition="flip">
 							<img src="images/services/tile_site.png" width="100%">
@@ -306,7 +302,6 @@
                         <br>
                         <br>
 					</div>
-
 
 				<!--</div>END of ui-grid-b-->
 
@@ -338,7 +333,13 @@
 					<p>Almost 70,000 participants attended a conference, purchased tickets for a festival, golfed in an outing, or attended a webinar last year.</p>
 					<p>Today, Purdue's Conference Division services over 700 events annually, striving to meet the unique needs and objectives of each one. From a professional staff of experienced conference coordinators, to state-of-the-art facilities and services, Purdue upholds a tradition of excellence with one of the largest collegiate conference programs in the nation.</p>
 					<p>Whether you are looking to bring a group of 5 or a group of 5,000, you can put your confidence in Purdue Conference Division's 20 coordinators, registration assistants, and clerical assistants, who are supported by over 20 business and IT staff members. We currently have 2 Certified Meeting Planners, with 2 more working toward certification. We have the expertise to assist you with everything from online registration and abstract management to technology and business needs.</p>
-				</div>
+                </div>
+                <div style="padding:3%; width:50%; background-color: rgba(0,0,0,.8); color: #ffffff; font-size:11px;">
+                    <p>Purdue University, West Lafayette, IN 47907<br>
+                    © 2013 Purdue University | An equal access/equal opportunity university<br>
+                    For comments or feedback about this app, please contact PEC-IT at <a style="text-decoration:none; color: #E3AE24;" href="mailto:pecsysadmin@purdue.edu">pecsysadmin@purdue.edu</a>
+                    </p>
+                </div>
 
 			</div>
 
