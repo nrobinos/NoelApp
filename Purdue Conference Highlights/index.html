@@ -153,7 +153,7 @@
 
         var x = xmlDoc.getElementsByTagName(name);
 
-        var html_replace = null;
+        var html_replace = "";
         for (i = 0; i < x.length; i++) {
 
             html_replace += "<a href='" + x[i].getElementsByTagName("Link")[0].childNodes[0].nodeValue + "' data-rel='popup'>";
