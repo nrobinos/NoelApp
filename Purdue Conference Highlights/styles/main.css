@@ -48,6 +48,17 @@ body
     width: 100%;*/
     }
     
+    #services
+    {
+    background: url(../images/services/ServicesMap_Portrait.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    /*height: 890px;
+    width: 100%;*/
+    }    
+    
     #about
     {
     background: url(../images/about/about_portrait.jpg) no-repeat center center fixed;
@@ -334,6 +345,43 @@ body
     left:45.6%;
     }
     
+ /*SERVICES - Map Points*/
+    #services_purdue{
+    position:absolute;
+    top:45.5%; 
+    left:21%;
+    }
+    
+    #services_vegas{
+    position:absolute;
+    top:46%; 
+    left:13%;
+    }
+    
+    #services_turkey{
+    position:absolute;
+    top:46%; 
+    left:55%;
+    }
+    
+    #services_florida{
+    position:absolute;
+    top:48%; 
+    left:22%;
+    }
+    
+    #services_scotland{
+    position:absolute;
+    top:41%; 
+    left:45%;
+    }
+    
+    #services_newyork{
+    position:absolute;
+    top:45%; 
+    left:24%;
+    }
+    
 }
 /* END - CSS FOR PORTRAIT ORIENTATION*/
 
@@ -349,6 +397,21 @@ body
     /*height: 890px;
     width: 100%;*/
     }
+    
+    #services
+    {
+    background: url(../images/services/ServicesMap_Landscape.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    /*height: 890px;
+    width: 100%;*/
+    }
+    
+    .zoom50 {zoom:150%;}
+    .zoom100 {zoom:200%;}
+    .zoom0 {zoom:100%;}
     
     #about
     {
@@ -634,6 +697,43 @@ body
     position:absolute; 
     top:53%; 
     left:52%;
+    }
+    
+ /*SERVICES - Map Points*/
+    #services_purdue{
+    position:absolute;
+    top:43%; 
+    left:21%;
+    }
+    
+    #services_vegas{
+    position:absolute;
+    top:44%; 
+    left:13%;
+    }
+    
+    #services_turkey{
+    position:absolute;
+    top:43%; 
+    left:55%;
+    }
+    
+    #services_florida{
+    position:absolute;
+    top:47%; 
+    left:22%;
+    }
+    
+    #services_scotland{
+    position:absolute;
+    top:34%; 
+    left:45%;
+    }
+    
+    #services_newyork{
+    position:absolute;
+    top:42%; 
+    left:25%;
     }
     
 }/* END - CSS FOR LANDSCAPE ORIENTATION*/
