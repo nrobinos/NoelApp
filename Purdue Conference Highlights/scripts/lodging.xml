@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<Records>
+  
+
+    <lodge>
+        
+        <name>First Street</name>
+        <address>Purdue University</address>
+        <img>img/first.png</img>
+        <img2></img2>
+        <img3></img3>
+        <caption>First Street</caption>
+        <lat>40.42487</lat>
+        <lng>-86.92457</lng>
+        
+    </lodge>
+
+    <lodge>
+        <name>Cary Quadrangle</name>
+        <address>Purdue University</address>
+        <img>img/cary.png</img>
+        <img2></img2>
+        <img3></img3>
+        <caption>Cary Quadrangle</caption>
+        <lat>40.43195</lat>
+        <lng>-86.91820</lng>
+        
+   </lodge>
+    
+    <lodge>
+        <name>Wiley</name>
+        <address>Purdue University</address>
+        <img></img>
+        <img2></img2>
+        <img3></img3>
+        <caption>Wiley</caption>
+        <lat>40.42973</lat>
+        <lng>-86.92083</lng>
+        
+   </lodge>
+    
+    
+    <lodge>
+        <name>harrison Hall</name>
+        <address>Purdue University</address>
+        <img>img/harrison.png</img>
+        <img2></img2>
+        <img3></img3>
+        <caption>harrison Hall</caption>
+        <lat>40.42496</lat>
+        <lng>-86.92685</lng>
+        
+   </lodge>
+    
+    <lodge>
+        <name>Mccutcheon</name>
+        <address>Purdue University</address>
+        <img>img/mccutcheon.png</img>
+        <img2></img2>
+        <img3></img3>
+        <caption>Mccutcheon</caption>
+        <lat>40.42498</lat>
+        <lng>-86.92810</lng>
+        
+   </lodge>
+    
+    <lodge>
+        <name>Owen Hall</name>
+        <address>Purdue University</address>
+        <img></img>
+        <img2></img2>
+        <img3></img3>
+        <caption>Owen Hall</caption>
+        <lat>40.43200</lat>
+        <lng>-86.92076</lng>
+        
+   </lodge>
+
+    <lodge>
+        <name>Shreve Hall</name>
+        <address>Purdue University</address>
+        <img>img/shreve.png</img>
+        <img2></img2>
+        <img3></img3>
+        <caption>Shreve Hall</caption>
+        <lat>40.42673</lat>
+        <lng>-86.92499</lng>
+        
+   </lodge>
+    
+    <lodge>
+        <name>Earhart Hall</name>
+        <address>Purdue University</address>
+        <img>img/earhart_lodging.png</img>
+        <img2></img2>
+        <img3></img3>
+        <caption>Earhart Hall</caption>
+        <lat>40.42580</lat>
+        <lng>-86.92495</lng>
+        
+   </lodge>
+    
+    <lodge>
+        <name>Hillenbrand Hall</name>
+        <address>Purdue University</address>
+        <img>img/hillenbrand_lodging.png</img>
+        <img2></img2>
+        <img3></img3>
+        <caption>Hillenbrand Hall</caption>
+        <lat>40.42666</lat>
+        <lng>-86.92675</lng>
+        
+   </lodge>
+    
+</Records>

@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<Records>
+  
+
+    <theatre>
+        
+        <name>Elliot Hall of Music</name>
+        <address>Purdue University</address>
+        <img>img/elliot.png</img>
+        <img2></img2>
+        <img3></img3>
+        <caption>Elliot Hall of Music</caption>
+        <lat>40.42776</lat>
+        <lng>-86.91527</lng>
+        
+    </theatre>
+
+    <theatre>
+        <name>Fowler</name>
+        <address>Purdue University</address>
+        <img>img/fowler.png</img>
+        <img2></img2>
+        <img3></img3>
+        <caption>Fowler</caption>
+        <lat>40.42475</lat>
+        <lng>-86.91329</lng>
+        
+   </theatre>
+    
+    <theatre>
+        <name>Loeb Playhouse</name>
+        <address>Purdue University</address>
+        <img>img/loeb.png</img>
+        <img2></img2>
+        <img3></img3>
+        <caption>Loeb Playhouse</caption>
+        <lat>40.42535</lat>
+        <lng>-86.91326</lng>
+        
+   </theatre>
+    
+    
+    <theatre>
+        <name>Slayter Hill</name>
+        <address>Purdue University</address>
+        <img>img/slayter.png</img>
+        <img2></img2>
+        <img3></img3>
+        <caption>Slayter Hill</caption>
+        <lat>40.43213</lat>
+        <lng>-86.92256</lng>
+        
+   </theatre>
+    
+   
+</Records>

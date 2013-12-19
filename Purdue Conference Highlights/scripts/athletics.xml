@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<Records>
+  
+
+    <athletics>
+        
+        <name>RSC</name>
+        <address>Purdue University</address>
+        <img>img/rsc.png</img>
+        <img2></img2>
+        <img3></img3>
+        <caption>RSC</caption>
+        <lat>40.42814</lat>
+        <lng>-86.92241</lng>
+        
+    </athletics>
+
+    <athletics>
+        <name>Mackey Arena</name>
+        <address>Purdue University</address>
+        <img>img/mackey.png</img>
+        <img2>img/</img2>
+        <img3>img/</img3>
+        <caption>Mackey Arena</caption>
+        <lat>40.43326</lat>
+        <lng>-86.91632</lng>
+        
+   </athletics>
+    
+    <athletics>
+        <name>Lambert</name>
+        <address>Purdue University</address>
+        <img>img/lambert.png</img>
+        <img2></img2>
+        <img3></img3>
+        <caption>Lambert</caption>
+        <lat>40.43231</lat>
+        <lng>-86.91595</lng>
+        
+   </athletics>
+    
+    
+    <athletics>
+        <name>Track and Field</name>
+        <address>Purdue University</address>
+        <img>img/rankin.png</img>
+        <img2></img2>
+        <img3></img3>
+        <caption>Track and Field</caption>
+        <lat>40.43048</lat>
+        <lng>-86.92271</lng>
+        
+   </athletics>
+    
+    <athletics>
+        <name>Ross Ade</name>
+        <address>Purdue University</address>
+        <img>img/rossade_atheletics.png</img>
+        <img2></img2>
+        <img3></img3>
+        <caption>Ross Ade</caption>
+        <lat>40.43395</lat>
+        <lng>-86.91835</lng>
+        
+   </athletics>
+    
+    <athletics>
+        <name>Schwartz Tennis Center</name>
+        <address>Purdue University</address>
+        <img>img/tennis.png</img>
+        <img2></img2>
+        <img3></img3>
+        <caption>Schwartz Tennis Center</caption>
+        <lat>40.43677</lat>
+        <lng>-86.93775</lng>
+        
+   </athletics>
+    
+    <athletics>
+        <name>Aquatics Centre</name>
+        <address>Purdue University</address>
+        <img>img/pool.png</img>
+        <img2></img2>
+        <img3></img3>
+        <caption>Aquatics center</caption>
+        <lat>40.42824</lat>
+        <lng>-86.92371</lng>
+        
+   </athletics>
+
+    <athletics>
+        <name>Birck Golf</name>
+        <address>Purdue University</address>
+        <img>img/golf.png</img>
+        <img2></img2>
+        <img3></img3>
+        <caption>Birck Golf</caption>
+        <lat>40.44009</lat>
+        <lng>-86.92550</lng>
+        
+   </athletics>
+    
+</Records>

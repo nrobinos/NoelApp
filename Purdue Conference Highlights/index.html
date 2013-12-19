@@ -20,58 +20,38 @@
 		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>-->
 		<link href="jquery-mobile/jquery.mobile-1.2.0.min.css" rel="stylesheet" type="text/css" />
 		<script src="jquery-mobile/jquery-1.8.2.min.js" type="text/javascript"></script>
+        
+        <!--For slideshow-->
+        <script type="text/javascript" src="scripts/slides.js"></script> 
+        <link rel="stylesheet" type="text/css" href="styles/global.css" />
+        
 		<script src="jquery-mobile/jquery.mobile-1.2.0.min.js" type="text/javascript"></script>
         
-        <!--ZOOMOOZ for ZOOMING SERVICES CONTENT - http://jaukia.github.io/zoomooz/ 
-        <script src="zoomooz/jquery.zoomooz.min.js"></script>-->
+        <!--Google Maps -->
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?v=3.11&sensor=false"></script> 
+        <link href="http://code.google.com/apis/maps/documentation/javascript/examples/default.css" rel="stylesheet" type="text/css" />
+        
+        
+        <!--ZOOMOOZ for ZOOMING SERVICES CONTENT - http://jaukia.github.io/zoomooz/ -->
+        <script src="zoomooz/jquery.zoomooz.min.js"></script>
         
 		<!--START ARNAV's SAMPLE
 		<!--We don't need a reference to the lower version of jquery
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 		<script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>-->
 		<!--END ARNAV's SAMPLE-->
-
+	
+        <!--Timeout-->
+     <script type="text/javascript">
+          window.onload = function () {
+              setTimeout("initialize()", 2000);
+          }
+	</script> 
+        
+        
 	</head>
 
 	<body>
-		<!--START TOGGLE VISIBILITY OF PINS-->
-		<script>
-			$(function() {
-				$("#toggle1").click(function() { 
-					// Toggles Venues Div
-					$("#Venues").toggle();
-				});
-			});
-			
-			$(function() {
-				$("#toggle2").click(function() {
-					// Toggles Lodging Div  
-					$("#Lodging").toggle();
-				});
-			});
-			
-			$(function() {
-				$("#toggle3").click(function() {
-					// Toggles Theatre Div  
-					$("#Theatre").toggle();
-				});
-			});
-			
-			$(function() {
-				$("#toggle4").click(function() {
-					// Toggles Athletics Div  
-					$("#Athletics").toggle();
-				});
-			});
-            			
-			$(function() {
-				$("#toggle5").click(function() {
-					// Toggles Dining Div  
-					$("#Dining").toggle();
-				});
-			});
-		</script>
-		<!--END TOGGLE VISIBILITY OF PINS-->
         
         <!--START MAIN PAGE-->
 		<div data-role="page" id="home" data-title=" ">
@@ -95,642 +75,29 @@
 		<!--END MAIN PAGE-->
 
 		<!--START CAMPUS MAP PAGE-->
-		<div data-role="page" id="campus_map" data-title=" ">
-			<div data-role="header" data-position="fixed" data-fullscreen="true">
-				<!--<div data-role="controlgroup" data-type="horizontal" data-mini="true">
-				<a href="#venues" data-role="button"><span style="color:red; font-size:50px; float:left; padding-right:10px;">&#8226;</span> Venues</a>
-				<a href="#lodging" data-role="button"><span style="color:green; font-size:50px; float:left; padding-right:10px;">&#8226;</span> Lodging</a>
-				<a href="#theatre" data-role="button"><span style="color:blue; font-size:50px; float:left; padding-right:10px;">&#8226;</span> Theatre</a>
-				<a href="#athletics" data-role="button"><span style="color:yellow; font-size:50px; float:left; padding-right:10px;">&#8226;</span> Athletics</a>
-				<a href="#dining" data-role="button"><span style="color:orange; font-size:50px; float:left; padding-right:10px;">&#8226;</span> Dining</a>
-				</div>-->
-                <h1>CAMPUS MAP</h1>
-				<div data-role="navbar">
-					<ul>
-						<li id="toggle1">
-							<a href="javascript:void(0)" >Venues <img src="images/pins/pin_red.png" style="width:20px; height:20px;"></a>
-						</li>
-						<li id="toggle2">
-							<a href="javascript:void(0)" >Lodging <img src="images/pins/pin_green.png" style="width:20px; height:20px;"></a>
-						</li>
-						<li id="toggle3">
-							<a href="javascript:void(0)" >Theatre <img src="images/pins/pin_blue.png" style="width:20px; height:20px;"></a>
-						</li>
-						<li id="toggle4">
-							<a href="javascript:void(0)" >Athletics <img src="images/pins/pin_yellow.png" style="width:20px; height:20px;"></a>
-						</li>
-						<li id="toggle5">
-							<a href="javascript:void(0)" >Dining <img src="images/pins/pin_orange.png" style="width:20px; height:20px;"></a>
-						</li>
-					</ul>
-				</div>
-			</div>
-
-			<div data-role="content">
-				<!--MAP -->
-				<!--<img class="map" src="media/map.jpg">-->
-
-				<!-- PINS (red) and popup photo for Venues tab-->
-				<div id="Venues" style="display:none">
-
-					<!--STEWART-->
-					<a href="#stew"  data-rel="popup" >
-						<div id="venues_stew">
-							<img src="images/pins/pin_red.png" style="width:40px; height:40px;">
-						</div>
-					</a>
-					<div data-role="popup" id="stew" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-                        <img class="popphoto" src="images/maps/venues/stew.png" alt="Stewart Center">
-						<div class="details">
-							<h3>Stewart Center</h3>
-						</div>
-
-					</div>
-
-					<!--PMU-->
-					<a href="#pmu"  data-rel="popup" >
-						<div id="venues_pmu">
-							<img src="images/pins/pin_red.png" style="width:40px; height:40px;">
-						</div>
-					</a>
-					<div data-role="popup" id="pmu" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-                        <img class="popphoto" src="images/maps/venues/pmu_venue.png" alt="PMU">
-						<div class="details">
-							<h3>Purdue Memorial Union</h3>
-							<p>North Ballroom, South Ballroom, East Faculty Lounge, West Faculty Lounge, Anniversary Drawing Room</p>
-						</div>
-					</div>
-
-					<!--LIBERAL ARTS MALL-->
-					<a href="#arts"  data-rel="popup" >
-						<div id="venues_arts">
-							<img src="images/pins/pin_red.png" style="width:40px; height:40px;">
-						</div>
-					</a>
-					<div data-role="popup" id="arts" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-						<img class="popphoto" src="images/maps/venues/la.png" alt="Liberal Arts">
-						<div class="details">
-							<h3>Liberal Arts Mall</h3>
-							<p>UNIV, REC, STON, MTHW, BRNG, MAT, PSYCH</p>
-						</div>
-					</div>
-
-					<!--CLASS OF 50-->
-					<a href="#class50"  data-rel="popup" >
-						<div id="venues_class50">
-							<img src="images/pins/pin_red.png" style="width:40px; height:40px;">
-						</div>
-					</a>
-					<div data-role="popup" id="class50" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-						<img class="popphoto" src="images/maps/venues/cl50.png" alt="CL50">
-						<div class="details">
-							<h3>Class of 50</h3>
-						</div>
-					</div>
-
-					<!--BUSINESS CAMPUS-->
-					<a href="#business"  data-rel="popup" >
-						<div id="venues_business">
-							<img src="images/pins/pin_red.png" style="width:40px; height:40px;">
-						</div>
-					</a>
-					<div data-role="popup" id="business" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-						<img class="popphoto" src="images/maps/venues/business.png" alt="Business Campus">
-						<div class="details">
-							<h3>Business Campus</h3>
-							<p>KRAN, RAWLS, KRANNERT CENTER, YONG</p>
-						</div>
-					</div>
-
-					<!--ENGINEERING MALL-->
-					<a href="#engineer"  data-rel="popup" >
-						<div id="venues_engineer">
-							<img src="images/pins/pin_red.png" style="width:40px; height:40px;">
-						</div>
-					</a>
-					<div data-role="popup" id="engineer" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-						<img class="popphoto" src="images/maps/venues/engineering.png" alt="Engineering Mall">
-						<div class="details">
-							<h3>Engineering Mall</h3>
-							<p>ARMS, CIVL, PHYS, ME, EE, KNOY</p>
-						</div>
-					</div>
-
-					<!--DAUCH ALUMNI CENTER-->
-					<a href="#dauch"  data-rel="popup" >
-						<div id="venues_dauch">
-							<img src="images/pins/pin_red.png" style="width:40px; height:40px;">
-						</div>
-					</a>
-					<div data-role="popup" id="dauch" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-						<img class="popphoto" src="images/maps/venues/dauch.png" alt="Dauch Alumni Center">
-						<div class="details">
-							<h3>Dauch Alumni Center</h3>
-						</div>
-					</div>
-
-					<!--ROSS ADE STADIUM PAVILION-->
-					<a href="#rossadepavilion"  data-rel="popup" >
-						<div id="venues_rossadepavilion">
-							<img src="images/pins/pin_red.png" style="width:40px; height:40px;">
-						</div>
-					</a>
-					<div data-role="popup" id="rossadepavilion" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-						<img class="popphoto" src="images/maps/venues/rossade_facilities.png" alt="Ross Ade">
-						<div class="details">
-							<h3>Ross Ade Stadium Pavilion</h3>
-							<p>Shively Club, Buchanan Club, Buchanan Mingling, Media Suite</p>
-						</div>
-					</div>
-
-					<!--DISCOVERY PARK-->
-					<a href="#discoverypark"  data-rel="popup" >
-						<div id="venues_discoverypark">
-							<img src="images/pins/pin_red.png" style="width:40px; height:40px;">
-						</div>
-					</a>
-					<div data-role="popup" id="discoverypark" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-						<img class="popphoto" src="images/maps/venues/discovery.png" alt="Discovery Park">
-						<div class="details">
-							<h3>Discovery Park</h3>
-						</div>
-					</div>
-
-				</div> <!-- Div #Venues ends -->
-
-				<!-- PINS (green) and popup photo for Lodging tab-->
-				<div id="Lodging" style="display:none">
-
-					<!--UNION CLUB HOTEL-->
-					<a href="#unionhotel"  data-rel="popup" >
-						<div id="lodging_unionhotel">
-							<img src="images/pins/pin_green.png" style="width:40px; height:40px;">
-						</div>
-					</a>
-					<div data-role="popup" id="unionhotel" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-                        <img class="popphoto" src="images/maps/lodging/pmu_lodging.png" alt="PMU">
-						<div class="details">
-							<h3>Union Club Hotel</h3>
-							<p>Deluxe Room, Double Twin, Queen</p>
-						</div>
-					</div>
-
-					<!--CARY QUAD-->
-					<a href="#cary"  data-rel="popup" >
-						<div id="lodging_cary">
-							<img src="images/pins/pin_green.png" style="width:40px; height:40px;">
-						</div>
-					</a>
-					<div data-role="popup" id="cary" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-						<img class="popphoto" src="images/maps/lodging/cary.png" alt="Cary Quad">
-						<div class="details">
-							<h3>Cary Quadrangle</h3>
-							<p>Suite-style A/C doubles</p>
-						</div>
-					</div>
-
-					<!--EARHART-->
-					<a href="#earhart"  data-rel="popup" >
-						<div id="lodging_earhart">
-							<img src="images/pins/pin_green.png" style="width:40px; height:40px;">
-						</div>
-					</a>
-					<div data-role="popup" id="earhart" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-						<img class="popphoto" src="images/maps/lodging/earhart_lodging.png" alt="Earhart">
-						<div class="details">
-							<h3>Earhart Residence Hall</h3>
-							<p>Traditional A/C</p>
-						</div>
-					</div>
-
-					<!--FIRST STREET TOWERS-->
-					<a href="#firststreet"  data-rel="popup" >
-						<div id="lodging_firststreet">
-							<img src="images/pins/pin_green.png" style="width:40px; height:40px;">
-						</div>
-					</a>
-					<div data-role="popup" id="firststreet" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-						<img class="popphoto" src="images/maps/lodging/first.png" alt="First Street Towers">
-						<div class="details">
-							<h3>First Street Towers</h3>
-							<p>Single A/C with Private Bath, Study Lounge, TV Lounge, Conference Room</p>
-						</div>
-					</div>
-
-					<!--HARRISON-->
-					<a href="#harrison"  data-rel="popup" >
-						<div id="lodging_harrison">
-							<img src="images/pins/pin_green.png" style="width:40px; height:40px;">
-						</div>
-					</a>
-					<div data-role="popup" id="harrison" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-						<img class="popphoto" src="images/maps/lodging/harrison.png" alt="Harrison">
-						<div class="details">
-							<h3>Harrison Residence Hall</h3>
-							<p>Traditional A/C</p>
-						</div>
-					</div>
-
-					<!--HILLENBRAND-->
-					<a href="#hillenbrand"  data-rel="popup" >
-						<div id="lodging_hillenbrand">
-							<img src="images/pins/pin_green.png" style="width:40px; height:40px;">
-						</div>
-					</a>
-					<div data-role="popup" id="hillenbrand" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-						<img class="popphoto" src="images/maps/lodging/hillenbrand_lodging.png" alt="Hillenbrand">
-						<div class="details">
-							<h3>Hillenbrand Residence Hall</h3>
-							<p>Suite-style A/C doubles</p>
-						</div>
-					</div>
-
-					<!--MCCUTCHEON-->
-					<a href="#mccutcheon"  data-rel="popup" >
-						<div id="lodging_mccutcheon">
-							<img src="images/pins/pin_green.png" style="width:40px; height:40px;">
-						</div>
-					</a>
-					<div data-role="popup" id="mccutcheon" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-						<img class="popphoto" src="images/maps/lodging/mccutcheon.png" alt="McCutcheon">
-						<div class="details">
-							<h3>McCutcheon Residence Hall</h3>
-							<p>Traditional A/C, Computer Lab, Conference Rooms</p>
-						</div>
-					</div>
-
-					<!--SHREVE-->
-					<a href="#shreve"  data-rel="popup" >
-						<div id="lodging_shreve">
-							<img src="images/pins/pin_green.png" style="width:40px; height:40px;">
-						</div>
-					</a>
-					<div data-role="popup" id="shreve" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-						<img class="popphoto" src="images/maps/lodging/shreve.png" alt="Shreve">
-						<div class="details">
-							<h3>Shreve Residence Hall</h3>
-							<p>Traditional A/C</p>
-						</div>
-					</div>
-
-					<!--WINDSOR HALL-->
-					<a href="#windsor"  data-rel="popup" >
-						<div id="lodging_windsor">
-							<img src="images/pins/pin_green.png" style="width:40px; height:40px;">
-						</div>
-					</a>
-					<div data-role="popup" id="windsor" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-						<img class="popphoto" src="images/maps/lodging/windsor_lodging.png" alt="Windsor">
-						<div class="details">
-							<h3>Windsor Halls</h3>
-							<p>Traditional A/C</p>
-						</div>
-					</div>
-
-				</div> <!-- Div #Lodging ends -->
-
-				<!-- PINS (blue) and popup photo for Theatre tab-->
-				<div id="Theatre" style="display:none">
-
-					<!--ELLIOT HALL-->
-					<a href="#elliot"  data-rel="popup" >
-						<div id="theatre_elliot">
-							<img src="images/pins/pin_blue.png" style="width:40px; height:40px;">
-						</div>
-					</a>
-					<div data-role="popup" id="elliot" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-						<img class="popphoto" src="images/maps/theatre/elliot.png" alt="Elliot">
-						<div class="details">
-							<h3>Elliot Hall of Music</h3>
-                            <ul>
-                                <li>Seats 6005 on three levels</li>
-                                <li>Stage: 136’ wide x 37’ deep</li>
-                                <li>One of the largest proscenium theatres in the U.S.</li>
-                                <li>Two dressing rooms with private baths; other multiple dressing rooms</li>
-                                <li>Opened in 1940</li>
-                                <li>Purdue University landmark at Third and University Streets</li>
-                            </ul>
-						</div>
-					</div>
-
-					<!--FOWLER HALL-->
-					<a href="#fowler"  data-rel="popup" >
-						<div id="theatre_fowler">
-							<img src="images/pins/pin_blue.png" style="width:40px; height:40px;">
-						</div>
-					</a>
-					<div data-role="popup" id="fowler" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-                        <img class="popphoto" src="images/maps/theatre/fowler.png" alt="Fowler Theater">
-						<div class="details">
-							<h3>Fowler Hall</h3>
-						</div>
-					</div>
-
-					<!--LOEB PLAYHOUSE-->
-					<a href="#loeb"  data-rel="popup" >
-						<div id="theatre_loeb">
-							<img src="images/pins/pin_blue.png" style="width:40px; height:40px;">
-						</div>
-					</a>
-					<div data-role="popup" id="loeb" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-						<img class="popphoto" src="images/maps/theatre/loeb.png" alt="Loeb Playhouse">
-						<div class="details">
-							<h3>Loeb Playhouse</h3>
-						</div>
-					</div>
-
-					<!--SLAYTER HILL-->
-					<a href="#slayter"  data-rel="popup" >
-						<div id="theatre_slayter">
-							<img src="images/pins/pin_blue.png" style="width:40px; height:40px;">
-						</div>
-					</a>
-					<div data-role="popup" id="slayter" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-						<img class="popphoto" src="images/maps/theatre/slayter.png" alt="Slayter Hill">
-						<div class="details">
-							<h3>Slayter Hill</h3>
-						</div>
-					</div>
-
-				</div> <!-- Div #Theatre ends -->
-
-				<!-- PINS (yellow) and popup photo for Athletics tab-->
-				<div id="Athletics" style="display:none">
-
-					<!--RECREATIONAL SPORTS CENTER-->
-					<a href="#reccenter"  data-rel="popup" >
-						<div id="athletics_reccenter">
-							<img src="images/pins/pin_yellow.png" style="width:40px; height:40px;">
-						</div>
-					</a>
-					<div data-role="popup" id="reccenter" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-                        <img class="popphoto" src="images/maps/athletics/rsc.png" alt="RSC">
-						<div class="details">
-							<h3>Recreational Sports Center</h3>
-						</div>
-					</div>
-
-					<!--ROSS ADE STADIUM-->
-					<a href="#rossadestadium"  data-rel="popup" >
-						<div id="athletics_rossadestadium">
-							<img src="images/pins/pin_yellow.png" style="width:40px; height:40px;">
-						</div>
-					</a>
-					<div data-role="popup" id="rossadestadium" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-						<img class="popphoto" src="images/maps/athletics/rossade_atheletics.png" alt="Football Stadium">
-						<div class="details">
-							<h3>Ross Ade Stadium</h3>
-						</div>
-					</div>
-
-					<!--MACKEY ARENA-->
-					<a href="#mackey"  data-rel="popup" >
-						<div id="athletics_mackey">
-							<img src="images/pins/pin_yellow.png" style="width:40px; height:40px;">
-						</div>
-					</a>
-					<div data-role="popup" id="mackey" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-						<img class="popphoto" src="images/maps/athletics/mackey.png" alt="Mackey Arena">
-						<div class="details">
-							<h3>Mackey Arena</h3>
-						</div>
-					</div>
-
-					<!--LAMBERT FIELDHOUSE-->
-					<a href="#lambert"  data-rel="popup" >
-						<div id="athletics_lambert">
-							<img src="images/pins/pin_yellow.png" style="width:40px; height:40px;">
-						</div>
-					</a>
-					<div data-role="popup" id="lambert" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-						<img class="popphoto" src="images/maps/athletics/lambert.png" alt="Lambert Field House">
-						<div class="details">
-							<h3>Lambert Fieldhouse</h3>
-						</div>
-					</div>
-
-					<!--BOILERMAKER GOLF COMPLEX-->
-					<a href="#golfcomplex"  data-rel="popup" >
-						<div id="athletics_golfcomplex">
-							<img src="images/pins/pin_yellow.png" style="width:40px; height:40px;">
-						</div>
-					</a>
-					<div data-role="popup" id="golfcomplex" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-						<img class="popphoto" src="images/maps/athletics/golf.png" alt="Birck Golf Complex">
-						<div class="details">
-							<h3>Boilermaker Golf Complex</h3>
-						</div>
-					</div>
-
-					<!--SCHWARTZ TENNIS PAVILION-->
-					<a href="#schwartz"  data-rel="popup" >
-						<div id="athletics_schwartz">
-							<img src="images/pins/pin_yellow.png" style="width:40px; height:40px;">
-						</div>
-					</a>
-					<div data-role="popup" id="schwartz" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-						<img class="popphoto" src="images/maps/athletics/tennis.png" alt="Schwarts Tennis Complex">
-						<div class="details">
-							<h3>Schwartz Tennis Pavilion</h3>
-						</div>
-					</div>
-
-					<!--BASEBALL COMPLEX-->
-					<a href="#baseballcomplex"  data-rel="popup" >
-						<div id="athletics_baseballcomplex">
-							<img src="images/pins/pin_yellow.png" style="width:40px; height:40px;">
-						</div>
-					</a>
-					<div data-role="popup" id="baseballcomplex" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-						<img class="popphoto" src="images/maps/athletics/baseball.png" alt="Baseball Complex">
-						<div class="details">
-							<h3>Baseball Complex</h3>
-						</div>
-					</div>
-
-					<!--BOILERMAKER AQUATIC CENTER-->
-					<a href="#aquaticcenter"  data-rel="popup" >
-						<div id="athletics_aquaticcenter">
-							<img src="images/pins/pin_yellow.png" style="width:40px; height:40px;">
-						</div>
-					</a>
-					<div data-role="popup" id="aquaticcenter" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-                        <img class="popphoto" src="images/maps/athletics/pool.png" alt="Aquatic Center">
-						<div class="details">
-							<h3>Boilermaker Aquatic Center</h3>
-						</div>
-					</div>
-
-					<!--RANKIN TRACK-->
-					<a href="#rankintrack"  data-rel="popup" >
-						<div id="athletics_rankintrack">
-							<img src="images/pins/pin_yellow.png" style="width:40px; height:40px;">
-						</div>
-					</a>
-					<div data-role="popup" id="rankintrack" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-						<img class="popphoto" src="images/maps/athletics/rankin.png" alt="Rankin Track">
-						<div class="details">
-							<h3>Rankin Track</h3>
-						</div>
-					</div>
-
-					<!--ROPES COURSE-->
-					<a href="#ropescourse"  data-rel="popup" >
-						<div id="athletics_ropescourse">
-							<img src="images/pins/pin_yellow.png" style="width:40px; height:40px;">
-						</div>
-					</a>
-					<div data-role="popup" id="ropescourse" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-						<img class="popphoto" src="images/maps/athletics/ropes.png" alt="Ropes Course">
-						<div class="details">
-							<h3>Ropes Course</h3>
-						</div>
-					</div>
-
-				</div> <!-- Div #Athletics ends -->
-
-				<!-- PINS (orange) and popup photo for Dining tab-->
-				<div id="Dining" style="display:none">
-
-					<!--UNION COMMONS-->
-					<a href="#unioncommons"  data-rel="popup" >
-						<div id="dining_unioncommons">
-							<img src="images/pins/pin_orange.png" style="width:40px; height:40px;">
-						</div>
-					</a>
-					<div data-role="popup" id="unioncommons" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-                        <img class="popphoto" src="images/maps/dining/pmu_commons.png" alt="PMU">
-						<div class="details">
-							<h3>Union Commons</h3>
-						</div>
-					</div>
-                            
-                    <!--STEW CATERING-->
-					<a href="#stewcatering"  data-rel="popup" >
-						<div id="dining_stewcatering">
-							<img src="images/pins/pin_orange.png" style="width:40px; height:40px;">
-						</div>
-					</a>
-					<div data-role="popup" id="stewcatering" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-                        <img class="popphoto" src="images/maps/dining/stew_catering.png" alt="PMU" style="width:800px; height:600px;">
-						<div class="details">
-							<h3>Catering</h3>
-						</div>
-					</div>
-
-					<!--FORD DINING COURT-->
-					<a href="#fordcourt"  data-rel="popup" >
-						<div id="dining_fordcourt">
-							<img src="images/pins/pin_orange.png" style="width:40px; height:40px;">
-						</div>
-					</a>
-					<div data-role="popup" id="fordcourt" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-						<img class="popphoto" src="images/maps/dining/ford.png" alt="Ford">
-						<div class="details">
-							<h3>Ford Dining Court</h3>
-							<p>Asian, Pizza, Salad Bar, Grill, Comfort, Desserts</p>
-						</div>
-					</div>
-
-					<!--EARHART DINING COURT-->
-					<a href="#earhartcourt"  data-rel="popup" >
-						<div id="dining_earhartcourt">
-							<img src="images/pins/pin_orange.png" style="width:40px; height:40px;">
-						</div>
-					</a>
-					<div data-role="popup" id="earhartcourt" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-						<img class="popphoto" src="images/maps/dining/earhart_dining.png" alt="Earhart">
-						<div class="details">
-							<h3>Earhart Dining Court</h3>
-							<p>Mongolian Barbeque</p>
-						</div>
-					</div>
-
-					<!--WILEY DINING COURT-->
-					<a href="#wileycourt"  data-rel="popup" >
-						<div id="dining_wileycourt">
-							<img src="images/pins/pin_orange.png" style="width:40px; height:40px;">
-						</div>
-					</a>
-					<div data-role="popup" id="wileycourt" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-                        <img class="popphoto" src="images/maps/dining/wiley.png" alt="Wiley">
-						<div class="details">
-							<h3>Wiley Dining Court</h3>
-							<p>Churascuria</p>
-						</div>
-					</div>
-
-					<!--HILLENBRAND DINING COURT-->
-					<a href="#hillenbrandcourt"  data-rel="popup" >
-						<div id="dining_hillenbrandcourt">
-							<img src="images/pins/pin_orange.png" style="width:40px; height:40px;">
-						</div>
-					</a>
-					<div data-role="popup" id="hillenbrandcourt" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-						<img class="popphoto" src="images/maps/dining/hillenbrand_dining.png" alt="Hillenbrand">
-						<div class="details">
-							<h3>Hillenbrand Dining Court</h3>
-							<p>BYO Quesadilla</p>
-						</div>
-					</div>
-
-					<!--WINDSOR DINING COURT-->
-					<a href="#windsorcourt"  data-rel="popup" >
-						<div id="dining_windsorcourt">
-							<img src="images/pins/pin_orange.png" style="width:40px; height:40px;">
-						</div>
-					</a>
-					<div data-role="popup" id="windsorcourt" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-						<img class="popphoto" src="images/maps/dining/windsor_dining.png" alt="Windsor">
-						<div class="details">
-							<h3>Windsor Dining Court</h3>
-							<p>Sizzling Salads</p>
-						</div>
-					</div>
-
-				</div> <!-- Div #Dining ends -->
-
-			</div>
-
+		<div data-role="page" id="campus_map" data-title="" style="position:relative;">
+            
+			<div  data-role="header">
+                
+                <div data-role="navbar">
+                      <ul>
+                        <li id="toggle" onclick = ""><a href="">Venues<img src="img/pin_blue.png" height="20" width="20"/></a></li>
+                        <li id="toggle2" onclick = ""><a href="">Dining<img src="img/pin_green.png" height="20" width="20"/></a></li>
+                        <li id="toggle3" onclick = ""><a href="">Lodging<img src="img/pin_red.png" height="20" width="20"/></a></li> 
+                        <li id="toggle4" onclick = ""><a href="">Athletics<img src="img/pin_yellow.png" height="20" width="20"/></a></li> 
+                        <li id="toggle5" onclick = ""><a href="">Theatre<img src="img/pin_orange.png" height="20" width="20"/></a></li>
+                     </ul>
+                </div> <!-- Div navbar ends -->
+            </div>
+            
+            
+				 <div data-role="content" >
+                    <div id="reloadMap"><a href="javascript:location.reload(true)">RELOAD MAP</a></div>
+                    <div id="map_canvas" style="width:100%; height:980px; z-index:200;"></div> 
+                 </div>
+                
+            
+            
 			<div data-role="footer" data-id="footer_ID" data-position="fixed" data-fullscreen="true" >
 				<div data-role="navbar">
 					<ul>
@@ -742,6 +109,714 @@
 					</ul>
 				</div>
 			</div>
+            <!--Google Map Code Starts-->
+           
+    
+<script type="text/javascript">
+
+    var map;
+    var infowindow;
+    var purdue = new google.maps.LatLng(40.42794, -86.92104);
+    infos = [];
+
+    function HomeControl(controlDiv, map) {
+
+        // Set CSS styles for the DIV containing the control
+        // Setting padding to 5 px will offset the control
+        // from the edge of the map.
+        controlDiv.style.padding = '8px';
+
+        // Set CSS for the control border.
+        var controlUI = document.createElement('div');
+        controlUI.style.backgroundColor = 'gold';
+        controlUI.style.borderStyle = 'solid';
+        controlUI.style.borderWidth = '1px';
+        controlUI.style.cursor = 'pointer';
+        controlUI.style.textAlign = 'center';
+        controlUI.title = 'Click to set the map to Home';
+        controlDiv.appendChild(controlUI);
+
+        // Set CSS for the control interior.
+        var controlText = document.createElement('div');
+        controlText.style.fontFamily = 'Arial,sans-serif';
+        controlText.style.fontSize = '12px';
+        controlText.style.paddingLeft = '4px';
+        controlText.style.paddingRight = '4px';
+        controlText.innerHTML = '<strong>PURDUE</strong>';
+        controlUI.appendChild(controlText);
+
+        // Setup the click event listeners: simply set the map to Purdue.
+        google.maps.event.addDomListener(controlUI, 'click', function () {
+            map.setCenter(purdue)
+        });
+    }
+
+    function initialize() {
+
+        var map = new google.maps.Map(document.getElementById('map_canvas'), {
+            zoom: 15,
+            center: new google.maps.LatLng(40.42794, -86.92104),
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        });
+
+              
+        
+        var homeControlDiv = document.createElement('div');
+        var homeControl = new HomeControl(homeControlDiv, map);
+
+        homeControlDiv.index = 1;
+        map.controls[google.maps.ControlPosition.TOP_RIGHT].push(homeControlDiv);
+
+
+        //----------------START VENUE---------------------//    
+
+        $.get("scripts/venue.xml", function (xml) {
+            $(xml).find("Venue").each(function () {
+
+
+                var lat = $(this).find('lat').text();
+                var lng = $(this).find('lng').text();
+                var point = new google.maps.LatLng(parseFloat(lat), parseFloat(lng));
+
+
+                var html = '<div id="container">' +
+                '<div id="example">' +
+
+                    '<div id="slides">' +
+                        '<div class="slides_container">' +
+                            '<div class="slide">' +
+                                '<img src="' + $(this).find('img').text() + '" width="600" height="420" alt="Slide 1">' + '</a>' +
+                                '<div class="caption" style="bottom:0">' +
+                                    '<p>' + $(this).find('caption').text() + '</p>' +
+                                '</div>' +
+                            '</div>' +
+                            '<div class="slide">' +
+                                '<img src="' + $(this).find('img2').text() + '" width="600" height="420" alt="Slide 2">' + '</a>' +
+                                '<div class="caption">' +
+                                    '<p>' + $(this).find('caption').text() + '</p>' +
+                                '</div>' +
+                            '</div>' +
+                                '<div class="slide">' +
+                                '<img src="' + $(this).find('img3').text() + '" width="600" height="420" alt="Slide 2">' + '</a>' +
+                                '<div class="caption">' +
+                                    '<p>' + $(this).find('caption').text() + '</p>' +
+                                '</div>' +
+                            '</div>' +
+                                '</div>' +
+                        '<a href="#" class="prev">' + '<img src="img/left.png" width="40" height="50" alt="Arrow Prev">' + '</a>' +
+                        '<a href="#" class="next">' + '<img src="img/right.png" width="40" height="50" alt="Arrow Next">' + '</a>' +
+                    '</div>' +
+
+                '</div>';
+
+
+
+                var locations = [point];
+
+                var infowindow = new google.maps.InfoWindow();
+
+                var marker, i;
+
+                /* */
+                var pin = "img/pin_blue.png";
+
+                for (i = 0; i < locations.length; i++) {
+                    marker = new google.maps.Marker({
+                        position: point,
+                        map: map,
+                        icon: pin,
+                        visible: true
+                    });
+
+                    google.maps.event.addListener(marker, 'click', (function (marker, i) {
+                        return function () {
+                            closeInfos();
+                            infowindow.setContent(html);
+                            infowindow.open(map, marker);
+                            infos[0] = infowindow;
+                        }
+                    })(marker, i));
+
+
+                    function closeInfos() {
+
+                        if (infos.length > 0) {
+
+                            /* detach the info-window from the marker ... undocumented in the API docs */
+                            infos[0].set("marker", null);
+
+                            /* and close it */
+                            infos[0].close();
+
+                            /* blank the array */
+                            infos.length = 0;
+                        }
+                    }
+
+                    google.maps.event.addListener(map, "click", function () {
+
+                        infowindow.close();
+                    });
+
+                    google.maps.event.addListener(infowindow, 'domready', function () {
+                        $(function () {
+                            $('#slides').slides({
+                                preload: true,
+                                preloadImage: 'img/loading.gif',
+                                play: 5000,
+                                pause: 2500,
+                                hoverPause: false,
+
+                                slidesLoaded: function () {
+                                    $('.caption').animate({
+                                        bottom: 0
+                                    }, 200);
+                                }
+                            });
+                        });
+
+                    });
+
+                    $("#toggle").click(function () {
+
+                        if (marker.getVisible()) {
+                            marker.setVisible(false);
+                        }
+                        else {
+                            marker.setVisible(true);
+
+                        }
+
+                    });
+
+                }
+
+
+            });
+
+
+        });
+
+        //----------------END VENUE---------------------//
+
+        //----------------START DINE---------------------//
+
+        $.get("scripts/dine.xml", function (xml) {
+            $(xml).find("Dine").each(function () {
+
+                var lat = $(this).find('lat').text();
+                var lng = $(this).find('lng').text();
+                var point = new google.maps.LatLng(parseFloat(lat), parseFloat(lng));
+
+
+                var html = '<div id="container">' +
+            '<div id="example">' +
+
+                '<div id="slides">' +
+                    '<div class="slides_container">' +
+                        '<div class="slide">' +
+                            '<img src="' + $(this).find('img').text() + '" width="600" height="420" alt="Slide 1">' + '</a>' +
+                            '<div class="caption" style="bottom:0">' +
+                                '<p>' + $(this).find('caption').text() + '</p>' +
+                            '</div>' +
+                        '</div>' +
+                        '<div class="slide">' +
+                            '<img src="' + $(this).find('img2').text() + '" width="600" height="420" alt="Slide 2">' + '</a>' +
+                            '<div class="caption">' +
+                                '<p>' + $(this).find('caption').text() + '</p>' +
+                            '</div>' +
+                        '</div>' +
+                            '<div class="slide">' +
+                            '<img src="' + $(this).find('img3').text() + '" width="600" height="420" alt="Slide 2">' + '</a>' +
+                            '<div class="caption">' +
+                                '<p>' + $(this).find('caption').text() + '</p>' +
+                            '</div>' +
+                        '</div>' +
+                            '</div>' +
+                    '<a href="#" class="prev">' + '<img src="img/left.png" width="40" height="50" alt="Arrow Prev">' + '</a>' +
+                    '<a href="#" class="next">' + '<img src="img/right.png" width="40" height="50" alt="Arrow Next">' + '</a>' +
+                '</div>' +
+
+            '</div>';
+
+
+
+                var locations = [point];
+
+                var infowindow = new google.maps.InfoWindow();
+
+                var marker, i;
+
+                var pin = "img/pin_green.png";
+
+                for (i = 0; i < locations.length; i++) {
+                    marker = new google.maps.Marker({
+                        position: point,
+                        map: map,
+                        icon: pin,
+                        visible: true
+                    });
+
+                    google.maps.event.addListener(marker, 'click', (function (marker, i) {
+                        return function () {
+                            closeInfos();
+                            infowindow.setContent(html);
+                            infowindow.open(map, marker);
+                            infos[0] = infowindow;
+                        }
+                    })(marker, i));
+
+                    function closeInfos() {
+
+                        if (infos.length > 0) {
+
+                            /* detach the info-window from the marker ... undocumented in the API docs */
+                            infos[0].set("marker", null);
+
+                            /* and close it */
+                            infos[0].close();
+
+                            /* blank the array */
+                            infos.length = 0;
+                        }
+                    }
+                    google.maps.event.addListener(map, "click", function () {
+
+                        infowindow.close();
+                    });
+                    google.maps.event.addListener(infowindow, 'domready', function () {
+                        $(function () {
+                            $('#slides').slides({
+                                preload: true,
+                                preloadImage: 'img/loading.gif',
+                                play: 5000,
+                                pause: 2500,
+                                hoverPause: false,
+                                slidesLoaded: function () {
+                                    $('.caption').animate({
+                                        bottom: 0
+                                    }, 200);
+                                }
+                            });
+                        });
+
+                    });
+
+                    $("#toggle2").click(function () {
+
+                        if (marker.getVisible()) {
+                            marker.setVisible(false);
+                        }
+                        else {
+                            marker.setVisible(true);
+
+                        }
+
+                    });
+
+                }
+
+
+            });
+
+
+        });
+
+        //----------------END DINE---------------------//
+        //----------------START LODGING---------------------//
+
+        $.get("scripts/lodging.xml", function (xml) {
+            $(xml).find("lodge").each(function () {
+
+                var lat = $(this).find('lat').text();
+                var lng = $(this).find('lng').text();
+                var point = new google.maps.LatLng(parseFloat(lat), parseFloat(lng));
+
+
+                var html = '<div id="container">' +
+            '<div id="example">' +
+
+                '<div id="slides">' +
+                    '<div class="slides_container">' +
+                        '<div class="slide">' +
+                            '<img src="' + $(this).find('img').text() + '" width="600" height="420" alt="Slide 1">' + '</a>' +
+                            '<div class="caption" style="bottom:0">' +
+                                '<p>' + $(this).find('caption').text() + '</p>' +
+                            '</div>' +
+                        '</div>' +
+                        '<div class="slide">' +
+                            '<img src="' + $(this).find('img2').text() + '" width="600" height="420" alt="Slide 2">' + '</a>' +
+                            '<div class="caption">' +
+                                '<p>' + $(this).find('caption').text() + '</p>' +
+                            '</div>' +
+                        '</div>' +
+                            '<div class="slide">' +
+                            '<img src="' + $(this).find('img3').text() + '" width="600" height="420" alt="Slide 2">' + '</a>' +
+                            '<div class="caption">' +
+                                '<p>' + $(this).find('caption').text() + '</p>' +
+                            '</div>' +
+                        '</div>' +
+                            '</div>' +
+                    '<a href="#" class="prev">' + '<img src="img/left.png" width="40" height="50" alt="Arrow Prev">' + '</a>' +
+                    '<a href="#" class="next">' + '<img src="img/right.png" width="40" height="50" alt="Arrow Next">' + '</a>' +
+                '</div>' +
+
+            '</div>';
+
+
+
+                var locations = [point];
+
+                var infowindow = new google.maps.InfoWindow();
+
+                var marker, i;
+
+                var pin = "img/pin_red.png";
+
+                for (i = 0; i < locations.length; i++) {
+                    marker = new google.maps.Marker({
+                        position: point,
+                        map: map,
+                        icon: pin,
+                        visible: true
+                    });
+
+                    google.maps.event.addListener(marker, 'click', (function (marker, i) {
+                        return function () {
+                            closeInfos();
+                            infowindow.setContent(html);
+                            infowindow.open(map, marker);
+                            infos[0] = infowindow;
+                        }
+                    })(marker, i));
+
+                    function closeInfos() {
+
+                        if (infos.length > 0) {
+
+                            /* detach the info-window from the marker ... undocumented in the API docs */
+                            infos[0].set("marker", null);
+
+                            /* and close it */
+                            infos[0].close();
+
+                            /* blank the array */
+                            infos.length = 0;
+                        }
+                    }
+                    google.maps.event.addListener(map, "click", function () {
+
+                        infowindow.close();
+                    });
+                    google.maps.event.addListener(infowindow, 'domready', function () {
+                        $(function () {
+                            $('#slides').slides({
+                                preload: true,
+                                preloadImage: 'img/loading.gif',
+                                play: 5000,
+                                pause: 2500,
+                                hoverPause: false,
+                                slidesLoaded: function () {
+                                    $('.caption').animate({
+                                        bottom: 0
+                                    }, 200);
+                                }
+                            });
+                        });
+
+                    });
+
+                    $("#toggle3").click(function () {
+
+                        if (marker.getVisible()) {
+                            marker.setVisible(false);
+                        }
+                        else {
+                            marker.setVisible(true);
+
+                        }
+
+                    });
+
+                }
+
+
+            });
+
+
+        });
+
+        //----------------END LODGE---------------------//
+
+        //----------------START ATHLETICS---------------------//    
+
+        $.get("scripts/athletics.xml", function (xml) {
+            $(xml).find("athletics").each(function () {
+
+
+                var lat = $(this).find('lat').text();
+                var lng = $(this).find('lng').text();
+                var point = new google.maps.LatLng(parseFloat(lat), parseFloat(lng));
+
+
+                var html = '<div id="container">' +
+                '<div id="example">' +
+
+                    '<div id="slides">' +
+                        '<div class="slides_container">' +
+                            '<div class="slide">' +
+                                '<img src="' + $(this).find('img').text() + '" width="600" height="420" alt="Slide 1">' + '</a>' +
+                                '<div class="caption" style="bottom:0">' +
+                                    '<p>' + $(this).find('caption').text() + '</p>' +
+                                '</div>' +
+                            '</div>' +
+                            '<div class="slide">' +
+                                '<img src="' + $(this).find('img2').text() + '" width="600" height="420" alt="Slide 2">' + '</a>' +
+                                '<div class="caption">' +
+                                    '<p>' + $(this).find('caption').text() + '</p>' +
+                                '</div>' +
+                            '</div>' +
+                                '<div class="slide">' +
+                                '<img src="' + $(this).find('img3').text() + '" width="600" height="420" alt="Slide 2">' + '</a>' +
+                                '<div class="caption">' +
+                                    '<p>' + $(this).find('caption').text() + '</p>' +
+                                '</div>' +
+                            '</div>' +
+                                '</div>' +
+                        '<a href="#" class="prev">' + '<img src="img/left.png" width="40" height="50" alt="Arrow Prev">' + '</a>' +
+                        '<a href="#" class="next">' + '<img src="img/right.png" width="40" height="50" alt="Arrow Next">' + '</a>' +
+                    '</div>' +
+
+                '</div>';
+
+
+
+                var locations = [point];
+
+                var infowindow = new google.maps.InfoWindow();
+
+                var marker, i;
+
+                var pin = "img/pin_yellow.png";
+
+                for (i = 0; i < locations.length; i++) {
+                    marker = new google.maps.Marker({
+                        position: point,
+                        map: map,
+                        icon: pin,
+                        visible: true
+                    });
+
+                    google.maps.event.addListener(marker, 'click', (function (marker, i) {
+                        return function () {
+                            closeInfos();
+                            infowindow.setContent(html);
+                            infowindow.open(map, marker);
+                            infos[0] = infowindow;
+                        }
+                    })(marker, i));
+
+
+                    function closeInfos() {
+
+                        if (infos.length > 0) {
+
+                            /* detach the info-window from the marker ... undocumented in the API docs */
+                            infos[0].set("marker", null);
+
+                            /* and close it */
+                            infos[0].close();
+
+                            /* blank the array */
+                            infos.length = 0;
+                        }
+                    }
+
+                    google.maps.event.addListener(map, "click", function () {
+
+                        infowindow.close();
+                    });
+
+                    google.maps.event.addListener(infowindow, 'domready', function () {
+                        $(function () {
+                            $('#slides').slides({
+                                preload: true,
+                                preloadImage: 'img/loading.gif',
+                                play: 5000,
+                                pause: 2500,
+                                hoverPause: false,
+
+                                slidesLoaded: function () {
+                                    $('.caption').animate({
+                                        bottom: 0
+                                    }, 200);
+                                }
+                            });
+                        });
+
+                    });
+
+                    $("#toggle4").click(function () {
+
+                        if (marker.getVisible()) {
+                            marker.setVisible(false);
+                        }
+                        else {
+                            marker.setVisible(true);
+
+                        }
+
+                    });
+
+                }
+
+
+            });
+
+
+        });
+
+        //----------------END ATHLETICS---------------------//
+
+        //----------------START THEATRE---------------------//    
+
+        $.get("scripts/theatre.xml", function (xml) {
+            $(xml).find("theatre").each(function () {
+
+
+                var lat = $(this).find('lat').text();
+                var lng = $(this).find('lng').text();
+                var point = new google.maps.LatLng(parseFloat(lat), parseFloat(lng));
+
+
+                var html = '<div id="container">' +
+                '<div id="example">' +
+
+                    '<div id="slides">' +
+                        '<div class="slides_container">' +
+                            '<div class="slide">' +
+                                '<img src="' + $(this).find('img').text() + '" width="600" height="420" alt="Slide 1">' + '</a>' +
+                                '<div class="caption" style="bottom:0">' +
+                                    '<p>' + $(this).find('caption').text() + '</p>' +
+                                '</div>' +
+                            '</div>' +
+                            '<div class="slide">' +
+                                '<img src="' + $(this).find('img2').text() + '" width="600" height="420" alt="Slide 2">' + '</a>' +
+                                '<div class="caption">' +
+                                    '<p>' + $(this).find('caption').text() + '</p>' +
+                                '</div>' +
+                            '</div>' +
+                                '<div class="slide">' +
+                                '<img src="' + $(this).find('img3').text() + '" width="600" height="420" alt="Slide 2">' + '</a>' +
+                                '<div class="caption">' +
+                                    '<p>' + $(this).find('caption').text() + '</p>' +
+                                '</div>' +
+                            '</div>' +
+                                '</div>' +
+                        '<a href="#" class="prev">' + '<img src="img/left.png" width="40" height="50" alt="Arrow Prev">' + '</a>' +
+                        '<a href="#" class="next">' + '<img src="img/right.png" width="40" height="50" alt="Arrow Next">' + '</a>' +
+                    '</div>' +
+
+                '</div>';
+
+
+
+                var locations = [point];
+
+                var infowindow = new google.maps.InfoWindow();
+
+                var marker, i;
+
+                var pin = "img/pin_orange.png";
+
+                for (i = 0; i < locations.length; i++) {
+                    marker = new google.maps.Marker({
+                        position: point,
+                        map: map,
+                        icon: pin,
+                        visible: true
+                    });
+
+                    google.maps.event.addListener(marker, 'click', (function (marker, i) {
+                        return function () {
+                            closeInfos();
+                            infowindow.setContent(html);
+                            infowindow.open(map, marker);
+                            infos[0] = infowindow;
+                        }
+                    })(marker, i));
+
+
+                    function closeInfos() {
+
+                        if (infos.length > 0) {
+
+                            /* detach the info-window from the marker ... undocumented in the API docs */
+                            infos[0].set("marker", null);
+
+                            /* and close it */
+                            infos[0].close();
+
+                            /* blank the array */
+                            infos.length = 0;
+                        }
+                    }
+
+                    google.maps.event.addListener(map, "click", function () {
+
+                        infowindow.close();
+                    });
+
+                    google.maps.event.addListener(infowindow, 'domready', function () {
+                        $(function () {
+                            $('#slides').slides({
+                                preload: true,
+                                preloadImage: 'img/loading.gif',
+                                play: 5000,
+                                pause: 2500,
+                                hoverPause: false,
+
+                                slidesLoaded: function () {
+                                    $('.caption').animate({
+                                        bottom: 0
+                                    }, 200);
+                                }
+                            });
+                        });
+
+                    });
+
+                    $("#toggle5").click(function () {
+
+                        if (marker.getVisible()) {
+                            marker.setVisible(false);
+                        }
+                        else {
+                            marker.setVisible(true);
+
+                        }
+
+                    });
+
+                }
+
+
+            });
+
+
+        });
+
+        //----------------END THEATRE---------------------//    
+
+    } ///-----END FUNCTION INITIALIZE-----//
+
+
+</script> 
+
+            <!--Google Map Code Ends-->
+
+
+			
 
 		</div>
 		<!--END CAMPUS MAP PAGE-->

@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<Records>
+  
+
+    <Venue>
+        
+        <name>Stewart Center</name>
+        <address>Purdue University</address>
+        <img>img/1.jpg</img>
+        <img2>img/2.jpg</img2>
+        <img3>img/3.jpg</img3>
+        <caption>Stewart Center</caption>
+        <lat>40.425062</lat>
+        <lng>-86.912777</lng>
+        
+    </Venue>
+
+    <Venue>
+        <name>PMU</name>
+        <address>Purdue University</address>
+        <img>img/pmu1.jpg</img>
+        <img2>img/pmu2.jpg</img2>
+        <img3>img/pmu3.jpg</img3>
+        <caption>Purdue Memorial Union</caption>
+        <lat>40.425078</lat>
+        <lng>-86.911082</lng>
+        
+   </Venue>
+    
+    <Venue>
+        <name>Class 1950</name>
+        <address>Purdue University</address>
+        <img>img/pmu1.jpg</img>
+        <img2>img/pmu2.jpg</img2>
+        <img3>img/pmu3.jpg</img3>
+        <caption>Class of 1950</caption>
+        <lat>40.42625</lat>
+        <lng>-86.91501</lng>
+        
+   </Venue>
+    
+    
+    <Venue>
+        <name>Dauch Alumni Center</name>
+        <address>Purdue University</address>
+        <img>img/pmu1.jpg</img>
+        <img2>img/pmu2.jpg</img2>
+        <img3>img/pmu3.jpg</img3>
+        <caption>Dauch Alumni Center</caption>
+        <lat>40.42183</lat>
+        <lng>-86.91071</lng>
+        
+   </Venue>
+    
+    <Venue>
+        <name>Ross Ade</name>
+        <address>Purdue University</address>
+        <img>img/pmu1.jpg</img>
+        <img2>img/pmu2.jpg</img2>
+        <img3>img/pmu3.jpg</img3>
+        <caption>Ross Ade</caption>
+        <lat>40.43395</lat>
+        <lng>-86.91835</lng>
+        
+   </Venue>
+    
+    <Venue>
+        <name>Discovery Park</name>
+        <address>Purdue University</address>
+        <img>img/pmu1.jpg</img>
+        <img2>img/pmu2.jpg</img2>
+        <img3>img/pmu3.jpg</img3>
+        <caption>Discovery Park</caption>
+        <lat>40.42362</lat>
+        <lng>-86.92282</lng>
+        
+   </Venue>
+    
+    <Venue>
+        <name>Engineering</name>
+        <address>Purdue University</address>
+        <img>img/eng1.png</img>
+        <img2></img2>
+        <img3></img3>
+        <caption>Engineering</caption>
+        <lat>40.42913</lat>
+        <lng>-86.91297</lng>
+        
+   </Venue>
+
+    <Venue>
+        <name>Rawls Hall</name>
+        <address>Purdue University</address>
+        <img>img/rawl1.png</img>
+        <img2></img2>
+        <img3></img3>
+        <caption>Rawls Hall</caption>
+        <lat>40.42373</lat>
+        <lng>-86.91006</lng>
+        
+   </Venue>
+    
+</Records>

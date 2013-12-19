@@ -80,16 +80,18 @@ body
     background-color: rgba(0,0,0,.5);
     }*/
     
-    #campus_map
+ /*----------Required only for Static map-----------*/
+    
+    /*#campus_map
     {
     background: url(../images/maps/CampusMap_Portrait.png) no-repeat top left fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-    /*height: 1500px;
-    width: 100%;*/
-    }
+    height: 1500px;
+    width: 100%;
+    }*/
 
     /*#campus_map h1 
     {
@@ -105,7 +107,7 @@ body
     height:100%;
     }*/
 
-/*Venues - RED PIN POSITION - PORTRAIT*/
+/*Venues - RED PIN POSITION - PORTRAIT
     #venues_stew{
     position:absolute; 
     top:62%; 
@@ -161,7 +163,7 @@ body
     }
 
     
-/*Lodging - GREEN PIN POSITION - PORTRAIT*/
+/*Lodging - GREEN PIN POSITION - PORTRAIT
     #lodging_unionhotel{
     position:absolute; 
     top:61%; 
@@ -216,7 +218,7 @@ body
     left:44.6%;
     }
 
-/*Theatre - BLUE PIN POSITION - PORTRAIT*/
+/*Theatre - BLUE PIN POSITION - PORTRAIT
     #theatre_elliot{
     position:absolute; 
     top:48%; 
@@ -241,7 +243,7 @@ body
     left:35.4%;
     }
 
-/*Athletics - YELLOW PIN POSITION - PORTRAIT*/
+/*Athletics - YELLOW PIN POSITION - PORTRAIT
     #athletics_reccenter{
     position:absolute; 
     top:46%; 
@@ -302,7 +304,7 @@ body
     left:50%;
     }*/
 
-/*Dining - ORANGE PIN POSITION - PORTRAIT*/
+/*Dining - ORANGE PIN POSITION - PORTRAIT
     #dining_unioncommons{
     position:absolute; 
     top:63%; 
@@ -343,7 +345,7 @@ body
     position:absolute; 
     top:51.2%; 
     left:45.6%;
-    }
+    } */
     
  /*SERVICES - Map Points*/
     #services_purdue{
@@ -380,7 +382,27 @@ body
     position:absolute;
     top:45%; 
     left:24%;
+    } 
+    
+ /*Refresh Map Button - MAP location - Landscape*/   
+    #reloadMap {
+        width:107px;
+        text-align:center;
+        border:1px solid #999999; 
+        text-decoration:none;
+        background-color:#FFFFFF; 
+        padding:5px; 
+        position:absolute; 
+        left:643px; 
+        top:85px; 
+        z-index:1000000;
     }
+    
+     #reloadMap a { 
+        text-decoration:none;
+        font-weight:bold;
+        color:#000000;
+    }  
     
 }
 /* END - CSS FOR PORTRAIT ORIENTATION*/
@@ -434,15 +456,17 @@ body
     background-color: rgba(0,0,0,.5);
     }*/
     
-    #campus_map
+    /*----------Required only for Static map-----------*/
+    
+    /*#campus_map
     {
     background: url(../images/maps/CampusMap_Landscape.png) no-repeat top left fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-    /*height: 1500px;
-    width: 100%;*/
+    height: 1500px;
+    width: 100%;
     }
 
     /*#campus_map h1 
@@ -459,7 +483,7 @@ body
     height:100%;
     }*/
     
-/*Venues - RED PIN POSITION - LANDSCAPE*/
+/*Venues - RED PIN POSITION - LANDSCAPE
     #venues_stew{
     position:absolute; 
     top:68%; 
@@ -515,7 +539,7 @@ body
     }
 
     
-/*Lodging - GREEN PIN POSITION - LANDSCAPE*/
+/*Lodging - GREEN PIN POSITION - LANDSCAPE
     #lodging_unionhotel{
     position:absolute; 
     top:67%; 
@@ -570,7 +594,7 @@ body
     left:50.5%;
     }
 
-/*Theatre - BLUE PIN POSITION - LANDSCAPE*/
+/*Theatre - BLUE PIN POSITION - LANDSCAPE
     #theatre_elliot{
     position:absolute; 
     top:48%; 
@@ -595,7 +619,7 @@ body
     left:44%;
     }
 
-/*Athletics - YELLOW PIN POSITION - LANDSCAPE*/
+/*Athletics - YELLOW PIN POSITION - LANDSCAPE
     #athletics_reccenter{
     position:absolute; 
     top:45%; 
@@ -656,7 +680,7 @@ body
     left:2.4%;
     }
 
-/*Dining - ORANGE PIN POSITION - LANDSCAPE*/
+/*Dining - ORANGE PIN POSITION - LANDSCAPE
     #dining_unioncommons{
     position:absolute; 
     top:69%; 
@@ -697,7 +721,7 @@ body
     position:absolute; 
     top:53%; 
     left:52%;
-    }
+    }*/
     
  /*SERVICES - Map Points*/
     #services_purdue{
@@ -734,6 +758,25 @@ body
     position:absolute;
     top:42%; 
     left:25%;
+    } 
+    
+ /*Refresh Map Button - MAP location - Landscape*/   
+    #reloadMap {
+        width:107px;
+        text-align:center;
+        border:1px solid #999999; 
+        text-decoration:none;
+        background-color:#FFFFFF; 
+        padding:5px; 
+        position:absolute; 
+        left:899px; 
+        top:85px; 
+        z-index:1000000;
     }
     
+     #reloadMap a { 
+        text-decoration:none;
+        font-weight:bold;
+        color:#000000;
+    }   
 }/* END - CSS FOR LANDSCAPE ORIENTATION*/
