@@ -39,7 +39,8 @@ body
     
     #home
     {
-    background: url(../images/home/Default-Portrait@2x~ipad.jpg) no-repeat center center fixed;
+    /*background: url(../images/home/Default-Portrait@2x~ipad.jpg) no-repeat center center fixed;*/
+    background: url(../images/home/Default-Portrait2xipad.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -413,7 +414,8 @@ body
     
     #home
     {
-    background: url(../images/home/Default-Landscape@2x~ipad.jpg) no-repeat center center fixed;
+    /*background: url(../images/home/Default-Landscape@2x~ipad.jpg) no-repeat center center fixed;*/
+    background: url(../images/home/Default-Landscape2xipad.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
