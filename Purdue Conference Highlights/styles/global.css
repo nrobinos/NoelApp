@@ -27,7 +27,7 @@ body {
 }
 
 #container {
-	width:580px;
+	width:600px; /*580*/
 	padding:0px;
 	margin:0 auto;
 	position:relative;
@@ -35,7 +35,7 @@ body {
 }
 
 #example {
-	width:580px;
+	width:600px; /*580*/
 	height:435px;
 	position:relative;
 }
@@ -103,7 +103,7 @@ body {
 }
 
 #slides .next {
-	left:520px;
+	left:540px;
 }
 
 /*
