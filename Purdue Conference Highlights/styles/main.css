@@ -396,12 +396,14 @@ body
         left:643px; 
         top:85px; 
         z-index:1000000;
+        font-size:.7em;
     }
     
      #reloadMap a { 
         text-decoration:none;
         font-weight:bold;
         color:#000000;
+        
     }  
     
 }
@@ -772,6 +774,7 @@ body
         left:899px; 
         top:85px; 
         z-index:1000000;
+        font-size:.7em;
     }
     
      #reloadMap a { 

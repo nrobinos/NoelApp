@@ -16,14 +16,14 @@ blockquote,q { quotes:"" ""; }
 	Page style
 */
 body { 
-	font:normal 62.5%/1.5 Helvetica, Arial, sans-serif;
+	/*font:normal 62.5%/1.5 Helvetica, Arial, sans-serif;
 	letter-spacing:0;
 	color:#434343;
 	background:#efefef url(../img/background.png) repeat top center;
 	padding:20px 0;
 	position:relative;
 	text-shadow:0 1px 0 rgba(255,255,255,.8);
-	-webkit-font-smoothing: subpixel-antialiased;
+	-webkit-font-smoothing: subpixel-antialiased;*/
 }
 
 #container {
@@ -151,7 +151,7 @@ body {
 	background:#000;
 	background:rgba(0,0,0,.5);
 	width:540px;
-	font-size:1.3em;
+	font-size:1em;
 	line-height:1.33;
 	color:#fff;
 	border-top:1px solid #000;
