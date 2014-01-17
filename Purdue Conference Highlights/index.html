@@ -75,10 +75,11 @@
 		<!--END MAIN PAGE-->
 
 		<!--START CAMPUS MAP PAGE-->
-		<div data-role="page" id="campus_map" data-title="" style="position:relative;">
+		<div data-role="page" id="campus_map" data-title="">
+        <!--<div data-role="page" id="campus_map" data-title="" style="position:relative;">-->
             
-			<div  data-role="header">
-                
+			<div data-role="header">
+                <h1>CAMPUS MAP</h1>
                 <div data-role="navbar">
                       <ul>
                         <li id="toggle" onclick = ""><a href="">Venues<img src="img/pin_blue.png" height="20" width="20"/></a></li>
@@ -93,7 +94,8 @@
             
 				 <div data-role="content" >
                     <div id="reloadMap"><a href="javascript:location.reload(true)">RELOAD MAP</a></div>
-                    <div id="map_canvas" style="width:100%; height:980px; z-index:200;"></div> 
+                    <div id="map_canvas"></div>
+                    <!--<div id="map_canvas" style="width:100%; height:980px; z-index:200;"></div>-->
                  </div>
                 
             
@@ -1023,12 +1025,30 @@
 			</div>
 			<div data-role="content" style="padding:3%;">
 
-				<div style="padding:3%; width:50%; background-color: rgba(0,0,0,.5); color: #ffffff; line-height:1.5em;">
-					<p style="padding-bottom:1em;">Almost 70,000 participants attended a conference, purchased tickets for a festival, golfed in an outing, or attended a webinar last year.</p>
+				<div style="padding:3%; width:60%; background-color: rgba(0,0,0,.5); color: #ffffff; line-height:1.5em;">
+					<!--
+                    <p style="padding-bottom:1em;">Almost 70,000 participants attended a conference, purchased tickets for a festival, golfed in an outing, or attended a webinar last year.</p>
 					<p style="padding-bottom:1em;">Today, Purdue's Conference Division services over 700 events annually, striving to meet the unique needs and objectives of each one. From a professional staff of experienced conference coordinators, to state-of-the-art facilities and services, Purdue upholds a tradition of excellence with one of the largest collegiate conference programs in the nation.</p>
 					<p style="padding-bottom:1em;">Whether you are looking to bring a group of 5 or a group of 5,000, you can put your confidence in Purdue Conference Division's 20 coordinators, registration assistants, and clerical assistants, who are supported by over 20 business and IT staff members. We currently have 2 Certified Meeting Planners, with 2 more working toward certification. We have the expertise to assist you with everything from online registration and abstract management to technology and business needs.</p>
+                    -->
+                    
+                    <p style="padding-bottom:1em;">Purdue Conferences' goal is to ensure that your conference, symposium, or event is a success. At Purdue we have meeting space for you whether your group is 10 people or 6,000. Not in the Midwest? Not a problem, we&rsquo;ll bring Purdue to you. We want to plan  any program you hold, anywhere you hold it. We have conducted conferences throughout the United States including New York, Las Vegas, Washington D.C., Sacramento, and internationally. Why deal with dozens of suppliers and  vendors when a Purdue Conferences coordinator can put the whole package  together for you? Purdue Conferences will take care of all the details for your conferences from site selection, speaker engagement, to every  logistical detail of your event. Let us focus on the  logistics so you can enjoy the success of your program.</p>
+                    <p style="padding-bottom:1em; font-weight:bold;">The Purdue Complete Meeting Service Package:</p>
+                    <ul>
+                        <li>Registration</li>
+                        <li>Revenue and expense management</li>
+                        <li>Supplier partnerships/networks</li>
+                        <li>Vendor contract negotiation</li>
+                        <li>Complete on-site support</li>
+                        <li>Full logistic and operational planning</li>
+                    </ul><br>
+                    <p style="padding-bottom:1em;">
+                        Purdue Conferences<br>
+                        Anytime, Anywhere
+                    </p>
+                    
                 </div>
-                <div style="padding:3%; width:50%; background-color: rgba(0,0,0,.8); color: #ffffff; font-size:11px; line-height:1.5em;">
+                <div style="padding:3%; width:60%; background-color: rgba(0,0,0,.8); color: #ffffff; font-size:11px; line-height:1.5em;">
                     <p>Purdue University, West Lafayette, IN 47907<br>
                     © 2014 Purdue University | An equal access/equal opportunity university<br>
                     For comments or feedback about this app, please contact PEC-IT at <a style="text-decoration:none; color: #E3AE24;" href="mailto:pec.support@purdue.edu">pec.support@purdue.edu</a>

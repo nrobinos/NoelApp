@@ -4,12 +4,12 @@
 
     <lodge>
         
-        <name>First Street</name>
+        <name>First Street Towers</name>
         <address>Purdue University</address>
-        <img>img/first.png</img>
-        <img2></img2>
-        <img3></img3>
-        <caption>First Street</caption>
+        <img>images/maps/lodging/firststreet/firststreet1.jpg</img>
+        <img2>images/maps/lodging/firststreet/firststreet3.jpg</img2>
+        <img3>images/maps/lodging/firststreet/firststreet2.jpg</img3>
+        <caption>First Street Towers</caption>
         <lat>40.42487</lat>
         <lng>-86.92457</lng>
         
@@ -18,16 +18,16 @@
     <lodge>
         <name>Cary Quadrangle</name>
         <address>Purdue University</address>
-        <img>img/cary.png</img>
-        <img2></img2>
-        <img3></img3>
+        <img>images/maps/lodging/cary/cary1.jpg</img>
+        <img2>images/maps/lodging/cary/cary2.jpg</img2>
+        <img3>images/maps/lodging/cary/cary3.jpg</img3>
         <caption>Cary Quadrangle</caption>
         <lat>40.43195</lat>
         <lng>-86.91820</lng>
         
    </lodge>
     
-    <lodge>
+    <!--<lodge>
         <name>Wiley</name>
         <address>Purdue University</address>
         <img></img>
@@ -37,34 +37,34 @@
         <lat>40.42973</lat>
         <lng>-86.92083</lng>
         
-   </lodge>
+   </lodge>-->
     
     
     <lodge>
-        <name>harrison Hall</name>
+        <name>Harrison Hall</name>
         <address>Purdue University</address>
-        <img>img/harrison.png</img>
-        <img2></img2>
-        <img3></img3>
-        <caption>harrison Hall</caption>
+        <img>images/maps/lodging/harrison/harrison1.jpg</img>
+        <img2>images/maps/lodging/harrison/harrison2.jpg</img2>
+        <img3>images/maps/lodging/harrison/harrison3.jpg</img3>
+        <caption>Harrison Hall</caption>
         <lat>40.42496</lat>
         <lng>-86.92685</lng>
         
    </lodge>
     
     <lodge>
-        <name>Mccutcheon</name>
+        <name>McCutcheon</name>
         <address>Purdue University</address>
-        <img>img/mccutcheon.png</img>
-        <img2></img2>
-        <img3></img3>
-        <caption>Mccutcheon</caption>
+        <img>images/maps/lodging/mccutcheon/mccutcheon1.jpg</img>
+        <img2>images/maps/lodging/mccutcheon/mccutcheon2.jpg</img2>
+        <img3>images/maps/lodging/mccutcheon/mccutcheon3.jpg</img3>
+        <caption>McCutcheon</caption>
         <lat>40.42498</lat>
         <lng>-86.92810</lng>
         
    </lodge>
     
-    <lodge>
+    <!--<lodge>
         <name>Owen Hall</name>
         <address>Purdue University</address>
         <img></img>
@@ -74,14 +74,14 @@
         <lat>40.43200</lat>
         <lng>-86.92076</lng>
         
-   </lodge>
+   </lodge>-->
 
     <lodge>
         <name>Shreve Hall</name>
         <address>Purdue University</address>
-        <img>img/shreve.png</img>
-        <img2></img2>
-        <img3></img3>
+        <img>images/maps/lodging/shreve/shreve1.jpg</img>
+        <img2>images/maps/lodging/shreve/shreve3.jpg</img2>
+        <img3>images/maps/lodging/shreve/shreve2.jpg</img3>
         <caption>Shreve Hall</caption>
         <lat>40.42673</lat>
         <lng>-86.92499</lng>
@@ -91,9 +91,9 @@
     <lodge>
         <name>Earhart Hall</name>
         <address>Purdue University</address>
-        <img>img/earhart_lodging.png</img>
-        <img2></img2>
-        <img3></img3>
+        <img>images/maps/lodging/earhart/earhart1.jpg</img>
+        <img2>images/maps/lodging/earhart/earhart2.jpg</img2>
+        <img3>images/maps/lodging/earhart/earhart3.jpg</img3>
         <caption>Earhart Hall</caption>
         <lat>40.42580</lat>
         <lng>-86.92495</lng>
@@ -103,9 +103,9 @@
     <lodge>
         <name>Hillenbrand Hall</name>
         <address>Purdue University</address>
-        <img>img/hillenbrand_lodging.png</img>
-        <img2></img2>
-        <img3></img3>
+        <img>images/maps/lodging/hillenbrand/hillenbrand1.jpg</img>
+        <img2>images/maps/lodging/hillenbrand/hillenbrand2.jpg</img2>
+        <img3>images/maps/lodging/hillenbrand/hillenbrand3.jpg</img3>
         <caption>Hillenbrand Hall</caption>
         <lat>40.42666</lat>
         <lng>-86.92675</lng>

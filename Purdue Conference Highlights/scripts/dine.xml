@@ -5,9 +5,9 @@
         
         <name>Ford</name>
         <address>Purdue University</address>
-        <img>img/ford.png</img>
-        <img2></img2>
-        <img3></img3>
+        <img>images/maps/dining/ford/ford1.jpg</img>
+        <img2>images/maps/dining/ford/ford2.jpg</img2>
+        <img3>images/maps/dining/ford/ford3.jpg</img3>
         <caption>Ford Dining court</caption>
         <lat>40.43213</lat>
         <lng>-86.91960</lng>
@@ -18,9 +18,9 @@
         
         <name>Wiley</name>
         <address>Purdue University</address>
-        <img>img/2.jpg</img>
-        <img2>img/pmu2.jpg</img2>
-        <img3>img/pmu3.jpg</img3>
+        <img>images/maps/dining/wiley/wiley1.jpg</img>
+        <img2>images/maps/dining/wiley/wiley2.jpg</img2>
+        <img3>images/maps/dining/wiley/wiley3.jpg</img3>
         <caption>Wiley</caption>
         <lat>40.429391</lat>
         <lng>-86.920781</lng>
@@ -31,9 +31,9 @@
         
         <name>Earhart</name>
         <address>Purdue University</address>
-        <img>img/earhart_dining.png</img>
-        <img2></img2>
-        <img3></img3>
+        <img>images/maps/dining/earhart/earhart1.jpg</img>
+        <img2>images/maps/dining/earhart/earhart2.jpg</img2>
+        <img3>images/maps/dining/earhart/earhart3.jpg</img3>
         <caption>Earhart</caption>
         <lat>40.42576</lat>
         <lng>-86.92495</lng>
@@ -44,9 +44,9 @@
         
         <name>HillenBrand</name>
         <address>Purdue University</address>
-        <img>img/hillenbrand_dining.png</img>
-        <img2></img2>
-        <img3></img3>
+        <img>images/maps/dining/hillenbrand/hillenbrand1.jpg</img>
+        <img2>images/maps/dining/hillenbrand/hillenbrand2.jpg</img2>
+        <img3>images/maps/dining/hillenbrand/hillenbrand3.jpg</img3>
         <caption>HillenBrand</caption>
         <lat>40.42686</lat>
         <lng>-86.92648</lng>
@@ -57,9 +57,9 @@
         
         <name>Windsor </name>
         <address>Purdue University</address>
-        <img>img/windsor_dining.png</img>
-        <img2></img2>
-        <img3></img3>
+        <img>images/maps/dining/windsor/windsor1.jpg</img>
+        <img2>images/maps/dining/windsor/windsor2.jpg</img2>
+        <img3>images/maps/dining/windsor/windsor3.jpg</img3>
         <caption>Windsor</caption>
         <lat>40.42665</lat>
         <lng>-86.92125</lng>
