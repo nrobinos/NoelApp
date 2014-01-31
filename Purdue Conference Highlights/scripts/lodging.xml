@@ -39,7 +39,6 @@
         
    </lodge>-->
     
-    
     <lodge>
         <name>Harrison Hall</name>
         <address>Purdue University</address>
@@ -111,5 +110,39 @@
         <lng>-86.92675</lng>
         
    </lodge>
+
+   <lodge>
+        <name>Hilton Garden Inn</name>
+        <address>Purdue University</address>
+        <img>images/maps/lodging/hilton/hilton1.jpg</img>
+        <img2>images/maps/lodging/hilton/hilton2.jpg</img2>
+        <img3>images/maps/lodging/hilton/hilton3.jpg</img3>
+        <caption>Hilton Garden Inn</caption>
+        <lat>40.420640</lat>
+        <lng>-86.899964</lng>
+   </lodge>
+
+   <lodge>
+        <name>Holiday Inn City Centre</name>
+        <address>Purdue University</address>
+        <img>images/maps/lodging/hiltoncity/hiltoncity1.jpg</img>
+        <img2>images/maps/lodging/hiltoncity/hiltoncity2.jpg</img2>
+        <img3>images/maps/lodging/hiltoncity/hiltoncity3.jpg</img3>
+        <caption>Holiday Inn City Centre</caption>
+        <lat>40.417308</lat>
+        <lng>-86.891667</lng>
+    </lodge>
+
+   <lodge>
+        <name>Four Points by Sheraton</name>
+        <address>Purdue University</address>
+        <img>images/maps/lodging/sheraton/sheraton1.jpg</img>
+        <img2>images/maps/lodging/sheraton/sheraton2.jpg</img2>
+        <img3>images/maps/lodging/sheraton/sheraton3.jpg</img3>
+        <caption>Four Points by Sheraton</caption>
+        <lat>40.459523</lat>
+        <lng>-86.935474</lng>
+   </lodge>
+
     
 </Records>
