@@ -99,5 +99,17 @@
         <lng>-86.91006</lng>
         
    </Venue>
+
+    <Venue>
+        <name>Purdue University Airport</name>
+        <address>Purdue University</address>
+        <img>images/maps/venues/airport/airport1.jpg</img>
+        <img2>images/maps/venues/airport/airport2.jpg</img2>
+        <img3>images/maps/venues/airport/airport3.jpg</img3>
+        <caption>Purdue University Airport</caption>
+        <lat>40.41397</lat>
+        <lng>-86.933786</lng>
+        
+   </Venue>
     
 </Records>
