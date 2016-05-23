@@ -96,7 +96,7 @@ body {
 	position:absolute;
 	top:140px;
 	left:20px;
-	width:24px;
+	width:43px; /*24px*/
 	height:43px;
 	display:block;
 	z-index:101;

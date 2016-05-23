@@ -14,15 +14,17 @@
 		<!--META
 		<meta name="viewport" content="width=device-width, initial-scale=1">-->
 
-		<!--JQUERY MOBILE POPUP
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
-		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
-		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>-->
+		<!--JQUERY MOBILE POPUP-->
 		<link href="jquery-mobile/jquery.mobile-1.2.0.min.css" rel="stylesheet" type="text/css" />
 		<script src="jquery-mobile/jquery-1.8.2.min.js" type="text/javascript"></script>
         
-        <!--For slideshow-->
-        <script type="text/javascript" src="scripts/slides.js"></script> 
+        <!--For muslider slideshow: http://muslider.musings.it/-->
+        <script type="text/javascript" src="scripts/muslider/jquery.muslider-2.0.min.js"></script>
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/muslider/CSSreset.min.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/muslider/muslider_demo.css" />
+        
+        <!--For Campus Map Slideshow-->
+        <script type="text/javascript" src="scripts/slides.js"></script>
         <link rel="stylesheet" type="text/css" href="styles/global.css" />
         
 		<script src="jquery-mobile/jquery.mobile-1.2.0.min.js" type="text/javascript"></script>
@@ -30,15 +32,6 @@
         <!--Google Maps previous v=3.11 -->
         <script type="text/javascript" src="http://maps.google.com/maps/api/js?v=3.14&sensor=false"></script> 
         <link href="http://code.google.com/apis/maps/documentation/javascript/examples/default.css" rel="stylesheet" type="text/css" />
-        
-        <!--ZOOMOOZ for ZOOMING SERVICES CONTENT - http://jaukia.github.io/zoomooz/ -->
-        <script src="zoomooz/jquery.zoomooz.min.js"></script>
-        
-		<!--START ARNAV's SAMPLE
-		<!--We don't need a reference to the lower version of jquery
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-		<script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>-->
-		<!--END ARNAV's SAMPLE-->
 	
         <!--Timeout-->
      <script type="text/javascript">
@@ -57,31 +50,40 @@
             function setplane3() {
                 $("#plane3").css({"position" : "absolute" , "top" : "42%" , "left" : "20%" , "z-index":"200"});
             }
+         
+            function setplane4() {
+                $("#plane4").css({"position" : "absolute" , "top" : "42%" , "left" : "20%" , "z-index":"300"});
+            }
             
             function turkey() {
                 $("#plane").show();
                 $("#plane").animate({"left":"52%"}, 800, function() {
-                    $("#turkey_services").popup("open"),1300,setplane(),$("#plane").hide();
+                    $("#turkey_reach").popup("open"),1300,setplane(),$("#plane").hide();
                 })  
             };
 
             function vegas() {
                 $("#plane2").show();
                 $("#plane2").animate({"left":"-=6%"}, 800, function() {
-                    $("#vegas_services").popup("open"),1300,setplane2(),$("#plane2").hide();
+                    $("#vegas_reach").popup("open"),1300,setplane2(),$("#plane2").hide();
                 })  
             };
          
             function sac() {
                 $("#plane3").show();
                 $("#plane3").animate({"left":"-=8%","top":"-=2%"}, 800, function() {
-                    $("#sacramento_services").popup("open"),1300,setplane3(),$("#plane3").hide();
+                    $("#sacramento_reach").popup("open"),1300,setplane3(),$("#plane3").hide();
+                })  
+            };
+         
+            function nigeria() {
+                $("#plane4").show();
+                $("#plane4").animate({"left":"48%","top":"55%"}, 800, function() {
+                    $("#nigeria_reach").popup("open"),1300,setplane4(),$("#plane4").hide();
                 })  
             };
 
-         
-	</script> 
-        
+	</script>
         
 	</head>
 
@@ -91,6 +93,58 @@
 		<div data-role="page" id="home" data-title=" ">
 			<div data-role="header"></div>
 			<div data-role="content">
+                <!--SLIDESHOW START-->
+			<div id="slider_wrapper">
+				<div id="container_main" class="slider" style="background-color:#000000;">
+                    <!--Main Slideshow Image 1-->
+					<div class="slide">
+						<img src="images/muslider/ajax-loader.gif" data-src="images/home/main_slideshow1.png" alt="" title="" />
+					</div>
+                    <!--Main Slideshow Image 2-->
+					<div class="slide">
+						<img src="images/muslider/ajax-loader.gif" data-src="images/home/main_slideshow2.png" alt="" title="" />
+					</div>
+                    <!--Main Slideshow Image 3-->
+					<div class="slide">
+						<img src="images/muslider/ajax-loader.gif" data-src="images/home/main_slideshow3.png" alt="" title="" />
+					</div>
+                    <!--Main Slideshow Image 4-->
+					<div class="slide">
+						<img src="images/muslider/ajax-loader.gif" data-src="images/home/main_slideshow4.png" alt="" title="" />
+					</div>
+                    <!--Main Slideshow Image 5-->
+					<div class="slide">
+						<img src="images/muslider/ajax-loader.gif" data-src="images/home/main_slideshow5.png" alt="" title="" />
+					</div>
+                    <!--Main Slideshow Image 6-->
+					<div class="slide">
+						<img src="images/muslider/ajax-loader.gif" data-src="images/home/main_slideshow6.png" alt="" title="" />
+					</div>
+				</div>
+				<div class="navslide" data-position="fixed" data-fullscreen="true" style="top:513px !important;">
+					<p>
+						<span class="prev"><img src="images/muslider/prev02.png" alt="previous" title="previous" /></span>
+						<span class="start"><img src="images/muslider/start02.png" alt="start" title="start" /></span>
+						<span class="stop"><img src="images/muslider/pause02.png" alt="stop" title="stop" /></span>
+						<span class="next"><img src="images/muslider/next02.png" alt="next" title="next" /></span>
+					</p>
+				</div>
+			</div>
+		<script>
+			$(document).ready(function() 
+			{
+				$("#container_main").muslider({
+					"animation_type": "horizontal", /*horizontal, vertical, fade*/
+					"animation_duration": 600,
+					"animation_start": "auto",
+                    "animation_interval": 5000, /*4000*/
+                    "responsive": "no",
+                    "width": 980,
+                    "height": 730,
+				});
+			});
+		</script>
+                <!--SLIDESHOW END-->
 				<div id="main"></div>
 			</div>
 
@@ -99,8 +153,8 @@
 					<ul>
 						<li><a href="#home" data-role="button" data-icon="home">Home</a></li>
 						<li><a href="#campus_map" data-role="button" data-icon="star">Campus Map</a></li>
-						<li><a href="#services" data-role="button" data-icon="gear">Services</a></li>
-						<li><a href="#staff" data-role="button" data-icon="grid">Staff</a></li>
+						<li><a href="#our_reach" data-role="button" data-icon="gear">Our Reach</a></li>
+						<li><a href="#services" data-role="button" data-icon="grid">Services</a></li>
 						<li><a href="#about" data-role="button" data-icon="info">About</a></li>
 					</ul>
 				</div>
@@ -139,8 +193,8 @@
 					<ul>
 						<li><a href="#home" data-role="button" data-icon="home">Home</a></li>
 						<li><a href="#campus_map" data-role="button" data-icon="star">Campus Map</a></li>
-						<li><a href="#services" data-role="button" data-icon="gear">Services</a></li>
-						<li><a href="#staff" data-role="button" data-icon="grid">Staff</a></li>
+						<li><a href="#our_reach" data-role="button" data-icon="gear">Our Reach</a></li>
+						<li><a href="#services" data-role="button" data-icon="grid">Services</a></li>
 						<li><a href="#about" data-role="button" data-icon="info">About</a></li>
 					</ul>
 				</div>
@@ -237,8 +291,8 @@
                                 '</div>' +
                             '</div>' +
                                 '</div>' +
-                        '<a href="#" class="prev">' + '<img src="img/left.png" width="40" height="50" alt="Arrow Prev">' + '</a>' +
-                        '<a href="#" class="next">' + '<img src="img/right.png" width="40" height="50" alt="Arrow Next">' + '</a>' +
+                        '<a href="#" class="prev">' + '<img src="img/left.png" width="50" height="50" alt="Arrow Prev">' + '</a>' +
+                        '<a href="#" class="next">' + '<img src="img/right.png" width="50" height="50" alt="Arrow Next">' + '</a>' +
                     '</div>' +
 
                 '</div>';
@@ -367,8 +421,8 @@
                             '</div>' +
                         '</div>' +
                             '</div>' +
-                    '<a href="#" class="prev">' + '<img src="img/left.png" width="40" height="50" alt="Arrow Prev">' + '</a>' +
-                    '<a href="#" class="next">' + '<img src="img/right.png" width="40" height="50" alt="Arrow Next">' + '</a>' +
+                    '<a href="#" class="prev">' + '<img src="img/left.png" width="50" height="50" alt="Arrow Prev">' + '</a>' +
+                    '<a href="#" class="next">' + '<img src="img/right.png" width="50" height="50" alt="Arrow Next">' + '</a>' +
                 '</div>' +
 
             '</div>';
@@ -491,8 +545,8 @@
                             '</div>' +
                         '</div>' +
                             '</div>' +
-                    '<a href="#" class="prev">' + '<img src="img/left.png" width="40" height="50" alt="Arrow Prev">' + '</a>' +
-                    '<a href="#" class="next">' + '<img src="img/right.png" width="40" height="50" alt="Arrow Next">' + '</a>' +
+                    '<a href="#" class="prev">' + '<img src="img/left.png" width="50" height="50" alt="Arrow Prev">' + '</a>' +
+                    '<a href="#" class="next">' + '<img src="img/right.png" width="50" height="50" alt="Arrow Next">' + '</a>' +
                 '</div>' +
 
             '</div>';
@@ -617,8 +671,8 @@
                                 '</div>' +
                             '</div>' +
                                 '</div>' +
-                        '<a href="#" class="prev">' + '<img src="img/left.png" width="40" height="50" alt="Arrow Prev">' + '</a>' +
-                        '<a href="#" class="next">' + '<img src="img/right.png" width="40" height="50" alt="Arrow Next">' + '</a>' +
+                        '<a href="#" class="prev">' + '<img src="img/left.png" width="50" height="50" alt="Arrow Prev">' + '</a>' +
+                        '<a href="#" class="next">' + '<img src="img/right.png" width="50" height="50" alt="Arrow Next">' + '</a>' +
                     '</div>' +
 
                 '</div>';
@@ -855,10 +909,10 @@
 		</div>
 		<!--END CAMPUS MAP PAGE-->
 
-		<!--START SERVICES PAGE-->
-		<div data-role="page" id="services" data-title=" ">
+		<!--START OUR REACH PAGE-->
+		<div data-role="page" id="our_reach" data-title=" ">
 			<div data-role="header" data-position="fixed" data-fullscreen="true" >
-				<h1>SERVICES</h1>
+				<h1>OUR REACH</h1>
  				<div data-role="navbar">
 					<ul>
 						<li>
@@ -880,174 +934,322 @@
 				</div>  
 			</div>
             
-            <!--airplane.png and airplane2.png for services tab animation-->
-            <img src="images/services/airplane.png" id="plane"/> <img src="images/services/airplane2.png" id="plane2" /> <img src="images/services/airplane2.png" id="plane3" />
+            <!--airplane.png and airplane2.png for our reach tab animation-->
+            <img src="images/reach/airplane.png" id="plane"/> 
+            <img src="images/reach/airplane2.png" id="plane2" /> 
+            <img src="images/reach/airplane2.png" id="plane3" />
+            <img src="images/reach/airplane.png" id="plane4"/> 
 
             <div data-role="content" style="padding:3%;">
                 
                 <!--<div class="ui-grid-b">START of ui-grid-b-->
-                <!--Services Map Points-->
-                <a href="#purdue_services"  data-rel="popup" data-transition="flip" >
-                    <div id="services_purdue">
-                        <img src="images/services/services_points_yellow.png" style="width:25px; height:25px;">
+                <!--Our Reach Map Points-->
+                <a href="#purdue_reach"  data-rel="popup" data-transition="flip" >
+                    <div id="reach_purdue">
+                        <img src="images/reach/services_points_yellow.png" style="width:25px; height:25px;">
                     </div>
                 </a>
-                <div data-role="popup" id="purdue_services" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+                <div data-role="popup" id="purdue_reach" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
                     <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-                    <img class="popphoto" src="images/services/popup_purdue.jpg" alt="Purdue University">
+                    <img class="popphoto" src="images/reach/popup_purdue.jpg" alt="Purdue University">
                     <div class="details">
                         <h3>Purdue University</h3>
                     </div>
                 </div>
-
-                <!--<a href="#vegas_services"  data-rel="popup" data-transition="flip" >
-                    <div id="services_vegas">
-                        <img src="images/services/services_points_red.png" style="width:25px; height:25px;">
-                    </div>
-                </a>-->
                 
                 <a href=""  data-rel="popup" data-transition="flip" >
-                    <div id="services_vegas">
-                        <img src="images/services/services_points_red.png" onclick="vegas()" style="width:25px; height:25px;">
+                    <div id="reach_vegas">
+                        <img src="images/reach/services_points_red.png" onclick="vegas()" style="width:25px; height:25px;">
                     </div>
                 </a>
                 
-                <div data-role="popup" id="vegas_services" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+                <div data-role="popup" id="vegas_reach" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
                     <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-                    <img class="popphoto" src="images/services/popup_vegas.jpg" alt="Las Vegas">
+                    <img class="popphoto" src="images/reach/popup_vegas.jpg" alt="Las Vegas">
                     <div class="details">
                         <h3>Las Vegas, NV</h3>
                     </div>
                 </div>
-
-                <!--<a href="#turkey_services"  data-rel="popup" data-transition="flip" >
-                    <div id="services_turkey">
-                        <img src="images/services/services_points_red.png" style="width:25px; height:25px;">
-                    </div>
-                </a>-->
                 
                <a href=""  data-rel="popup" data-transition="flip" >
-                    <div id="services_turkey">
-                        <img src="images/services/services_points_red.png" onclick="turkey()" style="width:25px; height:25px;">
+                    <div id="reach_turkey">
+                        <img src="images/reach/services_points_red.png" onclick="turkey()" style="width:25px; height:25px;">
                     </div>
                 </a>
                 
-                <div data-role="popup" id="turkey_services" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+                <div data-role="popup" id="turkey_reach" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
                     <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-                    <img class="popphoto" src="images/services/popup_turkey.jpg" alt="Turkey">
+                    <img class="popphoto" src="images/reach/popup_turkey.jpg" alt="Turkey">
                     <div class="details">
                         <h3>Turkey</h3>
                     </div>
                 </div>
 
-                <a href="#florida_services"  data-rel="popup" data-transition="flip" >
-                    <div id="services_florida">
-                        <img src="images/services/services_points_red.png" style="width:25px; height:25px;">
+                <a href="#florida_reach"  data-rel="popup" data-transition="flip" >
+                    <div id="reach_florida">
+                        <img src="images/reach/services_points_red.png" style="width:25px; height:25px;">
                     </div>
                 </a>
-                <div data-role="popup" id="florida_services" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+                <div data-role="popup" id="florida_reach" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
                     <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-                    <img class="popphoto" src="images/services/popup_florida.jpg" alt="Naples, FL">
+                    <img class="popphoto" src="images/reach/popup_florida.jpg" alt="Naples, FL">
                     <div class="details">
                         <h3>Naples, FL</h3>
                     </div>
                 </div>
-
-                <!--<a href="#sacramento_services"  data-rel="popup" data-transition="flip" >
-                    <div id="services_sacramento">
-                        <img src="images/services/services_points_red.png" style="width:25px; height:25px;">
-                    </div>
-                </a>-->
                 
                 <a href=""  data-rel="popup" data-transition="flip" >
-                    <div id="services_sacramento">
-                        <img src="images/services/services_points_red.png" onclick="sac()" style="width:25px; height:25px;">
+                    <div id="reach_sacramento">
+                        <img src="images/reach/services_points_red.png" onclick="sac()" style="width:25px; height:25px;">
                     </div>
                 </a>
                 
-                <div data-role="popup" id="sacramento_services" data-overlay-theme="a" data-theme="d" 
+                <div data-role="popup" id="sacramento_reach" data-overlay-theme="a" data-theme="d" 
 
                      data-corners="false" data-position-to="window">
                     <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-                    <img class="popphoto" src="images/services/popup_sacramento.jpg" alt="Scotland">
+                    <img class="popphoto" src="images/reach/popup_sacramento.jpg" alt="Scotland">
                     <div class="details">
                         <h3>Sacramento, CA</h3>
                     </div>
                 </div>
 
-                <a href="#newyork_services"  data-rel="popup" data-transition="flip" >
-                    <div id="services_newyork">
-                        <img src="images/services/services_points_red.png" style="width:25px; height:25px;">
+                <a href="#newyork_reach"  data-rel="popup" data-transition="flip" >
+                    <div id="reach_newyork">
+                        <img src="images/reach/services_points_red.png" style="width:25px; height:25px;">
                     </div>
                 </a>
-                <div data-role="popup" id="newyork_services" data-overlay-theme="a" data-theme="d" data-
+                <div data-role="popup" id="newyork_reach" data-overlay-theme="a" data-theme="d" data-
 
                      corners="false" data-position-to="window">
                     <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-                    <img class="popphoto" src="images/services/popup_newyork.jpg" alt="New York">
+                    <img class="popphoto" src="images/reach/popup_newyork.jpg" alt="New York">
                     <div class="details">
                         <h3>New York City, NY</h3>
                     </div>
                 </div>
+                
+               <a href=""  data-rel="popup" data-transition="flip" >
+                    <div id="reach_nigeria">
+                        <img src="images/reach/services_points_red.png" onclick="nigeria()" style="width:25px; height:25px;">
+                    </div>
+                </a>
+                
+                <div data-role="popup" id="nigeria_reach" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+                    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                    <img class="popphoto" src="images/reach/popup_nigeria.jpg" alt="Turkey">
+                    <div class="details">
+                        <h3>Abuja City, Nigeria</h3>
+                    </div>
+                </div>
+                
+               <a href="#rennes_reach"  data-rel="popup" data-transition="flip" >
+                    <div id="reach_rennes">
+                        <img src="images/reach/services_points_red.png" style="width:25px; height:25px;">
+                    </div>
+                </a>
+                
+                <div data-role="popup" id="rennes_reach" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+                    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                    <img class="popphoto" src="images/reach/popup_rennes.jpg" alt="Rennes, France">
+                    <div class="details">
+                        <h3>Rennes, France</h3>
+                    </div>
+                </div>
+                
+               <a href="#brisbane_reach"  data-rel="popup" data-transition="flip" >
+                    <div id="reach_brisbane">
+                        <img src="images/reach/services_points_red.png" style="width:25px; height:25px;">
+                    </div>
+                </a>
+                
+                <div data-role="popup" id="brisbane_reach" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+                    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                    <img class="popphoto" src="images/reach/popup_brisbane.jpg" alt="Brisbane, Australia">
+                    <div class="details">
+                        <h3>Brisbane, Australia</h3>
+                    </div>
+                </div>
+                
+               <a href="#basel_reach"  data-rel="popup" data-transition="flip" >
+                    <div id="reach_basel">
+                        <img src="images/reach/services_points_red.png" style="width:25px; height:25px;">
+                    </div>
+                </a>
+                
+                <div data-role="popup" id="basel_reach" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+                    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                    <img class="popphoto" src="images/reach/popup_basel.jpg" alt="Basel, Switzerland">
+                    <div class="details">
+                        <h3>Basel, Switzerland</h3>
+                    </div>
+                </div>
+                
+               <a href="#rio_reach"  data-rel="popup" data-transition="flip" >
+                    <div id="reach_rio">
+                        <img src="images/reach/services_points_red.png" style="width:25px; height:25px;">
+                    </div>
+                </a>
+                
+                <div data-role="popup" id="rio_reach" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+                    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                    <img class="popphoto" src="images/reach/popup_rio.jpg" alt="Rio De Janeiro, Brazil">
+                    <div class="details">
+                        <h3>Rio De Janeiro, Brazil</h3>
+                    </div>
+                </div>
+                
+               <a href="#landskrona_reach"  data-rel="popup" data-transition="flip" >
+                    <div id="reach_landskrona">
+                        <img src="images/reach/services_points_red.png" style="width:25px; height:25px;">
+                    </div>
+                </a>
+                
+                <div data-role="popup" id="landskrona_reach" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+                    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                    <img class="popphoto" src="images/reach/popup_landskrona.jpg" alt="Landskrona, Sweden">
+                    <div class="details">
+                        <h3>Landskrona, Sweden</h3>
+                    </div>
+                </div>
+                
+               <a href="#saopaulo_reach"  data-rel="popup" data-transition="flip" >
+                    <div id="reach_saopaulo">
+                        <img src="images/reach/services_points_red.png" style="width:25px; height:25px;">
+                    </div>
+                </a>
+                
+                <div data-role="popup" id="saopaulo_reach" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+                    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                    <img class="popphoto" src="images/reach/popup_saopaulo.jpg" alt="S&#227;u Paulo, Brazil">
+                    <div class="details">
+                        <h3>S&#227;u Paulo, Brazil</h3>
+                    </div>
+                </div>
+                
+               <a href="#bangkok_reach"  data-rel="popup" data-transition="flip" >
+                    <div id="reach_bangkok">
+                        <img src="images/reach/services_points_red.png" style="width:25px; height:25px;">
+                    </div>
+                </a>
+                
+                <div data-role="popup" id="bangkok_reach" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+                    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                    <img class="popphoto" src="images/reach/popup_bangkok.jpg" alt="Bangkok, Thailand">
+                    <div class="details">
+                        <h3>Bangkok, Thailand</h3>
+                    </div>
+                </div>
+                
+               <a href="#philippines_reach"  data-rel="popup" data-transition="flip" >
+                    <div id="reach_philippines">
+                        <img src="images/reach/services_points_red.png" style="width:25px; height:25px;">
+                    </div>
+                </a>
+                
+                <div data-role="popup" id="philippines_reach" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+                    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                    <img class="popphoto" src="images/reach/popup_philippines.jpg" alt="Philippines">
+                    <div class="details">
+                        <h3>Philippines</h3>
+                    </div>
+                </div>
+                
+               <a href="#venice_reach"  data-rel="popup" data-transition="flip" >
+                    <div id="reach_venice">
+                        <img src="images/reach/services_points_red.png" style="width:25px; height:25px;">
+                    </div>
+                </a>
+                
+                <div data-role="popup" id="venice_reach" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+                    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                    <img class="popphoto" src="images/reach/popup_venice.jpg" alt="Venice, Italy">
+                    <div class="details">
+                        <h3>Venice, Italy</h3>
+                    </div>
+                </div>
+                
+               <a href="#melbourne_reach"  data-rel="popup" data-transition="flip" >
+                    <div id="reach_melbourne">
+                        <img src="images/reach/services_points_red.png" style="width:25px; height:25px;">
+                    </div>
+                </a>
+                
+                <div data-role="popup" id="melbourne_reach" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+                    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                    <img class="popphoto" src="images/reach/popup_melbourne.jpg" alt="Melbourne, Australia">
+                    <div class="details">
+                        <h3>Melbourne, Australia</h3>
+                    </div>
+                </div>
+                
+               <a href="#dubai_reach"  data-rel="popup" data-transition="flip" >
+                    <div id="reach_dubai">
+                        <img src="images/reach/services_points_red.png" style="width:25px; height:25px;">
+                    </div>
+                </a>
+                
+                <div data-role="popup" id="dubai_reach" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+                    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                    <img class="popphoto" src="images/reach/popup_dubai.jpg" alt="Dubai, United Arab Emirates">
+                    <div class="details">
+                        <h3>Dubai, United Arab Emirates</h3>
+                    </div>
+                </div>
+                
+               <a href="#shanghai_reach"  data-rel="popup" data-transition="flip" >
+                    <div id="reach_shanghai">
+                        <img src="images/reach/services_points_red.png" style="width:25px; height:25px;">
+                    </div>
+                </a>
+                
+                <div data-role="popup" id="shanghai_reach" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
+                    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                    <img class="popphoto" src="images/reach/popup_shanghai.jpg" alt="Shanghai, China">
+                    <div class="details">
+                        <h3>Shanghai, China</h3>
+                    </div>
+                </div>
 
-                <!--Services Tab Popup Images-->
+                <!--Our Reach Tab Top Navigation Popup Images-->
                 <div>
-                    <!--<a href="#popupPhoto" data-rel="popup" data-transition="flip">
-                    <img src="images/services/tile_event.png" width="100%">
-                    </a>-->
                     <div data-role="popup" id="popupPhoto" data-overlay-theme="a" data-theme="d" 
 
                          data-corners="false" data-position-to="window">
                         <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-                        <img class="popphoto" src="images/services/popup_event.png" alt="Event Planning">
+                        <img class="popphoto" src="images/reach/popup_event.png" alt="Event Planning">
                     </div>
                 </div>
                 <div>
-                    <!--<a href="#popupPhoto1" data-rel="popup" data-transition="flip">
-                    <img src="images/services/tile_offsite.png" width="100%">
-                    </a>-->
                     <div data-role="popup" id="popupPhoto1" data-overlay-theme="a" data-theme="d" 
 
                          data-corners="false" data-position-to="window">
                         <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-                        <img class="popphoto1" src="images/services/popup_offsite.png" alt="Off-site Facilitation">
+                        <img class="popphoto1" src="images/reach/popup_offsite.png" alt="Off-site Facilitation">
                     </div>
                 </div>
                 <div>
-                    <!--<a href="#popupPhoto3" data-rel="popup"  data-transition="flip">
-                    <img src="images/services/tile_speaker.png" width="100%">
-                    </a>-->
                     <div data-role="popup" id="popupPhoto3" data-overlay-theme="a" data-theme="d" 
 
                          data-corners="false" data-position-to="window">
                         <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-                        <img class="popphoto3" src="images/services/popup_speaker.png" 
-
-                             alt="Speaker and Entertainment">
+                        <img class="popphoto3" src="images/reach/popup_speaker.png" alt="Speaker and Entertainment">
                     </div>
                 </div>
                 <div>
-                    <!--<a href="#popupPhoto4" data-rel="popup"  data-transition="flip">
-                    <img src="images/services/tile_site.png" width="100%">
-                    </a>-->
                     <div data-role="popup" id="popupPhoto4" data-overlay-theme="a" data-theme="d" 
 
                          data-corners="false" data-position-to="window">
                         <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-                        <img class="popphoto4" src="images/services/popup_site.png" alt="On-site Facilitation">
+                        <img class="popphoto4" src="images/reach/popup_site.png" alt="On-site Facilitation">
                     </div>
                 </div>
                 <div>
-                    <!--<a href="#popupPhoto5" data-rel="popup"  data-transition="flip">
-                    <img src="images/services/tile_register.png" width="100%">
-                    </a>-->
                     <div data-role="popup" id="popupPhoto5" data-overlay-theme="a" data-theme="d" 
 
                          data-corners="false" data-position-to="window">
                         <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-                        <img class="popphoto5" src="images/services/popup_register.png" 
-
-                             alt="Registration">
+                        <img class="popphoto5" src="images/reach/popup_register.png" alt="Registration">
                     </div>
                 </div>
                 <div>
@@ -1057,22 +1259,22 @@
 
                 <!--</div>END of ui-grid-b-->
 
-            </div><!--END of data-role="content" for Services Page-->
+            </div><!--END of data-role="content" for Our Reach Page-->
             
 			<div data-role="footer" data-id="footer_ID" data-position="fixed" data-fullscreen="true" >
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-role="button" data-icon="home">Home</a></li>
 						<li><a href="#campus_map" data-role="button" data-icon="star">Campus Map</a></li>
-						<li><a href="#services" data-role="button" data-icon="gear">Services</a></li>
-						<li><a href="#staff" data-role="button" data-icon="grid">Staff</a></li>
+						<li><a href="#our_reach" data-role="button" data-icon="gear">Our Reach</a></li>
+						<li><a href="#services" data-role="button" data-icon="grid">Services</a></li>
 						<li><a href="#about" data-role="button" data-icon="info">About</a></li>
 					</ul>
 				</div>
 			</div>
 
 		</div>
-		<!--END SERVICES PAGE-->
+		<!--END OUR REACH PAGE-->
 
 		<!--START ABOUT PAGE-->
 		<div data-role="page" id="about" data-title=" ">
@@ -1081,7 +1283,7 @@
 			</div>
 			<div data-role="content" style="padding:3%;">
 
-				<div style="padding:3%; width:60%; background-color: rgba(0,0,0,.5); color: #ffffff; line-height:1.5em;">
+				<div style="padding:3%; width:95%; background-color: rgba(0,0,0,.5); color: #ffffff; line-height:1.5em;">
 					<!--
                     <p style="padding-bottom:1em;">Almost 70,000 participants attended a conference, purchased tickets for a festival, golfed in an outing, or attended a webinar last year.</p>
 					<p style="padding-bottom:1em;">Today, Purdue's Conference Division services over 700 events annually, striving to meet the unique needs and objectives of each one. From a professional staff of experienced conference coordinators, to state-of-the-art facilities and services, Purdue upholds a tradition of excellence with one of the largest collegiate conference programs in the nation.</p>
@@ -1104,7 +1306,7 @@
                     </p>
                     
                 </div>
-                <div style="padding:3%; width:60%; background-color: rgba(0,0,0,.8); color: #ffffff; font-size:11px; line-height:1.5em;">
+                <div style="padding:3%; width:95%; background-color: rgba(0,0,0,.8); color: #ffffff; font-size:11px; line-height:1.5em;">
                     <p>Purdue University, West Lafayette, IN 47907<br>
                     © 2014 Purdue University | An equal access/equal opportunity university<br>
                     For comments or feedback about this app, please contact PEC-IT at <a style="text-decoration:none; color: #E3AE24;" href="mailto:pec.support@purdue.edu">pec.support@purdue.edu</a>
@@ -1118,8 +1320,8 @@
 					<ul>
 						<li><a href="#home" data-role="button" data-icon="home">Home</a></li>
 						<li><a href="#campus_map" data-role="button" data-icon="star">Campus Map</a></li>
-						<li><a href="#services" data-role="button" data-icon="gear">Services</a></li>
-						<li><a href="#staff" data-role="button" data-icon="grid">Staff</a></li>
+						<li><a href="#our_reach" data-role="button" data-icon="gear">Our Reach</a></li>
+						<li><a href="#services" data-role="button" data-icon="grid">Services</a></li>
 						<li><a href="#about" data-role="button" data-icon="info">About</a></li>
 					</ul>
 				</div>
@@ -1128,136 +1330,115 @@
 		</div>
 		<!--END ABOUT PAGE-->
 
-		<!--START STAFF PAGE-->
-		<div data-role="page" id="staff" data-title=" ">
+		<!--START SERVICES PAGE-->
+		<div data-role="page" id="services" data-title=" ">
 			<div data-role="header">
-				<h1>CONFERENCE STAFF</h1>
+				<h1>CONFERENCE SERVICES</h1>
 			</div>
-			<div data-role="content" style="padding:3%;">
-
-				<div class="ui-grid-b">
-
-					<div class="ui-block-a">
- 						<a href="#popupPhoto1" data-rel="popup" data-transition="flip">
-							<img src="images/staff/tile_nick.png" width="99%" >
-						</a>
-						<div data-role="popup" id="popupPhoto1" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-							<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-							<img class="popphoto1" src="images/staff/popup_nick.png" alt="Nick Bonora">
-						</div>                       
+			<div data-role="content">
+                <!--SLIDESHOW START-->
+			<div id="slider_wrapper">
+				<div id="container" class="slider">
+                    <!--Planning Services-->
+					<div class="slide">
+						<img src="images/muslider/ajax-loader.gif" data-src="images/services/planning_services.png" alt="Planning Services" title="" />
+                        <div style="position:absolute; top:100px; left:100px; width:700px;">
+                            <h1>Planning Services</h1>
+                            <ul style="list-style-type:disc; margin-left:50px;">
+                                <li>Objectives and Outcomes</li>
+                                <li>Finance Management</li>
+                                <li>Content Management</li>
+                                <li>Site Selection</li>
+                                <li>Timelines/Checklist</li>
+                            </ul>
+                        </div>
 					</div>
-                    
-					<div class="ui-block-b">
- 						<a href="#popupPhoto2" data-rel="popup" data-transition="flip">
-							<img src="images/staff/tile_kevin.png" width="99%" >
-						</a>
-						<div data-role="popup" id="popupPhoto2" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-							<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-							<img class="popphoto1" src="images/staff/popup_kevin.png" alt="Kevin Ness">
-						</div>                       
+                    <!--Registration Services-->
+					<div class="slide">
+						<img src="images/muslider/ajax-loader.gif" data-src="images/services/registration_services.png" alt="Registration Services" title="" />
+                        <div style="position:absolute; top:100px; left:100px; width:700px;">
+                            <h1>Registration Services</h1>
+                            <ul style="list-style-type:disc; margin-left:50px;">
+                                <li>Website Creation</li>
+                                <li>Online Registration</li>
+                                <li>Mail, Fax, E-mail Registration</li>
+                                <li>Name Badge Design</li>
+                                <li>On-Site Registration</li>
+                            </ul>
+                        </div>
 					</div>
-                    
-					<div class="ui-block-c">
- 						<a href="#popupPhoto3" data-rel="popup"  data-transition="flip">
-							<img src="images/staff/tile_stephanie.png" width="99%" >
-						</a>
-						<div data-role="popup" id="popupPhoto3" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-							<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-							<img class="popphoto3" src="images/staff/popup_stephanie.png" alt="Stephanie Botkin">
-						</div>                       
+                    <!--On-Site Services-->
+					<div class="slide">
+						<img src="images/muslider/ajax-loader.gif" data-src="images/services/onsite_services.png" alt="On-Site Services" title="" />
+                        <div style="position:absolute; top:100px; left:100px; width:700px;">
+                            <h1>On-Site Services</h1>
+                            <ul style="list-style-type:disc; margin-left:50px;">
+                                <li>Liaison with the Property</li>
+                                <li>Room Set-Ups</li>
+                                <li>Audiovisual</li>
+                                <li>Food & Beverage</li>
+                                <li>Signage</li>
+                                <li>Exhibit Hall</li>
+                                <li>Transportation</li>
+                                <li>Special Events</li>
+                            </ul>
+                        </div>
 					</div>
-					<div class="ui-block-a">
-						<a href="#popupPhoto4" data-rel="popup" data-transition="flip">
-							<img src="images/staff/tile_emma.png" width="99%">
-						</a>
-						<div data-role="popup" id="popupPhoto4" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-							<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-							<img class="popphoto" src="images/staff/popup_emma.png" alt="Emma Ferrell">
-						</div>
+                    <!--Contract Services-->
+					<div class="slide">
+						<img src="images/muslider/ajax-loader.gif" data-src="images/services/contract_services.png" alt="Contract Services" title="" />
+                        <div style="position:absolute; top:100px; left:100px; width:700px;">
+                            <h1>Contract Services</h1>
+                            <ul style="list-style-type:disc; margin-left:50px;">
+                                <li>Hotel Lodging</li>
+                                <li>Meeting Space</li>
+                                <li>Convention Centers</li>
+                                <li>Unique Venues</li>
+                                <li>Exhibit Companies</li>
+                                <li>Speakers</li>
+                            </ul>
+                        </div>
 					</div>
-
-					<div class="ui-block-b">
-						<a href="#popupPhoto5" data-rel="popup" data-transition="flip">
-							<img src="images/staff/tile_emily.png" width="99%">
-						</a>
-						<div data-role="popup" id="popupPhoto5" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-							<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-							<img class="popphoto" src="images/staff/popup_emily.png" alt="Emily Gillis">
-						</div>
+                    <!--Marketing Services-->
+					<div class="slide">
+						<img src="images/muslider/ajax-loader.gif" data-src="images/services/marketing_services.png" alt="Marketing Services" title="" />
+                        <div style="position:absolute; top:100px; left:100px; width:700px;">
+                            <h1>Marketing Services</h1>
+                            <ul style="list-style-type:disc; margin-left:50px;">
+                                <li>Graphic Design</li>
+                                <li>Printing</li>
+                                <li>Mailing</li>
+                                <li>E-Mail Distribution</li>
+                                <li>Web Development</li>
+                                <li>Promotional Items</li>
+                            </ul>
+                        </div>
 					</div>
-					<div class="ui-block-c">
-						<a href="#popupPhoto6" data-rel="popup" data-transition="flip">
-							<img src="images/staff/tile_latayna.png" width="99%">
-						</a>
-						<div data-role="popup" id="popupPhoto6" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-							<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-							<img class="popphoto" src="images/staff/popup_latayna.png" alt="LaTayna Greene">
-						</div>
-					</div>
-					<div class="ui-block-a">
-						<a href="#popupPhoto7" data-rel="popup"  data-transition="flip">
-							<img src="images/staff/tile_tom.png" width="99%" >
-						</a>
-						<div data-role="popup" id="popupPhoto7" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-							<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-							<img class="popphoto3" src="images/staff/popup_tom.png" alt="Tom Robertson">
-						</div>
-					</div>
-
-					<div class="ui-block-b">
-						<a href="#popupPhoto8" data-rel="popup" data-transition="flip">
-							<img src="images/staff/tile_beth.png" width="99%">
-						</a>
-						<div data-role="popup" id="popupPhoto8" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-							<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-							<img class="popphoto" src="images/staff/popup_beth.png" alt="Beth Scharf">
-						</div>
-					</div>
-                    
-					<div class="ui-block-c">
-						<a href="#popupPhoto9" data-rel="popup" data-transition="flip">
-							<img src="images/staff/tile_pamela.png" width="99%" >
-						</a>
-						<div data-role="popup" id="popupPhoto9" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-							<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-							<img class="popphoto1" src="images/staff/popup_pamela.png" alt="Pamela Walker-Stokes">
-						</div>
-					</div>
-                    
-					<div class="ui-block-a">
-						<a href="#popupPhoto10" data-rel="popup" data-transition="flip">
-							<img src="images/staff/tile_kathy.png" width="99%" >
-						</a>
-						<div data-role="popup" id="popupPhoto10" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-							<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-							<img class="popphoto1" src="images/staff/popup_kathy.png" alt="Kathy Walters">
-						</div>
-					</div>
-                    
-					<div class="ui-block-b">
-						<a href="#popupPhoto11" data-rel="popup"  data-transition="flip">
-							<img src="images/staff/tile_erica.png" width="99%" >
-						</a>
-						<div data-role="popup" id="popupPhoto11" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-							<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-							<img class="popphoto3" src="images/staff/popup_erica.png" alt="Erica Wilson">
-						</div>
-					</div>
-                    
-					<div class="ui-block-c">
-						<a href="#popupPhoto12" data-rel="popup" data-transition="flip">
-							<img src="images/staff/tile_RegistrationAssistants.png" width="99%" >
-						</a>
-						<div data-role="popup" id="popupPhoto12" data-overlay-theme="a" data-theme="d" data-corners="false" data-position-to="window">
-							<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-							<img class="popphoto1" src="images/staff/popup_RegistrationAssistants.png" alt="Registration Assitants">
-						</div>
-					</div>
-                    
-					<div class="ui-block-c"></div>
-					<div class="ui-block-a"><br><br></div>
-
-				</div><!--END of ui-grid-b-->
+				</div>
+				<div class="navslide" data-position="fixed" data-fullscreen="true">
+					<p>
+						<span class="prev"><img src="images/muslider/prev02.png" alt="previous" title="previous" /></span>
+						<span class="start"><img src="images/muslider/start02.png" alt="start" title="start" /></span>
+						<span class="stop"><img src="images/muslider/pause02.png" alt="stop" title="stop" /></span>
+						<span class="next"><img src="images/muslider/next02.png" alt="next" title="next" /></span>
+					</p>
+				</div>
+			</div>
+		<script>
+			$(document).ready(function() 
+			{
+				$("#container").muslider({
+					"animation_type": "fade", /*horizontal, vertical, fade*/
+					"animation_duration": 600,
+					"animation_start": "auto",
+                    "animation_interval": 8000, /*4000*/
+                    "responsive": "no",
+                    "width": 980,
+                    "height": 695,
+				});
+			});
+		</script>
+                <!--SLIDESHOW END-->
 			</div>
 
 			<div data-role="footer" data-id="footer_ID" data-position="fixed" data-fullscreen="true" >
@@ -1265,14 +1446,14 @@
 					<ul>
 						<li><a href="#home" data-role="button" data-icon="home">Home</a></li>
 						<li><a href="#campus_map" data-role="button" data-icon="star">Campus Map</a></li>
-						<li><a href="#services" data-role="button" data-icon="gear">Services</a></li>
-						<li><a href="#staff" data-role="button" data-icon="grid">Staff</a></li>
+						<li><a href="#our_reach" data-role="button" data-icon="gear">Our Reach</a></li>
+						<li><a href="#services" data-role="button" data-icon="grid">Services</a></li>
 						<li><a href="#about" data-role="button" data-icon="info">About</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
-		<!--END STAFF PAGE-->
+		<!--END SERVICES PAGE-->
 
 	</body>
 </html>
